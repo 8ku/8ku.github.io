@@ -88,7 +88,7 @@ title: Home
 
         <div class="masonrygrid row listrecent">
 
-            {% for post in site.categories[Design] %}
+            {% for post in paginator.posts %}
 
             {% unless post.featured == true %}
 
