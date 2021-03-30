@@ -20,11 +20,7 @@ title: Works
 
             {% for post in paginator.posts %}
 
-            {% unless post.featured == true %}
-
                 {% include postbox.html %}
-
-            {% endunless %}
 
             {% endfor %}
 
