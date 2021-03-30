@@ -702,8 +702,8 @@ a.btn {color:#fff;}
     margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
-.sidebar {max-width:340px;font-size: 15px;}
-.sidebar h5 {    margin-bottom: 1rem;   text-align:center; position:fixed;font-weight: 700; }
+.sidebar {max-width:340px;font-size: 15px;position: sticky;top: 110px;}
+.sidebar h5 {    margin-bottom: 1rem;   text-align:center; position:relative;font-weight: 700; }
 .sidebar h5 span {
 background-color: #fff;
     position: relative;
