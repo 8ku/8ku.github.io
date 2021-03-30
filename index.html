@@ -88,14 +88,11 @@ title: Home
 
         <div class="masonrygrid row listrecent">
 
-            {% for post in site.categories.Design %}
+            {% for post in site.categories[Design] %}
 
             {% unless post.featured == true %}
-                {% if categories == "Design" %}
 
                     {% include postbox.html %}
-
-                {% endif %}
 
             {% endunless %}
 
