@@ -16,4 +16,5 @@ group :jekyll_plugins do
     gem 'jekyll-paginate'
     gem 'jekyll-seo-tag'
     gem 'jekyll-archives'
+    gem 'eventmachine', '1.2.7'
 end

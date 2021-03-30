@@ -1,13 +1,13 @@
 # Site
-name: "Affiliates Theme for Jekyll"
-title: "Affiliates Theme for Jekyll"
-description: "Jekyll Theme for Blogging"
-meta_description: "Jekyll theme for blogging."
+name: "8ku"
+title: "Little Corner of 8ku"
+description: "nowhere but here."
+meta_description: #"Jekyll theme for blogging."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 12
-baseurl: '8ku.github.io'
-email: 'wowthemesnet@gmail.com'
+baseurl: '/'
+email: 'dcyp@163.com'
 google_analytics: #'UA-46278016-1'
 disqus: #'demowebsite'
 sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
