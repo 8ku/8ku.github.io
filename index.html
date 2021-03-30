@@ -91,8 +91,11 @@ title: Home
             {% for post in paginator.posts %}
 
             {% unless post.featured == true %}
+                {% if categories == "Design" %}
 
-                {% include postbox.html %}
+                    {% include postbox.html %}
+                    
+                {% endif %}
 
             {% endunless %}
 
