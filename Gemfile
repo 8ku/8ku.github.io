@@ -18,3 +18,4 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'eventmachine', '1.2.7'
 end
+gem "jekyll", "~> 4.2"
