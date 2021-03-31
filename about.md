@@ -14,28 +14,29 @@ comments: false
 
 你觉得AI会不会毁灭世界？
 
-我站精神世界。
-
 
 <form action="mailto:dcyp@163.com" method="GET">
     你可以通过邮件联系我😀 
     <input class="btn btn-success" type="submit" value="Email me：dcyp＠163.com">
 </form>
 
+<div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>脑洞奇大，二次元种族，思维跳跃过快，软件狂热者，不接触新事物会死。</p>
+                    <p>一起玩游戏么？</p>
+                    <p>一起聊历史么？</p>
+                    <p>摄影玩不玩？</p>
+                    <p>你觉得AI会不会毁灭世界？</p>
+                    <form action="mailto:dcyp@163.com" method="GET">
+                        你可以通过邮件联系我😀 
+                        <input class="btn btn-success" type="submit" value="Email me：dcyp＠163.com">
+                    </form>
+                </div>
+                <div class="col-md-4 text-right footersocial">
+                    <img src="{{ site.baseurl }}/assets/images/logo-footer.svg">
+                </div>
+            </div>
+        </div>
 
 
-
-<!-- **License & Download**
-
-"Affiliates" for Jekyll is designed and developed by WowThemes.net and it is *free* for personal use.
-
-<a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip" target="_blank">Download - Affiliates Jekyll Theme</a>
-
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme1.jpg)
-
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme2.jpg)
-
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme3.jpg)
-
-![jekyll template mediumish]({{site.baseurl}}/assets/images/theme4.jpg)
- -->
