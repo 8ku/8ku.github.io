@@ -21,5 +21,5 @@ image_sliders:
 
 现在看来，这些设计在细节上还是幼稚得很，但是，当时的我体会到了一件事，设计不是设计师自己的个人秀，设计一定是需要从产品的角度出发的。
 
-[相关经历](https://8ku.github.io/Journey/2011/06/07/GraphicDesign_Journey)
+[相关经历](https://8ku.github.io/journey/2011/06/07/GraphicDesign_Journey)
 
