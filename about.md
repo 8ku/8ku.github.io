@@ -1,9 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
 comments: false
 ---
-### About me
 
 脑洞奇大，二次元种族，思维跳跃过快，软件狂热者，不接触新事物会死。
 
@@ -18,13 +17,15 @@ comments: false
 我站精神世界。
 
 
-<div class="container">
+<div class="site-content" style="margin-top: 87px;">
+    <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <p>你可以通过邮件联系我😀</p>
-                    <a class="btn btn-success" href="mailto:dcyp@163.com">JEmail me：dcyp＠163.com</a>
+                    <a class="btn btn-success" href="mailto:dcyp@163.com">Email me：dcyp＠163.com</a>
                 </div>
             </div>
+    </div>
 </div>
 
 
