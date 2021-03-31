@@ -46,4 +46,4 @@ categories: [Journey]
 
 
 
-[相关作品](https://8ku.github.io/journey/2018/09/28/UXDesign_community)
+[相关作品](https://8ku.github.io/ux design/2018/09/28/UXDesign_community)
