@@ -1,5 +1,5 @@
 ---
-layout: defalt
+layout: page
 title: About
 comments: false
 ---
@@ -18,13 +18,16 @@ comments: false
 我站精神世界。
 
 
-
-<div class="row justify-content-center">
+<div class="container">
+            <div class="row justify-content-center">
                 <div class="col-md-8">
                     <p>你可以通过邮件联系我😀</p>
-                    <a class="btn btn-primary btn-lg" href="mailto:dcyp@163.com">Email me：dcyp＠163.com</a>
+                    <a class="btn btn-success" href="mailto:dcyp@163.com">JEmail me：dcyp＠163.com</a>
                 </div>
+            </div>
 </div>
+
+
 
 
 <!-- **License & Download**
