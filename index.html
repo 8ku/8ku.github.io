@@ -11,11 +11,7 @@ title: Home
         <h2 class="lead">"Affiliates" is a Jekyll theme designed & developed by WowThemesNet, best suitable for affiliate marketing.</h2>    
         <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip" class="btn">Download</a>
 
-        {% for slide in site.slides %}
-
-            {{ slide.content }}
-
-        {% endfor %}
+        {% include sliderShow.html %}
 
     </div>
 
