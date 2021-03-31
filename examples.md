@@ -2,10 +2,7 @@
 layout: default
 title: Examples
 permalink: /examples/
-image_sliders:
-  - slider1
-  - slider2
-  - slider3
+
 ---
 
 [View the Markdown source for this page](https://raw.githubusercontent.com/jekylltools/jekyll-ideal-image-slider-include/gh-pages/examples.md)
