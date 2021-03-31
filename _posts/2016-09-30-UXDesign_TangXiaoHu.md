@@ -22,3 +22,6 @@ image: assets/images/UI/UItxh_head.jpg
 患者数据是指患者一切影响病情的数据，包括身高体重年龄性别等基本数据、患者血糖监测情况、日常饮食 运动用药情况、检查检验数据、医嘱遵从情况等等。
 
 这些数据一部分来源于患者日常主动记录，一部分来源于在医院进行诊疗时的检测。
+
+![uxTXH01]({{ site.baseurl }}/assets/images/UI/UItxh02.jpg)
+
