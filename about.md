@@ -13,7 +13,6 @@ comments: false
                     <p>摄影玩不玩？</p>
                     <p>你觉得AI会不会毁灭世界？</p>
                     <form action="mailto:dcyp@163.com" method="GET">
-                        你可以通过邮件联系我😀 
                         <input class="btn btn-success" type="submit" value="Email me：dcyp＠163.com">
                     </form>
                 </div>
