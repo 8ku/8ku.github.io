@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: default
 title: Examples
-categories: [Design]
 image_sliders:
   - slider1
   - slider2
