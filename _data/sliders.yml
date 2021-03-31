@@ -28,17 +28,30 @@
   bullets: true
   captions: true
   images:
-    - src: /img/1.jpg
-      title: Balloons!
-      alt: This slider has caption titles
-    - data-src: /img/2.jpg
-      title: This slider uses the fade effect
-      alt: Instead of the default slide effect
-    - data-src: /img/3.jpg
-      data-src-2x: /img/3@2x.jpg
-    - src: /img/4.jpg
-      title: Last image had no caption!
-      alt: Also, this image has no link
+    - src: /assets/images/graphic/LA.jpg
+      #title: LA音箱
+      alt: LA音箱广告
+    - data-src: /assets/images/graphic/impulse12D.jpg
+      #title: This slider uses the fade effect
+      alt: Impulse 12D音箱广告
+    - data-src: /assets/images/graphic/xFrame.jpg
+      # data-src-2x: /img/3@2x.jpg
+      alt: X-Frame音箱广告
+    - src: /assets/images/graphic/PHR.jpg
+      #title: Last image had no caption!
+      alt: PHR音箱广告
+    - src: /assets/images/graphic/album1.jpg
+      #title: Last image had no caption!
+      alt: 画册1
+    - src: /assets/images/graphic/album2.jpg
+      #title: Last image had no caption!
+      alt: 画册2
+    - src: /assets/images/graphic/album3.jpg
+      #title: Last image had no caption!
+      alt: 画册3
+    - src: /assets/images/graphic/album4.jpg
+      #title: Last image had no caption!
+      alt: 画册4
   settings:
     height: "'auto'"
     effect: "'fade'"
