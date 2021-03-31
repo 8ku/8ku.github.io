@@ -17,16 +17,10 @@ comments: false
 我站精神世界。
 
 
-<div class="site-content" style="margin-top: 87px;">
-    <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <p>你可以通过邮件联系我😀</p>
-                    <a class="btn btn-success" href="mailto:dcyp@163.com">Email me：dcyp＠163.com</a>
-                </div>
-            </div>
-    </div>
-</div>
+<form action="mailto:dcyp@163.com" method="GET">
+    你可以通过邮件联系我😀 
+    <input class="btn btn-success" type="submit" value="Email me：dcyp＠163.com">
+</form>
 
 
 
