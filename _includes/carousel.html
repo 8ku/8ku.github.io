@@ -3,7 +3,7 @@
 
 <div class="carousel__holder">
     <div class="carousel">
-        {% for item in site.data.carousel.images %}
+        {% for item in site.carousel.images %}
           <input class="carousel__activator" type="radio" name="carousel" id="{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
         {% endfor %}
         {% for item in site.data.carousel.images %}
