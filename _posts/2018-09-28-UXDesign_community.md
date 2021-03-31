@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 社区产品 UX
-categories: [UX Design]
+categories: [UI/UX Design]
 image: assets/images/UI/community_head.jpg
 ---
 

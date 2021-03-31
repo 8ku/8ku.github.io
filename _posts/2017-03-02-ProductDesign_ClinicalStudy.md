@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 临床医疗监督系统 产品
-categories: [UX Design, Product Design]
+categories: [UI/UX Design, Product Design]
 image: assets/images/UI/ClinicalStudy_head.jpg
 ---
 

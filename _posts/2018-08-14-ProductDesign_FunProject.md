@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 网站智能助手
-categories: [UX Design, Product Design]
+categories: [UI/UX Design, Product Design]
 image: assets/images/UI/Funproject_head.jpg
 ---
 

@@ -3,7 +3,7 @@ name: "8ku"
 title: "Little Corner of 8ku"
 description: "nowhere but here."
 meta_description: #"Jekyll theme for blogging."
-logo: 'assets/images/logo.png'
+logo: 'assets/images/logo.svg'
 favicon: 'assets/images/favicon.ico'
 paginate: 6
 baseurl: '/'
