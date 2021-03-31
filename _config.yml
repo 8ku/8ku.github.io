@@ -49,3 +49,7 @@ jekyll-archives:
 # Other
 markdown: kramdown
 highlighter: rouge
+
+# Collections
+collections: 
+  - slides
