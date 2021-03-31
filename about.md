@@ -4,22 +4,6 @@ title: About Me
 comments: false
 ---
 
-脑洞奇大，二次元种族，思维跳跃过快，软件狂热者，不接触新事物会死。
-
-一起玩游戏么？
-
-一起聊历史么？
-
-摄影玩不玩？
-
-你觉得AI会不会毁灭世界？
-
-
-<form action="mailto:dcyp@163.com" method="GET">
-    你可以通过邮件联系我😀 
-    <input class="btn btn-success" type="submit" value="Email me：dcyp＠163.com">
-</form>
-
 <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -34,7 +18,7 @@ comments: false
                     </form>
                 </div>
                 <div class="col-md-4 text-right footersocial">
-                    <img src="{{ site.baseurl }}/assets/images/logo-footer.svg">
+                    <img src="{{ site.baseurl }}/assets/images/logo_about.jpg">
                 </div>
             </div>
         </div>
