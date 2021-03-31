@@ -317,6 +317,7 @@ span.post-name a,span.post-read-more a:hover {
 	margin-right:7px;
     vertical-align: text-bottom;
     max-width:initial;
+    height: 36px;
 }
 .mainheading h1.sitetitle {
 	font-family:Georgia;
