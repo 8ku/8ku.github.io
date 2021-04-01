@@ -12,8 +12,8 @@ comments: false
                     <p>一起聊历史么？</p>
                     <p>摄影玩不玩？</p>
                     <p>你觉得AI会不会毁灭世界？</p>
-                    <form action="mailto:dcyp@163.com" method="GET">
-                        <input class="btn btn-success" type="submit" value="Email me：dcyp＠163.com">
+                    <form action="mailto:8kutan@gmail.com" method="GET">
+                        <input class="btn btn-success" type="submit" value="Email me：8kutan@gmail.com">
                     </form>
                 </div>
                 <div class="col-md-4 text-right footersocial">
