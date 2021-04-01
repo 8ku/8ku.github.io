@@ -13,7 +13,7 @@ comments: false
                     <p>摄影玩不玩？</p>
                     <p>你觉得AI会不会毁灭世界？</p>
                     <form action="mailto:8kutan@gmail.com" method="GET">
-                        <input class="btn btn-success" type="submit" value="Email me：8kutan@gmail.com" onclick="gtag('event','email me', {'event_label':'email me from About Page'})">
+                        <input class="btn btn-success" type="submit" value="Email me：8kutan@gmail.com" onclick="gtag('event','emailMe', {'event_label':'email me from About Page'})">
                     </form>
                 </div>
                 <div class="col-md-4 text-right footersocial">
