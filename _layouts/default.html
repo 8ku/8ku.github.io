@@ -34,7 +34,9 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-W3Y2J5WTXC');
+  gtag('config', 'G-W3Y2J5WTXC',{
+     'custom_map': {'dimension1': 'open resume'}
+  });
 </script>
 
 
@@ -100,7 +102,7 @@
                 </li> 
   
                 <li class="nav-item">                
-                    <a class="nav-link highlight" href="https://8ku.github.io/archive/resume.pdf">Resume</a>
+                    <a class="nav-link highlight" href="https://8ku.github.io/archive/resume.pdf" onclick="gtag('event','open resume', {'open resume': 1})">Resume</a>
                 </li> 
                 
             </ul>
