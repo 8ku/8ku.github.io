@@ -3,6 +3,7 @@ layout: post
 title: 社区产品 UX
 categories: [UI/UX Design]
 image: assets/images/UI/community_head.jpg
+featured: true
 ---
 
 公司一个大IP《权力的游戏》快要上线，需要做一个产品预热。游戏项目组决定做一个能让书迷剧迷聚集起来的社区产品，找到我们组来策划和做交互设计。

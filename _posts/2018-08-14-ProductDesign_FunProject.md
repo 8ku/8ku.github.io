@@ -3,6 +3,7 @@ layout: post
 title: 网站智能助手
 categories: [UI/UX Design, Product Design]
 image: assets/images/UI/Funproject_head.jpg
+featured: true
 ---
 
 一个有意思的小项目.

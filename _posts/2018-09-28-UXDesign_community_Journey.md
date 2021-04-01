@@ -2,7 +2,7 @@
 layout: post
 title: 游戏交互？我做不了的，哦？没关系？
 categories: [Journey]
-featured: true
+featured: false
 ---
 
 游戏公司里不是只有游戏项目组，我真正到一家游戏公司里才知道这件事。我所在的部门叫平台运营部，主要工作围绕平台网站业务需求提供交互设计上的支持。
