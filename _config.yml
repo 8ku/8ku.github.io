@@ -8,7 +8,7 @@ favicon: 'assets/images/favicon.ico'
 paginate: 6
 baseurl: '/'
 email: 'dcyp@163.com'
-google_analytics: 267565891
+google_analytics: UA-101042903-2
 sharethis: #'<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
 
 # Authors
