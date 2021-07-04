@@ -35,6 +35,8 @@ image: assets/images/3DArt/3D_scence3.jpg
 
 ![第二版 场景测试：Unity]({{ site.baseurl }}/assets/images/3DArt/3D_scence2_1.jpg)
 
+![第二版 场景测试：Unity]({{ site.baseurl }}/assets/images/3DArt/3D_scence2_2.jpg)
+
 *第二版 场景测试 整体*  🡇
 
 ![第二版 场景测试 整体]({{ site.baseurl }}/assets/images/3DArt/3D_scence3.jpg)
