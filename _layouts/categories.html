@@ -3,11 +3,13 @@ title: "Categories"
 layout: default
 permalink: "/categories.html"
 ---
-{% for category in site.categories %}
-<h4 class="mt-5 mb-4 pb-2 border-bottom" id="{{ category[0] | replace: " ","-" }}"><span class="text-capitalize small font-weight-bold">In "{{ category[0] }}"</span></h4>
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+{% assign sorted_posts = category[1] | reverse %}
+<h4 class="mt-5 mb-4 pb-2 border-bottom" id="{{ category[0] |  uri_escape | downcase | replace: " ","-" }}"><span class="text-capitalize small font-weight-bold">In "{{ category[0] }}"</span></h4>
 <div class="row">
 {% assign pages_list = category[1] %}
-{% for post in pages_list %}
+{% for post in sorted_posts %}
 {% if post.title != null %}
 {% if group == null or group == post.group %}
 <div class="col-md-4 mb-5">
