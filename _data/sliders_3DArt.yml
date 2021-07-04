@@ -1,0 +1,13 @@
+- selector: slider2
+  bullets: true
+  captions: true
+  images:
+    - src: /assets/images/3DArt/3D_Sheep_draft.jpg
+      #title: LA音箱
+      alt: draft
+    - data-src: /assets/images/3DArt/3D_Sheep_model.jpg
+      #title: This slider uses the fade effect
+      alt: model
+  settings:
+    height: "'auto'"
+    effect: "'fade'"

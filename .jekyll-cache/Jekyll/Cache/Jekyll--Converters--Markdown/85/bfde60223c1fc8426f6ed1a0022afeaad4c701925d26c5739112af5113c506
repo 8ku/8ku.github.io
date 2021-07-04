@@ -1,0 +1,8 @@
+I"i<!-- Jekyll Ideal Image Slider Include -->
+<!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
+<!-- v1.8 -->
+<div id="slider2">
+  <img data-src="" data-src-2x="" src="/assets/images/3DArt/Sheep_3D.png" title="" alt="Sheep_3D" />
+  <img data-src="/assets/images/graphic/PHR.jpg" data-src-2x="" src="" title="" alt="amazon+scan" />
+  </div>
+:ET
