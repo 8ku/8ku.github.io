@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building-Scene Design
-categories: [3D Art]
+categories: [3D-Art]
 image: assets/images/3DArt/3D_scence3.jpg
 ---
 

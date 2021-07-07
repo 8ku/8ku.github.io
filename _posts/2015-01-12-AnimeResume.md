@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 不这么无聊的简历实验
-categories: [Animation Design]
+categories: [Animation-Design]
 image: assets/images/graphic/anime.jpg
 ---
 
@@ -22,4 +22,3 @@ image: assets/images/graphic/anime.jpg
 <video width="100%" height="240" controls>
   <source type="video/mp4" src="https://8ku.github.io/archive/resumeAnime.mp4">
 </video>
-

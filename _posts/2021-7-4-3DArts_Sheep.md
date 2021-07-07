@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sheep-Character Design
-categories: [3D Art]
+categories: [3D-Art]
 image: assets/images/3DArt/3D_Sheep_model.jpg
 image_sliders:
   - slider2

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 音响品牌代理公司 平面设计
-categories: [Graphic Design]
+categories: [Graphic-Design]
 image: assets/images/graphic/2011.jpg
 image_sliders:
   - slider2

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 互联网医疗公司 UX 设计
-categories: [UI/UX Design]
+categories: [UI-UX-Design]
 image: assets/images/UI/UItxh_head.jpg
 ---
 

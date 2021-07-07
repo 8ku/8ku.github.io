@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 互联网教育 海报/周边产品设计
-categories: [Graphic Design]
+categories: [Graphic-Design]
 image: assets/images/graphic/logoDesign.jpg
 image_sliders:
   - slider2

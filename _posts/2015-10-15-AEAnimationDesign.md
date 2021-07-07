@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 不做点有意思的东西要生锈了
-categories: [Animation Design]
+categories: [Animation-Design]
 image: assets/images/UI/animationForFun.gif
 ---
 
@@ -20,4 +20,3 @@ image: assets/images/UI/animationForFun.gif
 <video width="100%" height="100%" controls>
   <source type="video/mp4" src="https://8ku.github.io/archive/AEAnimation.mp4">
 </video>
-
