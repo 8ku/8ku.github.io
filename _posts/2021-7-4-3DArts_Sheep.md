@@ -12,7 +12,11 @@ featured: true
 
 {% include slider_3DArt.html selector="slider2" %}
 
-场景
+## 场景
 
 ![Summer Sea]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_SummerSea.jpg)
+
+
+
+![Wind Bell]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg)
 
