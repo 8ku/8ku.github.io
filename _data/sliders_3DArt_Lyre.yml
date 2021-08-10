@@ -1,0 +1,19 @@
+- selector: slider2
+  bullets: true
+  captions: true
+  images:
+    - src: /assets/images/3DArt/3D_Lyre_Design.jpg
+      #title: This slider uses the fade effect
+      alt: Design
+    - data-src: /assets/images/3DArt/3D_Lyre_Model.jpg
+      #title: This slider uses the fade effect
+      alt: Model
+    - data-src: /assets/images/3DArt/3D_Lyre_Render.jpg
+      #title: This slider uses the fade effect
+      alt: Render
+    - data-src: /assets/images/3DArt/3D_Lyre_3DPrinting.jpg
+      #title: This slider uses the fade effect
+      alt: 3D Printing
+  settings:
+    height: "'auto'"
+    effect: "'fade'"
