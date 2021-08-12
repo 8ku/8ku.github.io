@@ -12,4 +12,3 @@ featured: false
 
 {% include slider_3DArt_Lyre.html selector="slider2" %}
 
-
