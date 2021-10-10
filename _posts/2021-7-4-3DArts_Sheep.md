@@ -20,3 +20,7 @@ featured: true
 
 ![Wind Bell]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg)
 
+
+
+![Summer is Over]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_SummerIsOver.jpg)
+
