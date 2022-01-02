@@ -16,11 +16,22 @@ featured: true
 
 ![Summer Sea]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_SummerSea.jpg)
 
+Summer Sea
+
 
 
 ![Wind Bell]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg)
+
+Wind Bell
 
 
 
 ![Summer is Over]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_SummerIsOver.jpg)
 
+Summer is Over
+
+
+
+![New Year(2022)]({{ site.baseurl }}/assets/images/3DArt/3D_Sheep_newYear.jpg)
+
+New Year(2022)
