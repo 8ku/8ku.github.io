@@ -1,0 +1,32 @@
+I"�<div class="col-md-6">
+莫丹
+女 ｜ 本科 ｜dcyp@163.com  
+</div>
+
+<h2 id="莫丹">莫丹</h2>
+
+<p>女 ｜ 本科 ｜dcyp@163.com</p>
+
+<h3 id="个人优势">个人优势</h3>
+
+<p>You can have the best looking app,but if it doesn’t work,NO ONE is going to use it.</p>
+
+<p>终身学习者。</p>
+
+<p>5 年交互设计经验，形成自己的产品设计方法论并在公司中有所实践；自学 HTML，在工作中了解了后端语言结构及原理，利用共同的语言和产品、UI  及开发顺利沟通；坚持以人为本，掌握  SQL、 Python  等分析工具的使用，仍在不断学习；重点研究社会学，生物学，心理学；关注经济学，认知科学，数据分析等领域。</p>
+
+<p>目前负责 NLP 应用和聊天机器人训练，集团层数据可视化报表设计及数据研究工作。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span id='div1'&gt;把要打印的内容放这里&lt;/span&gt;
+&lt;p&gt;所有内容&lt;/p&gt;
+&lt;div id="div2"&gt;div2的内容&lt;/div&gt;
+&lt;a href="javascript:printme()" rel="external nofollow" target="_self"&gt;打印&lt;/a&gt;
+&lt;script language="javascript"&gt;
+function printme()
+{ document.body.innerHTML=document.getElementByIdx_x_x('div1').innerHTML+'&lt;br/&gt;'+document.getElementByIdx_x_x('div2').innerHTML;
+window.print();
+}
+&lt;/script&gt;
+</code></pre></div></div>
+
+:ET
