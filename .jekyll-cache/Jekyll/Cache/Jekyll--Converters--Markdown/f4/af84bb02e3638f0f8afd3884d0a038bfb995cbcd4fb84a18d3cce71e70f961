@@ -1,14 +1,7 @@
----
-layout: default
-comments: false
----
-
-
-
-<div class="resume" align="right">
+I"�<div class="resume" align="right">
 	<a class="btn btn-dark" href="javascript:printme()" rel="external nofollow" target="_self">Print</a>
 </div>
-<div id = "print">
+<div id="print">
 <div class="col-lg-8 mx-auto">
 <h2>莫丹</h2>
 <p>女 ｜ 本科 ｜dcyp@163.com  </p>
@@ -16,33 +9,15 @@ comments: false
 <p>You can have the best looking app, but if it doesn't work, NO ONE is going to use it. </p>
 <p>终身学习者。</p>   
 <p>6 年交互设计经验，形成自己的产品设计方法论并在公司中有所实践；自学HTML，在工作中了解了后端语言结构及原理，利用共同的语言和产品、UI  及开发顺利沟通；坚持以人为本，掌握  SQL、 Python 等分析工具的使用，仍在不断学习；重点研究社会学，生物学，心理学；关注经济学，认知科学，数据分析等领域。</p>
-
+<p>目前负责 NLP 应用和聊天机器人训练，集团层数据可视化报表设计及数据研究工作。</p>
 </div>
 <div class="area">
 <h4>期望职位</h4>
-<p>交互设计师 上海  25-30K<br>
-交互设计师 成都  20-25K</p>
+<p>交互设计师 上海  25-30K<br />
+交互设计师 成都  25-30K</p>
 </div>
 <div class="area">
 <h4>工作经历</h4>
-<h5>上海游犀科技有限公司</h5>
-<p>资深交互设计师 | UED部门  2021.8—至今</p>
-  <p><b>内容</b></p>
-<ul>
-	<li>主负责公司产品 - “KOL流量交易平台” 的 PC 端、H5端、App端所有交互设计工作，参与多个产品从0到1全过程</li>
-	<li>建立交互设计规范及工作流程规范并实行</li>
-	<li>指导初级交互设计师工作 </li>
-	<li>和用户研究人员共同进行前期的用户调研及可用性测试</li>
-	<li>主导用户行为数据基建工作，负责每次运营活动的交互设计、数据埋点、数据分析，产出用户行为分析报告</li>
-	<li>配合公司发展方向进行创新项目的尝试</li>
-</ul>
-<p><b>业绩</b></p>
-<ul>
-	<li>同时负责3条产品线的交互设计工作，高效高质完成交互设计工作，保证了上下游的工作通畅及最后上线</li>
-	<li>在缺少开发人员的支持下，自学Google Tag Manager并独立完成数据埋点等基础工作，在每次重要运营活动后结合 Google Analytics、Google Tag Manager 及 Data Studio的数据，进行用户行为数据分析，产出分析报告</li>
-	<li>2周内快速学习了Three.js，把公司创新项目中设计的虚拟人动画成功在网页中展示并实现简单交互</li>
-	<li>带动学习氛围，鼓励并指导 UED 部门内部学习3D建模软件 Blender，并成功在公司创新项目中实践</li>
-</ul>
 <h5>瑞格丝（上海）投资有限公司</h5>
 <p>交互设计师 | 效能创新部  2018.10—2020.12</p>
   <p><b>内容</b></p>
@@ -145,3 +120,6 @@ window.print();
 
 
 
+
+</div>
+:ET

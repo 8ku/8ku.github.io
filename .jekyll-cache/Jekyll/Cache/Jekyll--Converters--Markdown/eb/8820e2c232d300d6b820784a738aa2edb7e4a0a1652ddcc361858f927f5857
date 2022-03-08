@@ -1,14 +1,7 @@
----
-layout: default
-comments: false
----
-
-
-
-<div class="resume" align="right">
+I"�<div class="resume" align="right">
 	<a class="btn btn-dark" href="javascript:printme()" rel="external nofollow" target="_self">Print</a>
 </div>
-<div id = "print">
+<div id="print">
 <div class="col-lg-8 mx-auto">
 <h2>莫丹</h2>
 <p>女 ｜ 本科 ｜dcyp@163.com  </p>
@@ -20,7 +13,7 @@ comments: false
 </div>
 <div class="area">
 <h4>期望职位</h4>
-<p>交互设计师 上海  25-30K<br>
+<p>交互设计师 上海  25-30K<br />
 交互设计师 成都  20-25K</p>
 </div>
 <div class="area">
@@ -145,3 +138,5 @@ window.print();
 
 
 
+</div>
+:ET
