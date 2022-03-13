@@ -54,7 +54,7 @@ highlighter: rouge
 # language Switcher
 languages: ["en", "zh"]
 default_lang: "zh"
-exclude_from_localization: ["assets/css", "assets/images"]
+exclude_from_localization: ["assets/css", "assets/images", "assets/js"]
 parallel_localization: true
 
 sass:
