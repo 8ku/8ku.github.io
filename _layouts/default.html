@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,11 +44,11 @@
 {% include slider_styles.html %}
     
 </head>
-    
 
     
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
+
 
     
 <!-- Begin Menu Navigation
@@ -65,8 +65,16 @@
         </a>
         <!-- End Logo -->
 
+        
+
+
         <!-- Begin Menu -->
         <div class="collapse navbar-collapse" id="navbarsWow">
+
+                    <!-- language switcher -->
+        <div class="lang-switcher">
+            + {%- include lang-switcher.html -%}+        
+        </div>
             
             <!-- Begin Menu -->
             <ul class="navbar-nav ml-auto">

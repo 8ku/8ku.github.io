@@ -17,5 +17,6 @@ group :jekyll_plugins do
     gem 'jekyll-seo-tag'
     gem 'jekyll-archives'
     gem 'eventmachine', '1.2.7'
+    gem 'jekyll-polyglot'
 end
 gem "jekyll", "~> 4.2"
