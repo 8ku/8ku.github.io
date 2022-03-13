@@ -1,0 +1,15 @@
+I"§<div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>Designer / Programmer / Lifelong Learner</p>
+                    <form action="mailto:8kutan@gmail.com" method="GET">
+                        <input class="btn btn-success" type="submit" value="Email meï¼š8kutan@gmail.com" onclick="gtag('event','EmailMe', {'event_label':'email me from About Page'})" />
+                    </form>
+                </div>
+                <div class="col-md-4 text-right footersocial">
+                    <img src="/assets/images/logo_about.jpg" />
+                </div>
+            </div>
+        </div>
+
+:ET
