@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Little Corner of 8ku</title>
+    <description>nowhere but here.</description>
+    <link>/</link>
+    <atom:link href="/en/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 13 Mar 2022 23:41:08 +0800</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2022 23:41:08 +0800</lastBuildDate>
+    <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>WorldEscape-3D Design</title>
+        <description>&lt;p&gt;English.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Mar 2022 00:00:00 +0800</pubDate>
+        <link>/3d-art/2022/03/13/new-post.html</link>
+        <guid isPermaLink="true">/3d-art/2022/03/13/new-post.html</guid>
+        
+        
+        <category>3D-Art</category>
+        
+      </item>
+    
+      <item>
+        <title>WorldEscape-3D Design</title>
+        <description>&lt;h3 id=&quot;设计&quot;&gt;设计&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_WorldEscape_Design.jpg&quot; alt=&quot;设计&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;渲染&quot;&gt;渲染&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_WorldEscape_Rendering.jpg&quot; alt=&quot;设计&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 Aug 2021 00:00:00 +0800</pubDate>
+        <link>/3d-art/2021/08/12/3DArts_WorldEscape.html</link>
+        <guid isPermaLink="true">/3d-art/2021/08/12/3DArts_WorldEscape.html</guid>
+        
+        
+        <category>3D-Art</category>
+        
+      </item>
+    
+      <item>
+        <title>Lyre-3D Design</title>
+        <description>&lt;p&gt;给朋友的BJD娃娃设计和打印的一个Lyre琴。&lt;/p&gt;
+
+&lt;!-- Jekyll Ideal Image Slider Include --&gt;
+&lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
+&lt;!-- v1.8 --&gt;
+&lt;div id=&quot;slider2&quot;&gt;
+  &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/assets/images/3DArt/3D_Lyre_Design.jpg&quot; title=&quot;&quot; alt=&quot;Design&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Lyre_Model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;Model&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Lyre_Render.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;Render&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Lyre_3DPrinting.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;3D Printing&quot; /&gt;
+  &lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 10 Aug 2021 00:00:00 +0800</pubDate>
+        <link>/3d-art/2021/08/10/3DArts_Lyre.html</link>
+        <guid isPermaLink="true">/3d-art/2021/08/10/3DArts_Lyre.html</guid>
+        
+        
+        <category>3D-Art</category>
+        
+      </item>
+    
+      <item>
+        <title>Sheep-Character Design</title>
+        <description>&lt;p&gt;在练习&lt;strong&gt;Blender&lt;/strong&gt;时，把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
+
+&lt;!-- Jekyll Ideal Image Slider Include --&gt;
+&lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
+&lt;!-- v1.8 --&gt;
+&lt;div id=&quot;slider2&quot;&gt;
+  &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/assets/images/3DArt/3D_Sheep_draft.jpg&quot; title=&quot;&quot; alt=&quot;draft&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Sheep_model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;model&quot; /&gt;
+  &lt;/div&gt;
+
+&lt;h2 id=&quot;场景&quot;&gt;场景&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_Sheep_SummerSea.jpg&quot; alt=&quot;Summer Sea&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Summer Sea&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg&quot; alt=&quot;Wind Bell&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Wind Bell&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_Sheep_SummerIsOver.jpg&quot; alt=&quot;Summer is Over&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Summer is Over&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_Sheep_newYear.jpg&quot; alt=&quot;New Year(2022)&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;New Year(2022)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Jul 2021 00:00:00 +0800</pubDate>
+        <link>/3d-art/2021/07/04/3DArts_Sheep.html</link>
+        <guid isPermaLink="true">/3d-art/2021/07/04/3DArts_Sheep.html</guid>
+        
+        
+        <category>3D-Art</category>
+        
+      </item>
+    
+      <item>
+        <title>The Lost Designer</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://scottberkun.com/2021/the-lost-designer/?ref=uxdesignweekly&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;作者: Scott Berkun&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;设计师被雇来改变, 没人会雇一个设计师来让事情保持一成不变. 但挑战在于我们通常希望改变按照我们的设定, 我们的想法和信念发生. 这便形成了冲突 – 我们理解的设计与客户, 同事和高管这样的普通人不同. 设计师们经常感到被忽视, 误解甚至迷失是有道理的. 然而, 不知为何我们会对这些感觉感到惊讶, 而在职业生涯中, 这些感觉会发展成失望和怨恨, 因为我们期望事情会和实际不同.&lt;/p&gt;
+
+&lt;p&gt;设计文化让我们产生认知失调, 脑子里同时存在着两个互相竞争的想法. 举例来说, 很多设计师希望与众不同, 因为在某方面来说我们确实是, 但我们很惊讶别人不理解我们或认为我们自命不凡. 我们希望其他人采纳我们的想法, 而不需要我们解释和说服他们. 我们想要权力和控制等特权, 但不想要得到这些特权所需要的政治或人际关系. 从逻辑上说, 我们不可能两全其美, 但我们经常表现得好像我们应该这样做. 的确, 所有人都容易出现认知推敲, 但作为一个不常见的职业, 它对我们的伤害比大多数人更大.&lt;/p&gt;
+
+&lt;p&gt;问题不只是我们在这些相互竞争的期望中迷失了方向, 而在于我们被鼓励去期望有人能找到我们. 设计教育和设计文化使我们中许多人都期待一个与真实世界不同的世界. 我们经常抱怨 “我不必” “他们为什么不这样做” 或 “他们就是不明白”, 但我们忘记了 “应该” 这个词是对权威的要求, 例如对父母或老板. 我们假设他们比他们表现出来的更有智慧, 这是我们的错. 到底谁是我们要求做出正确决定的权威, 而我们为何期望他们知道什么是正确的? 或者即使他们知道什么是正确的, 也要有正确的激励措施来做这些事吧?&lt;/p&gt;
+
+&lt;p&gt;我们忘记了我们的专业知识不是谁都知道的. 如果我们不能让人信服地解释我们专业的基本知识, 我们怎么能期望任何权威掌握这些知识呢? 除了我们, 他们可能从哪里知道这些知识呢? 我们的工作就是让事情变得简单, 高效和优美 – 如果我们不能在解释设计本身时做到这些, 那能怪谁呢? 这就像我们是登上了外星球的语言学家, 对外星人不能说我们的语言而感到愤怒. 我们可以认为这是个愚蠢的星球(这确实有可能是), 然后离开, 但如果我们选择留下呢? 如果我们认为所有的星球都是愚蠢的怎么办? 那究竟是谁的问题?&lt;/p&gt;
+
+&lt;p&gt;意识到这点并不有趣, 从大方面来说, 但这更好地解释了为什么我们体会到的 “设计师敌意” 可能只是对设计的无知. 他们确实只是不知道, 也不知道他们不知道什么. 或者组织存在严重的功能失调, 导致所有人都无法做好工作, 而不仅仅是设计师( 这意味着我们可能有比我们想象中更多的变革盟友 ), 在试图理解大多数组织到底发生了什么时, 把设计排除出来是很有帮助的. 相反, &lt;strong&gt;要问谁做了我应该做的决定? 是什么导致了这种情况? 要怎么改变? 我需要谁的帮助, 我怎么获得帮助?&lt;/strong&gt; 设计师们想要的权力肯定来自某个地方, 但我们必须意识到大多数拥有权力的人都没有动力去驱动事情的发生.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;在我们的教育中, 有一个默认的假设是对设计的欣赏是无处不在的.&lt;/strong&gt; 我们只用找到一个新工作, 四处撒下想法, 看着它们发展. 设计学校以设计为中心, 设计书籍, 设计会议和设计师朋友也是如此. 但这只是一个亚文化圈. 绝大部分重要的设计工作都不是在亚文化或设计杂志中完成的, 相反, 它们都是在成千上万的企业和组织中完成的, 这些组织的目标和价值并不以设计为中心. 如果你看看是谁创办了组织, 以及为什么他们创办了组织, 或者许多成功的公司制造的东西的设计质量, 这一点就变得非常明显.&lt;/p&gt;
+
+&lt;p&gt;然而, 当我们面对设计上的无知时, 我们会感到惊讶, 甚至被冒犯. 事实上, 你所做的工作越重要, 你所面临的对设计的无知就越多. 我们应该把它看作是一个进步的机会, 而不是一个需要避免的麻烦. 所有的设计师都应该关于解释基础知识, 但事实并非如此.&lt;/p&gt;
+
+&lt;p&gt;为了不再感到迷失, 我们必须首先诚实地认识到我们的处境. 除非我们先学习他们的语言, 否则很少有组织会转向使用我们的语言. 我们必须停止等待组织里有人来 “拯救设计”, 我们必须睁开眼睛, 了解人性和组织是如何工作的(或不工作), 我们可能不得不承认影响力限制了我们, 并且可能不是因为我们的设计才能不够好. &lt;strong&gt;如果设计技能被忽视, 再多的设计技能又有什么用呢?&lt;/strong&gt; 也许还有其他我们需要先提高的技能? 那些能够消除我们所面临的真正障碍的措施是什么? 接受这些不简单, 但比选择保持迷茫和痛苦, 等待一个以设计为中心的公司或一个懂设计的世界奇迹般出现在我们面前要现实.&lt;/p&gt;
+
+&lt;p&gt;我们忘了, 我们读到的, 每个关于设计师拥有我们所希望的尊重水平的地方都是由引领这一潮流的设计先驱塑造的, 他们引领了方向. 谁是真正的设计英雄? 可能不是让我们感觉良好和传道授业的主旨演讲者或设计大师, 反之是那些不太受公众关注的领导者, 他们说服, 教导并获得所需的影响力, 为他们建立的设计团队获得成功. 如果我们发现自己所处的工作场所有很多不足之处, 这只意味着有更多开拓工作要做, 谁来做这件事呢?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;看完以后发现好像又是useless knowledge, it’s true, but it not useful.&lt;/em&gt; 写文章可真轻松啊..&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 18 May 2021 00:00:00 +0800</pubDate>
+        <link>/translate/2021/05/18/TheLostDesigner.html</link>
+        <guid isPermaLink="true">/translate/2021/05/18/TheLostDesigner.html</guid>
+        
+        
+        <category>Translate</category>
+        
+      </item>
+    
+      <item>
+        <title>Building-Scene Design</title>
+        <description>&lt;p&gt;为自己的游戏第一关做的场景风格的测试。&lt;/p&gt;
+
+&lt;p&gt;参考了佛罗伦萨、那不勒斯和巴塞罗那的建筑风格。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第一版建筑prefabs&lt;/em&gt;  🡇&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_building01.jpg&quot; alt=&quot;第一版建筑prefabs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第一版 单建筑试色&lt;/em&gt;  🡇&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_building02.jpg&quot; alt=&quot;第一版 单建筑试色&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第一版 场景测试&lt;/em&gt;  🡇&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_scence1.jpg&quot; alt=&quot;第一版 场景测试&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;建好以后觉得意大利的古典建筑风格无法和游戏主题契合，我无法解释建筑风格的来源，于是全部推翻重新构思。&lt;/p&gt;
+
+&lt;p&gt;第二版使用了更简练的统一风格。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第二版 场景测试&lt;/em&gt;  🡇&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_scence2.jpg&quot; alt=&quot;第二版 场景测试&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第二版 场景测试：Unity&lt;/em&gt; 🡇&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_scence2_1.jpg&quot; alt=&quot;第二版 场景测试：Unity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_scence2_2.jpg&quot; alt=&quot;第二版 场景测试：Unity&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第二版 场景测试 整体&lt;/em&gt;  🡇&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_scence3.jpg&quot; alt=&quot;第二版 场景测试 整体&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 22 Mar 2021 00:00:00 +0800</pubDate>
+        <link>/3d-art/2021/03/22/3DArts_building.html</link>
+        <guid isPermaLink="true">/3d-art/2021/03/22/3DArts_building.html</guid>
+        
+        
+        <category>3D-Art</category>
+        
+      </item>
+    
+      <item>
+        <title>关于用户体验</title>
+        <description>&lt;p&gt;今天回想起之前一次面试，被问到“你觉得用户体验做得比较好的app有哪些，为什么。” 当时我脑子里没有答案，随口胡说了一个。今天突然想起这件事的原因是，我终于知道为什么我当时没有答案了。&lt;/p&gt;
+
+&lt;p&gt;我记忆力不好，又特别喜欢看乱七八糟的书，所以必须边看书边记笔记。为了让笔记易查询易整理，我希望我的笔记是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;支持各种格式，例如多级标题，表格，图片&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可以在任何有网络的情况下可用网页浏览，这样我无论在哪，如果想翻看笔记，只要找到一台可联网的设备就好&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;按这样的要求，我找到了markdown，一种轻量的标记语言，可以轻松打出多级标题，表格，甚至数学公式，满足了第一条要求。&lt;/p&gt;
+
+&lt;p&gt;然后，感谢 github，我可以把笔记直接存为 markdown 格式，放在 github 上，生成一个可在线浏览的网站，满足了第二条要求。&lt;/p&gt;
+
+&lt;p&gt;这个故事本应结束，我在电脑上用支持 markdown 的软件写笔记（可选的软件不要太多），上传到 github，在网页上浏览，非常完美的闭环。&lt;/p&gt;
+
+&lt;p&gt;但是，我后来买了 ipad 。&lt;/p&gt;
+
+&lt;p&gt;原来完美的闭环完全被打破了，现在的需求变成:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/ux01.jpg&quot; alt=&quot;ux01&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我需要一个 iPad 和 iPhone 上文件能同步的 markdown 应用，并且能从移动设备直接上传到 github ，不需要再用电脑进行二次传输。&lt;/p&gt;
+
+&lt;p&gt;在搜索时我才发现，在移动端写代码也是一个不小的需求，从移动端上传文件到 github 已经有成熟的软件 Working Copy，于是问题只剩下，那个能在 iPad 和 iPhone 之间同步文件的应用。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/ux02.jpg&quot; alt=&quot;ux02&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我碰到了一个大难题。&lt;/p&gt;
+
+&lt;p&gt;iOS上支持 markdown 的应用也不少，上到重量级的 Ulysses ，iA  Writer ，下到轻量好看的 Bear 、马克飞象，适合写代码的 Drafts，MWeb，Joplin，和自己的云服务集成的比较好的坚果 markdown，开源的 Simplenote，再也不更新的 Editorial……几乎能找到的markdown 应用我都试过，各家的对比可以整理成巨大的表格，但缺点无非是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;太贵，点名 Ulysses ,iA Writer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;不支持表格或公式，点名 Bear&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;交互体验不好，点名 Simplenote、坚果 markdown、Joplin&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;个人开发者，点名 MWeb&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可以在应用内 copy 到 Working Copy ，但交互让人困惑，点名 Drafts&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;最终选择了另一个小众的应用 MarkNotes，虽然 UI 不够好看，交互体验也不够顺滑，但是它支持数学公式、表格，移动端，甚至桌面端上都可同步文件，我在手机上写东西，打开电脑可以继续编辑。&lt;/p&gt;
+
+&lt;p&gt;说一个这么冗长的故事，是想说，做交互这么几年，很早的时候就学会了用户体验、用户心理的专业术语，说出来掷地有声，甚至以此为武器试图说服别人相信我们“专业的判断”，因为我有理论依据，“你看看我的用词。”&lt;/p&gt;
+
+&lt;p&gt;说体验，用各种方法技巧揣测人心，最终都只是离得很远的旁观，做不需要对结果负责的决定，还认为自己很正确。&lt;strong&gt;但在问题涉及到自己（用户变成自己）时，一切都变得不那么宽容&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;回到最开始提的问题，为什么我当时脑子里没有答案，&lt;strong&gt;因为我的需求还不足以去体会到用户体验&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;只是为了吃饭谋求一个工作，利用一些自己也不懂的概念武装自己，站得很远做不需要为结果负责的决定，这可能是我一直无法在工作中得到成就感的原因。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;当然，两年后的今天再问我，觉得哪个产品的交互设计得好，我的答案依然是“没有”。好或不好是时间和数据来检验的，谁都能凭感觉评价一个产品的好或不好，那用户体验也没什么存在的意义。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;在中国悠悠五千年的历史上，有人文，有技术，却偏偏没有科学.有技术的原因是我们有技术的精神——把任何东西变成实用；没有科学的原因是我们没有科学精神——由天真的好奇出发的寻根究底，探求真实原本。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;中华民族是最信奉实用主义的，而且常常是彻底的实用主义，它浸透了我们文化的每一根经纬度：从孔子的实用主义理论，到走了原样的实用主义佛教，到精粹专集的实用主义政治学《资治通鉴》。我们历史上的成功在于实用主义，而近代与现代的失败也在于此。因为没有求真的指南，实用主义的强大蒸汽机便把整列火车推向了不明方向的去路。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Sat, 18 Jan 2020 00:00:00 +0800</pubDate>
+        <link>/journey/2020/01/18/AboutUserExperience.html</link>
+        <guid isPermaLink="true">/journey/2020/01/18/AboutUserExperience.html</guid>
+        
+        
+        <category>Journey</category>
+        
+      </item>
+    
+      <item>
+        <title>过于喧嚣</title>
+        <description>&lt;p&gt;&lt;strong&gt;我的兴趣始终是“人”。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;各种因缘巧合，我开始看经济学和管理学相关的书，一本接一本，快停不下来。都很有意思，因为这些学科不像我以为的那样枯燥，其实也是在讲人。&lt;/p&gt;
+
+&lt;p&gt;曾经不只和一个朋友争执过，产品和交互的区别。后来我有时间停下来回头看我自己，才发现自己和朋友当时都陷入“管窥”，试图更突显自己，完全忘记了应该有的态度和目标。太幼稚了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;“重要的是事物之间的关系，而非事物本身。”&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这是一个很朴素的事实，它在我看过的讲基因社会、管理学、经济学、建筑、剧本的书里都提到，仿佛一颗亮到不能再亮的启明星，可是我们之前从来没有抬头看过。&lt;/p&gt;
+
+&lt;p&gt;理想的团队和理想的环境几乎是梦想，我在7年后的今天决定慢下来，去碰一个机缘，在其他人看来可能只是痴人说梦，但我还是决定再坚持一下。&lt;/p&gt;
+
+&lt;p&gt;读一些人物传记还是有用的，我以前总是很带偏见地认为人物传记就是吹嘘美化，看一下那些无法触碰到的优秀的人的品质，对于行走世间会多一点指引。&lt;/p&gt;
+
+&lt;p&gt;学科交叉得越来越快，越来越复杂，互相之间的分界线快要消失，这是互联网带来的福利，也是对人类新一轮的挑战。 知识的获取成本在人类历史上从未如此刻这般低廉，也从未如此刻这般被快速浪费。我们应该恐惧的不是AI的发展速度，应该恐惧的是自己。&lt;/p&gt;
+
+&lt;p&gt;我已经感觉到时间在赶着我，嘲笑我在无用的娱乐中消耗自己的生命。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>/journey/2018/09/29/TooNoisy_Journey.html</link>
+        <guid isPermaLink="true">/journey/2018/09/29/TooNoisy_Journey.html</guid>
+        
+        
+        <category>Journey</category>
+        
+      </item>
+    
+      <item>
+        <title>游戏交互？我做不了的，哦？没关系？</title>
+        <description>&lt;p&gt;游戏公司里不是只有游戏项目组，我真正到一家游戏公司里才知道这件事。我所在的部门叫平台运营部，主要工作围绕平台网站业务需求提供交互设计上的支持。&lt;/p&gt;
+
+&lt;p&gt;在公司所做的实际项目比起之前的经历其实更单一，但是，工作反映出来的挑战又十分明显。&lt;/p&gt;
+
+&lt;p&gt;在近一年以来的工作，我遇到了三个新的挑战：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.如何在没有用户画像的前提下提出解决方案&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我入职以后了解到一个现实情况，平台官网用户是怎样的人，是没有比较具体的数据和总结的，甚至官网每一个页面每一个位置的点击率也是没有系统统计的。在这样的情况下，上级要求拿出一个改版方案。没有时间研究用户，如何拿出一个有效的改版方案是一个很大的挑战。&lt;/p&gt;
+
+&lt;p&gt;一定要有数据才能建立起用户画像吗？有没有别的更快的方法？&lt;/p&gt;
+
+&lt;p&gt;为了寻找答案，我从About Face的注解里寻找到了更多的书，《尊重表演艺术》《建筑的永恒之道》《游戏设计艺术》《心流》《认知与人格》《创新算法》《理解漫画》……如果说之前的工作经历给我更多的是实战上的经验，这一次，是书带我走了捷径。&lt;/p&gt;
+
+&lt;p&gt;我从来没想过，原来，所有的问题可以有一个解决方法，就是这么简单，这么近在咫尺。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这个方法其实是一个问题，&lt;strong&gt;我们想创造什么&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;用一个问题来解决问题，听起来很荒谬，但是它就是我找到的答案，在创造产品的过程中，不断的问自己，不断地根据回答修正路线，就能让一个优秀的产品诞生。&lt;/p&gt;
+
+&lt;p&gt;如果你坚持一定是每一个问题有独特的解决方法，不存在唯一的方法，那数学定理也不应该存在，物理法则也是个错误，哲学都是胡说八道，进化论很荒谬。当然，我不会赞同这样的观点。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 一个优秀的团队应该如何构成，如何领导&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;在上家公司工作时，我有机会为公司面试新成员。突如其来的机会，我当时没有想好应该怎么招到一个合适的成员，面试提问毫无章法又不知如何判断结果。等新成员入职以后发现并不是我想要的类型。&lt;/p&gt;
+
+&lt;p&gt;在传统观点里，团队里每个职能只要做好自己的事，领导承担决策和损失的风险。领导需要了解每个成员职能是什么，对成员的工作做业绩评估。我之前也这么想，所以如果想领导一个团队，必须自己了解所有职能的工作是怎样做的。或许看上去没什么问题，但是实际这么做以后，不只是把自己累得半死，而且产生了很多对团队成员的不信任，因为自己似乎懂，所以会质疑同事是不是尽力。这是非常失败的一个实验。&lt;/p&gt;
+
+&lt;p&gt;怎样才能找到组建团队的理想成员，有没有一个核心的判断方法？&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我得到的方法是，&lt;strong&gt;遇到问题拼命想办法去解决的人，就是理想的人才，无论年龄、无论经验、无论背景。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 如何把一个想法变成一个有希望的产品&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我在现在的公司非常幸运结识到一个创意型人才，创意型人才一定是最有价值的人，不管科技发展得多快。但创意往往超前于现实，如何把创意落地，变现为产品，是我给自己的第三个挑战。&lt;/p&gt;
+
+&lt;p&gt;因为是同事，我们有机会合作项目，有机会探讨如果把想法变成产品。最近我们在合作把一个小的点子玩成一个有生命的产品。每一个点子在变成具体的产品都是一个巨大的挑战。我需要把握住这样的机会，锻炼自己成长为真正的设计师。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://8ku.github.io/ux design/2018/09/28/UXDesign_community&quot;&gt;相关作品&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
+        <link>/journey/2018/09/28/UXDesign_community_Journey.html</link>
+        <guid isPermaLink="true">/journey/2018/09/28/UXDesign_community_Journey.html</guid>
+        
+        
+        <category>Journey</category>
+        
+      </item>
+    
+      <item>
+        <title>社区产品 UX</title>
+        <description>&lt;p&gt;重新思考了什么叫社区。&lt;/p&gt;
+
+&lt;p&gt;公司一个大IP《权力的游戏》快要上线，需要做一个产品预热。游戏项目组决定做一个能让书迷剧迷聚集起来的社区产品，找到我们组来策划和做交互设计。&lt;/p&gt;
+
+&lt;h3 id=&quot;什么叫社区&quot;&gt;什么叫社区&lt;/h3&gt;
+
+&lt;p&gt;立项的时候，参与的人都清楚市场上已经有了像百度贴吧、知乎这样的社区存在，再多一个单产品的社区是不是会很难做。运营组同事说我们有内容，有KOL带流量。听起来，这就是一个项目难点了。。。&lt;/p&gt;
+
+&lt;p&gt;什么是社区？这是我们碰到的第一个问题。&lt;/p&gt;
+
+&lt;p&gt;产品同学去找了市场上已有的论坛、交流社区产品来对比，形式上大同小异，似乎我们也照着做一个就差不多了。我当时很不甘心，不希望它是一个无聊的千篇一律的样子，就像在周围已经有各种球场健身馆的前提下再辟一块空地出来，指望着有人会来玩。&lt;/p&gt;
+
+&lt;p&gt;权力的游戏TV已经播到第7季，也有一些书迷们自建的百科网站，看得出来都是用书迷的热情支撑下来的资料型网站，如果热情褪去，或者TV完结，荒废掉的可能性很大，这就是只有一块空地没有组织者的原因了。&lt;/p&gt;
+
+&lt;p&gt;“社区”不非得长得社区的样子啊，我们可以做好玩一点，不然做成游戏吧。————我当时这么提出来。&lt;/p&gt;
+
+&lt;p&gt;最开始的设想，是用一张地图来承载社区功能，讨论区，用户中心，通知系统，成长系统等等。我希望在最初就能吸引用户，场所的舒适性能激发用户交流的欲望，况且，谁不喜欢游戏呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community01.jpg&quot; alt=&quot;community01&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;地图上需要把社区基本功能及最主要的信息都表现出来，它看起来不像社区，但是，有什么关系呢。&lt;/p&gt;
+
+&lt;h3 id=&quot;社区里需要什么&quot;&gt;社区里需要什么&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;要在一个地图上展示这么多功能和信息，如何让信息不杂乱，突出重点，抓住用户视觉焦点，提升用户的兴趣，是这个项目的一大难点。&lt;/p&gt;
+
+&lt;h3 id=&quot;设计思路&quot;&gt;设计思路&lt;/h3&gt;
+
+&lt;h4 id=&quot;提取核心功能&quot;&gt;提取核心功能&lt;/h4&gt;
+
+&lt;p&gt;经过讨论，我们确定了整个社区最核心的三个功能：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;讨论区&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;社区活动&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;商店&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;选择这三个功能模块原因都很明显，讨论区是用户最活跃的区块，社区活动是阶段性促活的区块，商店能增加用户粘性和归属感。其他的模块辅助这三大核心功能做细化。&lt;/p&gt;
+
+&lt;p&gt;确定好核心内容，开始用之前的概念图进行原型设计。&lt;/p&gt;
+
+&lt;h4 id=&quot;产品原型草图&quot;&gt;产品原型草图&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community03.jpg&quot; alt=&quot;community03&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;主要页面的框架图出来以后进行讨论，设计方向上达成了一致。&lt;/p&gt;
+
+&lt;p&gt;但是在上级审批的时候，遇到了比较大的问题。&lt;/p&gt;
+
+&lt;p&gt;首先，这个形式和传统社区有太大的区别，上级觉得风险很大；&lt;/p&gt;
+
+&lt;p&gt;其次，如果社区也长得像游戏，可能会抢掉游戏的关注度；&lt;/p&gt;
+
+&lt;p&gt;最后，用地图做基底，可能会涉及一些侵权问题。&lt;/p&gt;
+
+&lt;p&gt;最后得出的结论是，推掉原方案，做一个常规的社区。&lt;/p&gt;
+
+&lt;h3 id=&quot;修改方案&quot;&gt;修改方案&lt;/h3&gt;
+
+&lt;p&gt;修改以后的方案很快就拍定了，根据原有的功能需求，用大众化的框架搭建，小部分进行微交互优化。基于小程序的移动端界面也迅速成型。&lt;/p&gt;
+
+&lt;video width=&quot;100%&quot; height=&quot;100%&quot; controls=&quot;&quot;&gt;
+  &lt;source type=&quot;video/mp4&quot; src=&quot;https://8ku.github.io/archive/GameofThroneSite.mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h4 id=&quot;小程序原型界面&quot;&gt;小程序原型界面&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/GameofThrone02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;总结和思考&quot;&gt;总结和思考&lt;/h3&gt;
+
+&lt;p&gt;虽然这个项目里一开始的方案被推翻了，但是我觉得有机会去尝试新的思路还是特别好的一件事。&lt;/p&gt;
+
+&lt;p&gt;我认为游戏不应该只被局限于游戏行业，其实很多我们觉得应该严肃的，“不可儿戏”的产品都可以加入游戏化的思想，游戏这种心态，追溯到原始时期便有，人类喜欢玩游戏，我们都低估了游戏能带给人的益处。&lt;/p&gt;
+
+&lt;p&gt;这次尝试一下子跨得有点大，很多看到策划草稿的人都说“你这是游戏还是社区，一点都不像社区啊”，我喜欢固化思维，因为这样我就知道怎么去打破它。&lt;/p&gt;
+
+&lt;p&gt;后续: 这个项目按我的原型还原了70%后上线了, 但众所周知权游的游戏推广和运营给到了腾讯, 他们自己也出了个社区, 这个社区项目在上线后慢慢废弃了. 离开游族一年后, 我看到它也悄悄下线.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;相关经历&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
+        <link>/ui-ux-design/2018/09/28/UXDesign_community.html</link>
+        <guid isPermaLink="true">/ui-ux-design/2018/09/28/UXDesign_community.html</guid>
+        
+        
+        <category>UI-UX-Design</category>
+        
+      </item>
+    
+  </channel>
+</rss>
