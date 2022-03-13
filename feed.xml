@@ -5,22 +5,9 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2022 23:41:08 +0800</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2022 23:41:08 +0800</lastBuildDate>
+    <pubDate>Mon, 14 Mar 2022 00:41:16 +0800</pubDate>
+    <lastBuildDate>Mon, 14 Mar 2022 00:41:16 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
-    
-      <item>
-        <title>WorldEscape-3D Design</title>
-        <description>&lt;p&gt;中文&lt;/p&gt;
-</description>
-        <pubDate>Sun, 13 Mar 2022 00:00:00 +0800</pubDate>
-        <link>/3d-art/2022/03/13/new-post.html</link>
-        <guid isPermaLink="true">/3d-art/2022/03/13/new-post.html</guid>
-        
-        
-        <category>3D-Art</category>
-        
-      </item>
     
       <item>
         <title>WorldEscape-3D Design</title>
@@ -455,6 +442,67 @@
         
         
         <category>UI-UX-Design</category>
+        
+      </item>
+    
+      <item>
+        <title>网站智能助手</title>
+        <description>&lt;p&gt;一个有意思的小项目.&lt;/p&gt;
+
+&lt;p&gt;在公司遇到一个很有才华的同事，她在一个合作项目里提了一个很好的点子，因为时间和资源的原因无法在公司实际项目中实现，我们一起合作把这个点子按理想化的方向完善出来。&lt;/p&gt;
+
+&lt;p&gt;这是一个网站上的小智能助手，能给用户提供一些使用上的帮助，并能推送新闻。它的形象是一个有个性的小收音机，位于页面右下角，可收起，可用鼠标拖拽移动。&lt;/p&gt;
+
+&lt;h3 id=&quot;基本功能及目的&quot;&gt;基本功能及目的&lt;/h3&gt;
+
+&lt;p&gt;如果只是一个小挂件，放一些宣传物料，增加点击率，那是一个比较死的东西，我想它可以有更大的扩展，可以变成一个灵活的助手，代替现在网站上到处散落的辅助性功能，它可以形成一个icon，在用户心目中建立起一个代表网站的形象，提升用户的信任感。&lt;/p&gt;
+
+&lt;p&gt;首先，明确了智能助手的基本功能和扩展方向。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/Funproject01.jpg&quot; alt=&quot;fun Project01&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;根据这个策划方向，现有的后台无法支持这么灵活的配置方式，需要重新开一个新模块单独管理和维护这个功能的内容。在后台整合和接入上还需要和开发同事再沟通，后台部分暂时不设计出来。&lt;/p&gt;
+
+&lt;h3 id=&quot;基本形象及交互&quot;&gt;基本形象及交互&lt;/h3&gt;
+
+&lt;p&gt;基本形象为一个悬浮在页面右下角的小收音机，默认开启，开启时默认轮播配置好的新闻，有新消息时显示通知，有一个智能对话框，提供网站相关一切帮助。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/Funproject02.gif&quot; alt=&quot;fun Project02&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;收音机形象设定&quot;&gt;收音机形象设定&lt;/h3&gt;
+
+&lt;p&gt;所有预想的功能都通过一个虚拟形象去呈现，它是唯一能和用户交流的角色，在塑造这个角色上需要上用户产生共鸣和亲切感是这个项目的挑战。&lt;/p&gt;
+
+&lt;p&gt;我们给这个形象一个大致的特点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;不像广告贴片（外观形象）&lt;/li&gt;
+  &lt;li&gt;有个性（更拟人，人性化）&lt;/li&gt;
+  &lt;li&gt;易拓展（能根据业务发展及时更新更多功能）&lt;/li&gt;
+  &lt;li&gt;差异化（可市场上已经有类似产品的差异）&lt;/li&gt;
+  &lt;li&gt;友好（有礼貌，耐心，贴心，负责）&lt;/li&gt;
+  &lt;li&gt;有帮助（能解决用户问题）&lt;/li&gt;
+  &lt;li&gt;关心用户（像一个贴心的朋友，根据不同用户提供个性化服务）&lt;/li&gt;
+  &lt;li&gt;令人期待（会成长，有性格）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;根据这些特点，我们设计了三个不同个性的形象。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/Funproject03.jpg&quot; alt=&quot;fun Project03&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;试着根据形象的性格做一些简单的表情设定。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/Funproject04.gif&quot; alt=&quot;fun Project04&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 14 Aug 2018 00:00:00 +0800</pubDate>
+        <link>/ui-ux-design/product-design/2018/08/14/ProductDesign_FunProject.html</link>
+        <guid isPermaLink="true">/ui-ux-design/product-design/2018/08/14/ProductDesign_FunProject.html</guid>
+        
+        
+        <category>UI-UX-Design</category>
+        
+        <category>Product-Design</category>
         
       </item>
     
