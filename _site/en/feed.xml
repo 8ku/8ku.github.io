@@ -5,8 +5,8 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Mar 2022 15:55:45 +0800</pubDate>
-    <lastBuildDate>Mon, 14 Mar 2022 15:55:45 +0800</lastBuildDate>
+    <pubDate>Tue, 15 Mar 2022 15:37:42 +0800</pubDate>
+    <lastBuildDate>Tue, 15 Mar 2022 15:37:42 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -55,7 +55,11 @@
     
       <item>
         <title>Sheep-Character Design</title>
-        <description>&lt;p&gt;在练习&lt;strong&gt;Blender&lt;/strong&gt;时，把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
+        <description>&lt;p&gt;一组 3D 建模的角色设计和场景。&lt;/p&gt;
+
+&lt;p&gt;为了更熟练为自己的游戏建模，在很短时间内学习了 Blender 。因为从小开始接触了各种建模软件，3Ds Max、Rhinoceros 3D、Cinema 4D、ZBrush 等等，这样一个软件对我来说上手难度不高。在熟悉了眼花缭乱的快捷键以后，发现 Blender 确实是我接触过对用户最友好的 3D 软件。&lt;/p&gt;
+
+&lt;p&gt;在练习Blender时，把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
 
 &lt;!-- Jekyll Ideal Image Slider Include --&gt;
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
@@ -64,6 +68,8 @@
   &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/assets/images/3DArt/3D_Sheep_draft.jpg&quot; title=&quot;&quot; alt=&quot;draft&quot; /&gt;
   &lt;img data-src=&quot;/assets/images/3DArt/3D_Sheep_model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;model&quot; /&gt;
   &lt;/div&gt;
+
+&lt;p&gt;又以此为基础，设计了一些场景画面。&lt;/p&gt;
 
 &lt;h2 id=&quot;场景&quot;&gt;场景&lt;/h2&gt;
 
