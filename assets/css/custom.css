@@ -183,3 +183,13 @@
 .period .timeline-title { margin: 0; }
 
 .timeline ul { margin-bottom: 20px; }
+
+.layout-aboutMe .section-title span { font-size: 2rem; text-transform: none; letter-spacing: 0; }
+
+.layout-aboutMe .section-title h2:before { top: 17px; }
+
+.article-post ol, .article-post ul { margin-bottom: 1.5rem; }
+
+.article-post ol ol, .article-post ul ul { list-style: disc; margin-bottom: 0rem; }
+
+.layout-aboutMe p { line-height: 1.8; }
