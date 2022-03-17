@@ -5,8 +5,8 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Mar 2022 19:14:03 +0800</pubDate>
-    <lastBuildDate>Wed, 16 Mar 2022 19:14:03 +0800</lastBuildDate>
+    <pubDate>Thu, 17 Mar 2022 18:22:08 +0800</pubDate>
+    <lastBuildDate>Thu, 17 Mar 2022 18:22:08 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -31,13 +31,15 @@
     
       <item>
         <title>Lyre-3D Design</title>
-        <description>&lt;p&gt;这是我第一次尝试 3D 打印。&lt;/p&gt;
+        <description>&lt;p&gt;This is my first time trying 3D printing.&lt;/p&gt;
 
-&lt;p&gt;3D 打印最早在1945年作为一个概念出现，&lt;a href=&quot;https://www.wikiwand.com/en/3D_printing#/1940s_and_1950s&quot;&gt;第一台商用 3D 打印机&lt;/a&gt;出现在1987或1988年，直到2020年 3D 打印机的价格才降到大众家庭可以接受的程度。听说身边有人自己买了打印机，我才反应过来原来打印机的价格这么平民了。&lt;/p&gt;
+&lt;p&gt;The general concept of and procedure to be used in 3D printing was first described in 1945. [The first commercial 3D printers released in 1987 or 1988. As of 2020, 3D printers have reached the level of quality and price that allows most people to enter the world of 3D printing. When I heard that people around me bought their own printers, I realized that the price of a 3D printer was so low that normal people could buy one.&lt;/p&gt;
 
-&lt;p&gt;作为一个长年玩建模的人，对把电脑建模现实化一直充满兴趣。碰巧身边一个朋友在玩BJD娃娃，想要一个道具，我自告奋勇要帮忙设计。&lt;/p&gt;
+&lt;p&gt;As someone who has been modeling for many years, I have always had an interest in bringing computer modeling to life. A friend wanted someone to make a Lyre for her BJD doll, so I volunteered to help design and print it.&lt;/p&gt;
 
-&lt;p&gt;于是就有了这个Lyre琴。&lt;/p&gt;
+&lt;p&gt;Modeling on the computer is very different from producing in reality, and I also learned for the first time about the boundary values of 3D printing, how to adjust the size of the model to align with reality, how to clean up the number of model faces, merge unnecessary parts, and so on.&lt;/p&gt;
+
+&lt;p&gt;The first printout came out very well ,which gave me a lot of confidence. I can bring more ideas to life with printing.&lt;/p&gt;
 
 &lt;!-- Jekyll Ideal Image Slider Include --&gt;
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
