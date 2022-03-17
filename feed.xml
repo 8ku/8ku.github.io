@@ -5,8 +5,8 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Mar 2022 15:37:42 +0800</pubDate>
-    <lastBuildDate>Tue, 15 Mar 2022 15:37:42 +0800</lastBuildDate>
+    <pubDate>Wed, 16 Mar 2022 19:14:03 +0800</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2022 19:14:03 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -31,7 +31,13 @@
     
       <item>
         <title>Lyre-3D Design</title>
-        <description>&lt;p&gt;给朋友的BJD娃娃设计和打印的一个Lyre琴。&lt;/p&gt;
+        <description>&lt;p&gt;这是我第一次尝试 3D 打印。&lt;/p&gt;
+
+&lt;p&gt;3D 打印最早在1945年作为一个概念出现，&lt;a href=&quot;https://www.wikiwand.com/en/3D_printing#/1940s_and_1950s&quot;&gt;第一台商用 3D 打印机&lt;/a&gt;出现在1987或1988年，直到2020年 3D 打印机的价格才降到大众家庭可以接受的程度。听说身边有人自己买了打印机，我才反应过来原来打印机的价格这么平民了。&lt;/p&gt;
+
+&lt;p&gt;作为一个长年玩建模的人，对把电脑建模现实化一直充满兴趣。碰巧身边一个朋友在玩BJD娃娃，想要一个道具，我自告奋勇要帮忙设计。&lt;/p&gt;
+
+&lt;p&gt;于是就有了这个Lyre琴。&lt;/p&gt;
 
 &lt;!-- Jekyll Ideal Image Slider Include --&gt;
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
