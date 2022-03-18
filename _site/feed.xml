@@ -5,8 +5,8 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Mar 2022 18:22:08 +0800</pubDate>
-    <lastBuildDate>Thu, 17 Mar 2022 18:22:08 +0800</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2022 18:41:13 +0800</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2022 18:41:13 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -67,7 +67,7 @@
 
 &lt;p&gt;为了更熟练为自己的游戏建模，在很短时间内学习了 Blender 。因为从小开始接触了各种建模软件，3Ds Max、Rhinoceros 3D、Cinema 4D、ZBrush 等等，这样一个软件对我来说上手难度不高。在熟悉了眼花缭乱的快捷键以后，发现 Blender 确实是我接触过对用户最友好的 3D 软件。&lt;/p&gt;
 
-&lt;p&gt;在练习Blender时，把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
+&lt;p&gt;在练习Blender时，我把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
 
 &lt;!-- Jekyll Ideal Image Slider Include --&gt;
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
@@ -144,7 +144,7 @@
     
       <item>
         <title>Building-Scene Design</title>
-        <description>&lt;p&gt;为自己的游戏第一关做的场景风格的测试。&lt;/p&gt;
+        <description>&lt;p&gt;这是我为自己的游戏第一关做的场景风格的测试。&lt;/p&gt;
 
 &lt;p&gt;参考了佛罗伦萨、那不勒斯和巴塞罗那的建筑风格。&lt;/p&gt;
 
@@ -190,7 +190,9 @@
     
       <item>
         <title>关于用户体验</title>
-        <description>&lt;p&gt;今天回想起之前一次面试，被问到“你觉得用户体验做得比较好的app有哪些，为什么。” 当时我脑子里没有答案，随口胡说了一个。今天突然想起这件事的原因是，我终于知道为什么我当时没有答案了。&lt;/p&gt;
+        <description>&lt;p&gt;今天我回想起之前一次面试，我被问到“你觉得用户体验做得比较好的app有哪些，为什么。” 当时我脑子里没有答案，随口胡说了一个。今天突然想起这件事的原因是，我终于知道为什么我当时没有答案了。&lt;/p&gt;
+
+&lt;h2 id=&quot;起源&quot;&gt;起源&lt;/h2&gt;
 
 &lt;p&gt;我记忆力不好，又特别喜欢看乱七八糟的书，所以必须边看书边记笔记。为了让笔记易查询易整理，我希望我的笔记是：&lt;/p&gt;
 
@@ -207,6 +209,8 @@
 
 &lt;p&gt;然后，感谢 github，我可以把笔记直接存为 markdown 格式，放在 github 上，生成一个可在线浏览的网站，满足了第二条要求。&lt;/p&gt;
 
+&lt;h2 id=&quot;转折&quot;&gt;转折&lt;/h2&gt;
+
 &lt;p&gt;这个故事本应结束，我在电脑上用支持 markdown 的软件写笔记（可选的软件不要太多），上传到 github，在网页上浏览，非常完美的闭环。&lt;/p&gt;
 
 &lt;p&gt;但是，我后来买了 ipad 。&lt;/p&gt;
@@ -222,6 +226,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/UI/ux02.jpg&quot; alt=&quot;ux02&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我碰到了一个大难题。&lt;/p&gt;
+
+&lt;h2 id=&quot;困境&quot;&gt;困境&lt;/h2&gt;
 
 &lt;p&gt;iOS上支持 markdown 的应用也不少，上到重量级的 Ulysses ，iA  Writer ，下到轻量好看的 Bear 、马克飞象，适合写代码的 Drafts，MWeb，Joplin，和自己的云服务集成的比较好的坚果 markdown，开源的 Simplenote，再也不更新的 Editorial……几乎能找到的markdown 应用我都试过，各家的对比可以整理成巨大的表格，但缺点无非是：&lt;/p&gt;
 
@@ -245,6 +251,8 @@
 
 &lt;p&gt;最终选择了另一个小众的应用 MarkNotes，虽然 UI 不够好看，交互体验也不够顺滑，但是它支持数学公式、表格，移动端，甚至桌面端上都可同步文件，我在手机上写东西，打开电脑可以继续编辑。&lt;/p&gt;
 
+&lt;h2 id=&quot;回到主题&quot;&gt;回到主题&lt;/h2&gt;
+
 &lt;p&gt;说一个这么冗长的故事，是想说，做交互这么几年，很早的时候就学会了用户体验、用户心理的专业术语，说出来掷地有声，甚至以此为武器试图说服别人相信我们“专业的判断”，因为我有理论依据，“你看看我的用词。”&lt;/p&gt;
 
 &lt;p&gt;说体验，用各种方法技巧揣测人心，最终都只是离得很远的旁观，做不需要对结果负责的决定，还认为自己很正确。&lt;strong&gt;但在问题涉及到自己（用户变成自己）时，一切都变得不那么宽容&lt;/strong&gt;。&lt;/p&gt;
@@ -257,10 +265,10 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;在中国悠悠五千年的历史上，有人文，有技术，却偏偏没有科学.有技术的原因是我们有技术的精神——把任何东西变成实用；没有科学的原因是我们没有科学精神——由天真的好奇出发的寻根究底，探求真实原本。&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;中华民族是最信奉实用主义的，而且常常是彻底的实用主义，它浸透了我们文化的每一根经纬度：从孔子的实用主义理论，到走了原样的实用主义佛教，到精粹专集的实用主义政治学《资治通鉴》。我们历史上的成功在于实用主义，而近代与现代的失败也在于此。因为没有求真的指南，实用主义的强大蒸汽机便把整列火车推向了不明方向的去路。&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;– 你干吗在乎别人怎么想 理查德·费曼&lt;/p&gt;
 &lt;/blockquote&gt;
 
 </description>
