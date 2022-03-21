@@ -5,17 +5,78 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 Mar 2022 23:41:08 +0800</pubDate>
-    <lastBuildDate>Sun, 13 Mar 2022 23:41:08 +0800</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2022 19:17:01 +0800</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2022 19:17:01 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title>WorldEscape-3D Design</title>
-        <description>&lt;p&gt;中文&lt;/p&gt;
+        <title>A gift for someone I meet-3D Design</title>
+        <description>&lt;style&gt;
+		#box {
+			text-align: center;
+			width: 100%;
+		}
+		#c {
+			float: center;
+			width: 100%;
+			height: 540px;
+		}
+&lt;/style&gt;
+
+&lt;p&gt;这是一个突发奇想的项目。&lt;/p&gt;
+
+&lt;p&gt;很早以前开始，我从一个朋友那学来一个习惯：给旅途中遇到的人送礼物。有时是自己的摄影，有时是买到的好玩的东西。这一次是尝试把一个人做成独一无二的手办。就是说，我把一个旅途上遇到的人做成手办送给她本人。&lt;/p&gt;
+
+&lt;p&gt;提取一个人的特征建模对我来说不是困难的事，困难的是我从来没有做过的把模型拆分、打印、拼装和上色。&lt;/p&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;margin-bottom:16px;&quot;&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+&lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_modeling.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+&lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_modeling2.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_Rendering.jpg&quot; alt=&quot;Rendering&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;为了增加可玩性，这个礼物还包含了一个可以直接在手机上观看的AR模型，在寻找更便捷的实现方式时，无意中发现了 &lt;strong&gt;Three.js&lt;/strong&gt; 这个脚本语言。虽然最终还是决定使用苹果官方的 Reality Converter 把模型转换为可以直接在苹果手机上打开的AR模型，但我也顺手学了如何在 Web 网站上显示可交互的 3D 模型的方法。这个意外的插曲也让我成功为公司的虚拟人项目做了一点点贡献。&lt;/p&gt;
+
+&lt;div id=&quot;box&quot;&gt;
+		&lt;canvas id=&quot;c&quot;&gt;&lt;/canvas&gt;
+  	&lt;p&gt;
+     这是一个可以用鼠标放大缩小的模型～
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;margin-bottom:16px;&quot;&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+&lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_3DPrinting1.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+&lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_3DPrinting2.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_painting.jpg&quot; alt=&quot;painting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;要说我在这次经历里收获了什么，我想最大的收获是如何一步步实现自己的想法。虽然中途比较坎坷，整个项目从 “我有一个想法” 到最终实现经历了快1个半月，但它完成了，我也在过程中收获很多快乐和成就感。&lt;/p&gt;
+
+&lt;p&gt;当然，这仅仅是一个开始。&lt;/p&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;importmap&quot;&gt;{
+			&quot;imports&quot;: {
+				&quot;three&quot;: &quot;https://threejs.org/build/three.module.js&quot;
+			}
+		}&lt;/script&gt;
+
+&lt;script type=&quot;module&quot; src=&quot;/assets/js/js3d/threejsCanvas.js&quot;&gt;&lt;/script&gt;
+
 </description>
-        <pubDate>Sun, 13 Mar 2022 00:00:00 +0800</pubDate>
-        <link>/3d-art/2022/03/13/new-post.html</link>
-        <guid isPermaLink="true">/3d-art/2022/03/13/new-post.html</guid>
+        <pubDate>Mon, 21 Mar 2022 00:00:00 +0800</pubDate>
+        <link>/3d-art/2022/03/21/3DArts_WorkingPerson.html</link>
+        <guid isPermaLink="true">/3d-art/2022/03/21/3DArts_WorkingPerson.html</guid>
         
         
         <category>3D-Art</category>
@@ -44,7 +105,15 @@
     
       <item>
         <title>Lyre-3D Design</title>
-        <description>&lt;p&gt;给朋友的BJD娃娃设计和打印的一个Lyre琴。&lt;/p&gt;
+        <description>&lt;p&gt;这是我第一次尝试 3D 打印。&lt;/p&gt;
+
+&lt;p&gt;3D 打印最早在1945年作为一个概念出现，&lt;a href=&quot;https://www.wikiwand.com/en/3D_printing#/1940s_and_1950s&quot;&gt;第一台商用 3D 打印机&lt;/a&gt;出现在1987或1988年，直到2020年 3D 打印机的价格才降到大众家庭可以接受的程度。听说身边有人自己买了打印机，我才反应过来原来打印机的价格这么平民了。&lt;/p&gt;
+
+&lt;p&gt;作为一个长年玩建模的人，我对把电脑建模现实化一直充满兴趣。刚好身边一个朋友希望有人能给自己的BJD娃娃制作一把里拉琴，我自告奋勇帮忙设计和打印。&lt;/p&gt;
+
+&lt;p&gt;在电脑上建模和现实中生产差别很大，我也第一次在应用中了解到3D打印的边界值、如何调整模型对齐现实的尺寸、如何清理模型面数，合并没必要的部分等等。&lt;/p&gt;
+
+&lt;p&gt;第一次打印出来的效果非常好，这给我很大的信心。我可以把更多想法用打印的方式实现出来。&lt;/p&gt;
 
 &lt;!-- Jekyll Ideal Image Slider Include --&gt;
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
@@ -68,7 +137,11 @@
     
       <item>
         <title>Sheep-Character Design</title>
-        <description>&lt;p&gt;在练习&lt;strong&gt;Blender&lt;/strong&gt;时，把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
+        <description>&lt;p&gt;一组 3D 建模的角色设计和场景。&lt;/p&gt;
+
+&lt;p&gt;为了更熟练为自己的游戏建模，在很短时间内学习了 Blender 。因为从小开始接触了各种建模软件，3Ds Max、Rhinoceros 3D、Cinema 4D、ZBrush 等等，这样一个软件对我来说上手难度不高。在熟悉了眼花缭乱的快捷键以后，发现 Blender 确实是我接触过对用户最友好的 3D 软件。&lt;/p&gt;
+
+&lt;p&gt;在练习Blender时，我把之前以一个朋友为原型设计的形象3D化了。&lt;/p&gt;
 
 &lt;!-- Jekyll Ideal Image Slider Include --&gt;
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
@@ -77,6 +150,8 @@
   &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/assets/images/3DArt/3D_Sheep_draft.jpg&quot; title=&quot;&quot; alt=&quot;draft&quot; /&gt;
   &lt;img data-src=&quot;/assets/images/3DArt/3D_Sheep_model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;model&quot; /&gt;
   &lt;/div&gt;
+
+&lt;p&gt;又以此为基础，设计了一些场景画面。&lt;/p&gt;
 
 &lt;h2 id=&quot;场景&quot;&gt;场景&lt;/h2&gt;
 
@@ -143,7 +218,7 @@
     
       <item>
         <title>Building-Scene Design</title>
-        <description>&lt;p&gt;为自己的游戏第一关做的场景风格的测试。&lt;/p&gt;
+        <description>&lt;p&gt;这是我为自己的游戏第一关做的场景风格的测试。&lt;/p&gt;
 
 &lt;p&gt;参考了佛罗伦萨、那不勒斯和巴塞罗那的建筑风格。&lt;/p&gt;
 
@@ -189,7 +264,9 @@
     
       <item>
         <title>关于用户体验</title>
-        <description>&lt;p&gt;今天回想起之前一次面试，被问到“你觉得用户体验做得比较好的app有哪些，为什么。” 当时我脑子里没有答案，随口胡说了一个。今天突然想起这件事的原因是，我终于知道为什么我当时没有答案了。&lt;/p&gt;
+        <description>&lt;p&gt;今天我回想起之前一次面试，我被问到“你觉得用户体验做得比较好的app有哪些，为什么。” 当时我脑子里没有答案，随口胡说了一个。今天突然想起这件事的原因是，我终于知道为什么我当时没有答案了。&lt;/p&gt;
+
+&lt;h2 id=&quot;起源&quot;&gt;起源&lt;/h2&gt;
 
 &lt;p&gt;我记忆力不好，又特别喜欢看乱七八糟的书，所以必须边看书边记笔记。为了让笔记易查询易整理，我希望我的笔记是：&lt;/p&gt;
 
@@ -206,6 +283,8 @@
 
 &lt;p&gt;然后，感谢 github，我可以把笔记直接存为 markdown 格式，放在 github 上，生成一个可在线浏览的网站，满足了第二条要求。&lt;/p&gt;
 
+&lt;h2 id=&quot;转折&quot;&gt;转折&lt;/h2&gt;
+
 &lt;p&gt;这个故事本应结束，我在电脑上用支持 markdown 的软件写笔记（可选的软件不要太多），上传到 github，在网页上浏览，非常完美的闭环。&lt;/p&gt;
 
 &lt;p&gt;但是，我后来买了 ipad 。&lt;/p&gt;
@@ -221,6 +300,8 @@
 &lt;p&gt;&lt;img src=&quot;/assets/images/UI/ux02.jpg&quot; alt=&quot;ux02&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我碰到了一个大难题。&lt;/p&gt;
+
+&lt;h2 id=&quot;困境&quot;&gt;困境&lt;/h2&gt;
 
 &lt;p&gt;iOS上支持 markdown 的应用也不少，上到重量级的 Ulysses ，iA  Writer ，下到轻量好看的 Bear 、马克飞象，适合写代码的 Drafts，MWeb，Joplin，和自己的云服务集成的比较好的坚果 markdown，开源的 Simplenote，再也不更新的 Editorial……几乎能找到的markdown 应用我都试过，各家的对比可以整理成巨大的表格，但缺点无非是：&lt;/p&gt;
 
@@ -244,6 +325,8 @@
 
 &lt;p&gt;最终选择了另一个小众的应用 MarkNotes，虽然 UI 不够好看，交互体验也不够顺滑，但是它支持数学公式、表格，移动端，甚至桌面端上都可同步文件，我在手机上写东西，打开电脑可以继续编辑。&lt;/p&gt;
 
+&lt;h2 id=&quot;回到主题&quot;&gt;回到主题&lt;/h2&gt;
+
 &lt;p&gt;说一个这么冗长的故事，是想说，做交互这么几年，很早的时候就学会了用户体验、用户心理的专业术语，说出来掷地有声，甚至以此为武器试图说服别人相信我们“专业的判断”，因为我有理论依据，“你看看我的用词。”&lt;/p&gt;
 
 &lt;p&gt;说体验，用各种方法技巧揣测人心，最终都只是离得很远的旁观，做不需要对结果负责的决定，还认为自己很正确。&lt;strong&gt;但在问题涉及到自己（用户变成自己）时，一切都变得不那么宽容&lt;/strong&gt;。&lt;/p&gt;
@@ -256,10 +339,10 @@
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;在中国悠悠五千年的历史上，有人文，有技术，却偏偏没有科学.有技术的原因是我们有技术的精神——把任何东西变成实用；没有科学的原因是我们没有科学精神——由天真的好奇出发的寻根究底，探求真实原本。&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;中华民族是最信奉实用主义的，而且常常是彻底的实用主义，它浸透了我们文化的每一根经纬度：从孔子的实用主义理论，到走了原样的实用主义佛教，到精粹专集的实用主义政治学《资治通鉴》。我们历史上的成功在于实用主义，而近代与现代的失败也在于此。因为没有求真的指南，实用主义的强大蒸汽机便把整列火车推向了不明方向的去路。&lt;/em&gt;&lt;/p&gt;
+
+  &lt;p&gt;– 你干吗在乎别人怎么想 理查德·费曼&lt;/p&gt;
 &lt;/blockquote&gt;
 
 </description>
