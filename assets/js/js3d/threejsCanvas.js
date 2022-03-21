@@ -26,8 +26,8 @@ function init() {
 
 
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x72645b);
-	scene.fog = new THREE.Fog(0x72645b, 2, 15);
+    scene.background = new THREE.Color(0x778899);
+	scene.fog = new THREE.Fog(0x778899, 2, 15);
 
     // Ground
     const plane = new THREE.Mesh(
@@ -48,12 +48,12 @@ function init() {
     // scene.add(grid);
 
     const dracoLoader = new DRACOLoader();
-    dracoLoader.setDecoderPath( 'js/libs/draco/gltf/' );
+    dracoLoader.setDecoderPath( '/assets/js/js3d/js/libs/draco/gltf/' );
 
     // const loader = new GLTFLoader().setPath('../assets/images/models/');
     const loader = new GLTFLoader();
-    // loader.setDRACOLoader( dracoLoader );  
-    loader.load('../assets/images/models/human_body_compress.glb', function (gltf) {
+    loader.setDRACOLoader( dracoLoader );  
+    loader.load('/assets/images/models/human_body_compress.glb', function (gltf) {
         const model_human = gltf.scene;
 
         model_human.traverse(function(node){
@@ -130,7 +130,7 @@ function init() {
 
 
     function resizeRendererToDisplaySize(renderer) {
-        const canvas = renderer.domElement;
+        var canvas = renderer.domElement;
         const width = canvas.clientWidth;
         const height = canvas.clientHeight;
         const needResize = canvas.width !== width || canvas.height !== height;
