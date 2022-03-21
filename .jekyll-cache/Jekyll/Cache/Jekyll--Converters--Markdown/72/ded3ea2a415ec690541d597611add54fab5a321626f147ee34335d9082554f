@@ -1,0 +1,34 @@
+I"�<p>A set of 3D character designs and scenes.</p>
+
+<p>I learned Blender in a short time in order to become more proficient in modeling in my own game. Since I was a kid, I have been exposed to various modeling software, like 3Ds Max, Rhinoceros 3D, Cinema 4D, ZBrush, etc. It didn’t take long for me to get started with such sortware. After getting familiar with the dazzling shortcuts, I found that Blender is indeed the most user-friendly 3D software I have ever come across.</p>
+
+<p>While practicing Blender, I made a 3D model of an image I had previously designed based on a friend.</p>
+
+<!-- Jekyll Ideal Image Slider Include -->
+<!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
+<!-- v1.8 -->
+<div id="slider2">
+  <img data-src="" data-src-2x="" src="/assets/images/3DArt/3D_Sheep_draft.jpg" title="" alt="draft" />
+  <img data-src="/assets/images/3DArt/3D_Sheep_model.jpg" data-src-2x="" src="" title="" alt="model" />
+  </div>
+
+<p>And based on that, I designed some scenes.</p>
+
+<h2 id="场景">场景</h2>
+
+<p><img src="/assets/images/3DArt/3D_Sheep_SummerSea.jpg" alt="Summer Sea" /></p>
+
+<p>Summer Sea</p>
+
+<p><img src="/assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg" alt="Wind Bell" /></p>
+
+<p>Wind Bell</p>
+
+<p><img src="/assets/images/3DArt/3D_Sheep_SummerIsOver.jpg" alt="Summer is Over" /></p>
+
+<p>Summer is Over</p>
+
+<p><img src="/assets/images/3DArt/3D_Sheep_newYear.jpg" alt="New Year(2022)" /></p>
+
+<p>New Year(2022)</p>
+:ET

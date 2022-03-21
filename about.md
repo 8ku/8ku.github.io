@@ -1,21 +1,31 @@
 ---
-layout: page
+layout: aboutMe
 title: About Me
 comments: false
 ---
 
-<div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <p>Designer / Programmer / Lifelong Learner</p>
-                    <form action="mailto:8kutan@gmail.com" method="GET">
-                        <input class="btn btn-success" type="submit" value="Email me：8kutan@gmail.com" onclick="gtag('event','EmailMe', {'event_label':'email me from About Page'})">
-                    </form>
-                </div>
-                <div class="col-md-4 text-right footersocial">
-                    <img src="{{ site.baseurl }}/assets/images/logo_about.jpg">
-                </div>
-            </div>
-        </div>
+Designer / Programmer / Lifelong Learner
+
+虽然在各种面试场合下我都坚持自己是一个交互设计师，专注在用户体验领域。但由于各种现实情况，我已经朝着全栈设计师的方向前进。所以在简历中或者自我介绍中，我取消了 **我是交互设计师** 这样的自称 ，精简为 **我是设计师** 。
+
+**交互设计（UE/UX）和用户界面设计（UI）密不可分，都是用户体验设计的一部分**。也就是说，交互设计和用户界面设计在整个产品生命周期中是相辅相承不可或缺的。大部分我接触过的人都说“我理解”。但在实际工作流程中，又有很多人模糊了交互设计和用户界面设计的工作性质，或者说，很多人认为“<u>交互设计是在产品从0到1的设计阶段才需要的暂时性角色，当一个产品进入迭代阶段就不需要交互设计了。</u>“
+
+我选择用户体验设计的初衷，是 **希望能够了解到我的设计给用户的感受和影响**，这不止需要在产品设计前期对用户旅程、使用场景和用户画像的研究，还需要在产品后期追踪用户行为、分析用户数据以及获知用户反馈。我认为 **有反馈的设计才是真正的设计**。
+
+非常幸运的是，在职业发展的道路上遇到了很多人，愿意给我机会尝试想法，让我学习到这么多技能，参与了很多创新项目。这些经历和锻炼都帮助了我成为一个合格的设计师 —— 能够独立完成调研、设计、数据分析和获取用户反馈并不断改进的设计师。
+
+世界的变化如此之快，如果我们把自己限定在一个固定的角色里，总有一天会被世界抛弃。在此，我想引用安迪·格鲁夫的一句话作为结束，谢谢你看到这里。
+
+> 我一直都认为。每个人，无论他是职员还是个体户，都像一个独立的生意人。 你的责任就是保护你的生意免受伤害，让自己处在可以从工作环境的改变中受益的境地。
+>
+> -- *只有偏执狂才能生存* , Andrew Stephen Grove 
+
+
+
+
+
+<form action="mailto:8kutan@gmail.com" method="GET">
+<input class="btn btn-success" type="submit" value="Email me：8kutan@gmail.com" onclick="gtag('event','EmailMe', {'event_label':'email me from About Page'})" style="margin-bottom:1em;">
+</form>
 
 
