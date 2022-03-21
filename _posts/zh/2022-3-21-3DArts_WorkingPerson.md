@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A gift for someone I meet-3D Design
+title: A gift for someone I met-3D Design
 categories: [3D-Art]
 image: assets/images/3DArt/3D_WorkingPerson_Rendering.jpg
 featured: false
