@@ -26,13 +26,13 @@ function init() {
 
 
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x778899);
-	scene.fog = new THREE.Fog(0x778899, 2, 15);
+    scene.background = new THREE.Color(0x525038);
+	scene.fog = new THREE.Fog(0x525038, 1, 15);
 
     // Ground
     const plane = new THREE.Mesh(
         new THREE.PlaneGeometry(40, 40),
-        new THREE.MeshPhongMaterial({ color: 0x999999, specular: 0x101010 })
+        new THREE.MeshPhongMaterial({ color: 0x929074, specular: 0x101010 })
     );
     plane.rotation.x = - Math.PI / 2;
     plane.position.y = - 0.5;
@@ -82,7 +82,7 @@ function init() {
     // Lights
     scene.add(new THREE.HemisphereLight(0x443333, 0x111122));
 
-    addShadowedLight(1, 5, -0.2, 0xa2e9de, 0.7);
+    addShadowedLight(1, 8, -0.2, 0xc6c29c, 0.7);
     addShadowedLight(0.5, 1, 1, 0xeae8f2, 0.5);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.outputEncoding = THREE.sRGBEncoding;
