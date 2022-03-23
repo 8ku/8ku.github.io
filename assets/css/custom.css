@@ -193,3 +193,5 @@
 .article-post ol ol, .article-post ul ul { list-style: disc; margin-bottom: 0rem; }
 
 .layout-aboutMe p { line-height: 1.8; }
+
+.timeline-content h5 { margin-top: 0; }
