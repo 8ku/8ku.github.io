@@ -103,8 +103,12 @@
                     <a target="_blank" class="nav-link" href="https://github.com/8ku" onclick="gtag('event','Github', {'event_label':'click github'})">Github</a>
                 </li> 
  
-                <li class="nav-item">                
-                    <a class="nav-link highlight" href="{{ site.baseurl }}/resume" onclick="gtag('event','openResume', {'event_label':'open resume'})">Resume</a>
+                <li class="nav-item"> 
+                    {% if lang== 'en' %}               
+                        <a class="nav-link highlight" href="{{ site.baseurl }}/resume_en" onclick="gtag('event','openResume', {'event_label':'open resume'})">Resume</a>
+                    {%else%}
+                        <a class="nav-link highlight" href="{{ site.baseurl }}/resume" onclick="gtag('event','openResume', {'event_label':'open resume'})">Resume</a>
+                    {%endif%}
                 </li> 
   
                 <!-- <li class="nav-item">                

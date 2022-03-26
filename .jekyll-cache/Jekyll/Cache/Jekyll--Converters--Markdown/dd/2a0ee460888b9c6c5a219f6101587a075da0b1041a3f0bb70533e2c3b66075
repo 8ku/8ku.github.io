@@ -1,0 +1,13 @@
+I"…<style>
+		#box {
+			text-align: center;
+			width: 100%;
+		}
+		#c {
+			float: center;
+			width: 100%;
+			height: 540px;
+		}
+</style>
+
+:ET
