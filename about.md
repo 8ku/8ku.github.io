@@ -2,6 +2,8 @@
 layout: aboutMe
 title: About Me
 comments: false
+permalink: about/
+lang: zh
 ---
 
 Designer / Programmer / Lifelong Learner
