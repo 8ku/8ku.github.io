@@ -14,12 +14,29 @@ lang: zh
         <div class="area">
             <p>You can have the best looking app, but if it doesn't work, NO ONE is going to use it. </p>
             <p>终身学习者。</p>
-            <p>6 年交互设计经验，形成自己的产品设计方法论并在公司中有所实践；自学HTML，在工作中了解了后端语言结构及原理，利用共同的语言和产品、UI 及开发顺利沟通；坚持以人为本，掌握 SQL、 Python 等分析工具的使用，仍在不断学习；重点研究社会学，生物学，心理学；关注经济学，认知科学，数据分析等领域。</p>
+            <p>7 年交互设计经验，形成自己的产品设计方法论并在公司中有所实践；坚持以人为本，掌握 SQL、 Python 等分析工具的使用，仍在不断学习；重点研究社会学，生物学，心理学；关注经济学，认知科学，数据分析等领域。</p>
         </div>
         <ul class="timeline">
             <li class="timeline-item">
                 <div class="timeline-info">
-                    <span>2021.8—至今 资深交互设计师 | UED部门</span>
+                    <span>2022.4—至今 高级UX设计师</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h5 class="timeline-title">上海璨世科技有限公司</h5>
+                    <ul>
+                        <li>公司产品的所有用户体验工作, 从产品设计初期方案产出、用户调研、可交互原型产出,到交付上线，搭建用户行为报表检验设计成果，分析用户行为数据改进设计都独立负责</li>
+                    </ul>
+                    <p><b>业绩</b></p>
+                    <ul>
+                        <li>快速产出多个可交互原型方案，在短时间内完成用户测试，积极和上下游配合，在快速迭代的节奏中保证交互原型的质量</li>
+                        <li>利用公司已有的埋点数据，快速搭建用户行为数据看板，定期产出分析报告，为设计师团队及公司决策提供更多视角</li>
+                        <li>积极推进和公司其他合作部门的沟通，减少信息孤岛</li>
+                        <li>主导并全程执行用户访谈的所有流程，包括前期命题确定、用户招募、用户访谈及最终报告产出，给设计师团队、产品团队及公司决策提供有效科学的用户反馈</li>
+                    </ul>
+                </div>
+                <div class="timeline-info">
+                    <span>2021.8—2022.4 资深交互设计师 | UED部门</span>
                 </div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
