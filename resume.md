@@ -1,9 +1,12 @@
 ---
+
 layout: default
 comments: false
 permalink: resume/
 lang: zh
+
 ---
+
 <div class="resume" align="right">
     <a class="btn btn-dark" href="javascript:printme()" rel="external nofollow" target="_self">Print</a>
 </div>
@@ -207,6 +210,5 @@ lang: zh
 function printme() {
     document.body.innerHTML = document.getElementById('print').innerHTML;
     window.print();
-  	location.reload();
 }
 </script>

@@ -20,3 +20,5 @@ group :jekyll_plugins do
     gem 'jekyll-polyglot'
 end
 gem "jekyll", "~> 4.2"
+
+gem "webrick", "~> 1.8"

@@ -3,21 +3,11 @@
   <channel>
     <title>Little Corner of 8ku</title>
     <description>nowhere but here.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <pubDate>Mon, 21 Mar 2022 19:21:37 +0800</pubDate>
-    <lastBuildDate>Mon, 21 Mar 2022 19:21:37 +0800</lastBuildDate>
-=======
-    <pubDate>Sun, 27 Mar 2022 01:32:15 +0800</pubDate>
-    <lastBuildDate>Sun, 27 Mar 2022 01:32:15 +0800</lastBuildDate>
->>>>>>> gh-pages
-=======
-    <pubDate>Tue, 02 Aug 2022 23:49:39 +0800</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2022 23:49:39 +0800</lastBuildDate>
->>>>>>> gh-pages
-    <generator>Jekyll v4.2.0</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 26 Sep 2023 10:49:59 +0800</pubDate>
+    <lastBuildDate>Tue, 26 Sep 2023 10:49:59 +0800</lastBuildDate>
+    <generator>Jekyll v4.3.1</generator>
     
       <item>
         <title>A gift for someone I met-3D Design</title>
@@ -85,8 +75,8 @@
 
 </description>
         <pubDate>Mon, 21 Mar 2022 00:00:00 +0800</pubDate>
-        <link>/3d-art/2022/03/21/3DArts_WorkingPerson.html</link>
-        <guid isPermaLink="true">/3d-art/2022/03/21/3DArts_WorkingPerson.html</guid>
+        <link>http://localhost:4000/3d-art/2022/03/21/3DArts_WorkingPerson.html</link>
+        <guid isPermaLink="true">http://localhost:4000/3d-art/2022/03/21/3DArts_WorkingPerson.html</guid>
         
         
         <category>3D-Art</category>
@@ -105,8 +95,8 @@
 
 </description>
         <pubDate>Thu, 12 Aug 2021 00:00:00 +0800</pubDate>
-        <link>/3d-art/2021/08/12/3DArts_WorldEscape.html</link>
-        <guid isPermaLink="true">/3d-art/2021/08/12/3DArts_WorldEscape.html</guid>
+        <link>http://localhost:4000/3d-art/2021/08/12/3DArts_WorldEscape.html</link>
+        <guid isPermaLink="true">http://localhost:4000/3d-art/2021/08/12/3DArts_WorldEscape.html</guid>
         
         
         <category>3D-Art</category>
@@ -137,8 +127,8 @@
 
 </description>
         <pubDate>Tue, 10 Aug 2021 00:00:00 +0800</pubDate>
-        <link>/3d-art/2021/08/10/3DArts_Lyre.html</link>
-        <guid isPermaLink="true">/3d-art/2021/08/10/3DArts_Lyre.html</guid>
+        <link>http://localhost:4000/3d-art/2021/08/10/3DArts_Lyre.html</link>
+        <guid isPermaLink="true">http://localhost:4000/3d-art/2021/08/10/3DArts_Lyre.html</guid>
         
         
         <category>3D-Art</category>
@@ -182,8 +172,8 @@
 &lt;p&gt;New Year(2022)&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Jul 2021 00:00:00 +0800</pubDate>
-        <link>/3d-art/2021/07/04/3DArts_Sheep.html</link>
-        <guid isPermaLink="true">/3d-art/2021/07/04/3DArts_Sheep.html</guid>
+        <link>http://localhost:4000/3d-art/2021/07/04/3DArts_Sheep.html</link>
+        <guid isPermaLink="true">http://localhost:4000/3d-art/2021/07/04/3DArts_Sheep.html</guid>
         
         
         <category>3D-Art</category>
@@ -218,8 +208,8 @@
 
 </description>
         <pubDate>Tue, 18 May 2021 00:00:00 +0800</pubDate>
-        <link>/translate/2021/05/18/TheLostDesigner.html</link>
-        <guid isPermaLink="true">/translate/2021/05/18/TheLostDesigner.html</guid>
+        <link>http://localhost:4000/translate/2021/05/18/TheLostDesigner.html</link>
+        <guid isPermaLink="true">http://localhost:4000/translate/2021/05/18/TheLostDesigner.html</guid>
         
         
         <category>Translate</category>
@@ -264,8 +254,8 @@
 
 </description>
         <pubDate>Mon, 22 Mar 2021 00:00:00 +0800</pubDate>
-        <link>/3d-art/2021/03/22/3DArts_building.html</link>
-        <guid isPermaLink="true">/3d-art/2021/03/22/3DArts_building.html</guid>
+        <link>http://localhost:4000/3d-art/2021/03/22/3DArts_building.html</link>
+        <guid isPermaLink="true">http://localhost:4000/3d-art/2021/03/22/3DArts_building.html</guid>
         
         
         <category>3D-Art</category>
@@ -357,8 +347,8 @@
 
 </description>
         <pubDate>Sat, 18 Jan 2020 00:00:00 +0800</pubDate>
-        <link>/journey/2020/01/18/AboutUserExperience.html</link>
-        <guid isPermaLink="true">/journey/2020/01/18/AboutUserExperience.html</guid>
+        <link>http://localhost:4000/journey/2020/01/18/AboutUserExperience.html</link>
+        <guid isPermaLink="true">http://localhost:4000/journey/2020/01/18/AboutUserExperience.html</guid>
         
         
         <category>Journey</category>
@@ -388,8 +378,8 @@
 &lt;p&gt;我已经感觉到时间在赶着我，嘲笑我在无用的娱乐中消耗自己的生命。&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
-        <link>/journey/2018/09/29/TooNoisy_Journey.html</link>
-        <guid isPermaLink="true">/journey/2018/09/29/TooNoisy_Journey.html</guid>
+        <link>http://localhost:4000/journey/2018/09/29/TooNoisy_Journey.html</link>
+        <guid isPermaLink="true">http://localhost:4000/journey/2018/09/29/TooNoisy_Journey.html</guid>
         
         
         <category>Journey</category>
@@ -443,8 +433,8 @@
 &lt;p&gt;&lt;a href=&quot;https://8ku.github.io/ux design/2018/09/28/UXDesign_community&quot;&gt;相关作品&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
-        <link>/journey/2018/09/28/UXDesign_community_Journey.html</link>
-        <guid isPermaLink="true">/journey/2018/09/28/UXDesign_community_Journey.html</guid>
+        <link>http://localhost:4000/journey/2018/09/28/UXDesign_community_Journey.html</link>
+        <guid isPermaLink="true">http://localhost:4000/journey/2018/09/28/UXDesign_community_Journey.html</guid>
         
         
         <category>Journey</category>
@@ -543,8 +533,8 @@
 &lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;相关经历&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
-        <link>/ui-ux-design/2018/09/28/UXDesign_community.html</link>
-        <guid isPermaLink="true">/ui-ux-design/2018/09/28/UXDesign_community.html</guid>
+        <link>http://localhost:4000/ui-ux-design/2018/09/28/UXDesign_community.html</link>
+        <guid isPermaLink="true">http://localhost:4000/ui-ux-design/2018/09/28/UXDesign_community.html</guid>
         
         
         <category>UI-UX-Design</category>
