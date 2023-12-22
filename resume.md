@@ -92,22 +92,15 @@ lang: zh
             </li>
             <li class="timeline-item">
                 <div class="timeline-info">
-<<<<<<< HEAD
                     <span>2017.10—2018.08 交互设计师 | 平台部</span>
-=======
                     <span>2017.10—2018.08 交互设计师 | 官网平台部</span>
->>>>>>> gh-pages
                 </div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <h5 class="timeline-title">游族网络</h5>
                     <ul>
                         <li>游族官网相关业务所有交互工作</li>
-<<<<<<< HEAD
                         <li>视觉 UI 设计视觉建议和指导</li>
-=======
-                        <li>视觉 UI 设计建议和指导</li>
->>>>>>> gh-pages
                         <li>公司内其他项目组业务的交互需求支持</li>
                         <li>用户行为及用户心理分析</li>
                     </ul>
@@ -124,11 +117,8 @@ lang: zh
                 </div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
-<<<<<<< HEAD
                     <h5 class="timeline-title">糖小护健康科技（上海）有限公司</h5>
-=======
                     <h5 class="timeline-title">爱怡康健康科技（上海）有限公司（原名 糖小护健康科技（上海）有限公司）</h5>
->>>>>>> gh-pages
                     <ul>
                         <li>负责糖小护微信患者端整体结构调整优化，交互重构，视觉指导</li>
                         <li>糖小护网页医生/健康管理师端交互设计</li>

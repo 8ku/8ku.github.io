@@ -67,20 +67,24 @@ title: Home
 
 <section class="recent-posts row">
 
-    <div class="col">
+    <div class="col-sm-4">
+        {% include sidebar.html %} 
+    </div>
+
+    <div class="col-sm-8">
 
         <div class="section-title">
             <h2><span>All Works</span></h2>    
         </div>
 
-        <div class="row listrecent">
+        <div class="masonrygrid row listrecent">
 
             {% for post in paginator.posts %}
 
             {% unless post.featured == true %}
-                <div class="col-md-4 mb-5">
-                {% include postbox_homepage.html %}
-                </div>
+
+                    {% include postbox.html %}
+
             {% endunless %}
 
             {% endfor %}
