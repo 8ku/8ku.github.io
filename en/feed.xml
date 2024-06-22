@@ -3,10 +3,10 @@
   <channel>
     <title>Little Corner of 8ku</title>
     <description>nowhere but here.</description>
-    <link>http://localhost:4000www.bakumatata.com//</link>
-    <atom:link href="http://localhost:4000www.bakumatata.com//en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Jun 2024 23:37:13 +0800</pubDate>
-    <lastBuildDate>Sat, 22 Jun 2024 23:37:13 +0800</lastBuildDate>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//en/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 22 Jun 2024 23:56:12 +0800</pubDate>
+    <lastBuildDate>Sat, 22 Jun 2024 23:56:12 +0800</lastBuildDate>
     <generator>Jekyll v4.3.1</generator>
     
       <item>
@@ -38,7 +38,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_WorkingPerson_Rendering.jpg&quot; alt=&quot;Rendering&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_WorkingPerson_Rendering.jpg&quot; alt=&quot;Rendering&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;为了增加可玩性，这个礼物还包含了一个可以直接在手机上观看的AR模型，在寻找更便捷的实现方式时，无意中发现了 &lt;strong&gt;Three.js&lt;/strong&gt; 这个脚本语言。虽然最终还是决定使用苹果官方的 Reality Converter 把模型转换为可以直接在苹果手机上打开的AR模型，但我也顺手学了如何在 Web 网站上显示可交互的 3D 模型的方法。这个意外的插曲也让我成功为公司的虚拟人项目做了一点点贡献。&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 &lt;img src=&quot;/assets/images/3DArt/3D_WorkingPerson_3DPrinting2.jpg&quot; /&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_WorkingPerson_painting.jpg&quot; alt=&quot;painting&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_WorkingPerson_painting.jpg&quot; alt=&quot;painting&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;要说我在这次经历里收获了什么，我想最大的收获是如何一步步实现自己的想法。虽然中途比较坎坷，整个项目从 “我有一个想法” 到最终实现经历了快1个半月，但它完成了，我也在过程中收获很多快乐和成就感。&lt;/p&gt;
 
@@ -71,12 +71,12 @@
 			}
 		}&lt;/script&gt;
 
-&lt;script type=&quot;module&quot; src=&quot;www.bakumatata.com//assets/js/js3d/threejsCanvas.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;module&quot; src=&quot;//assets/js/js3d/threejsCanvas.js&quot;&gt;&lt;/script&gt;
 
 </description>
         <pubDate>Mon, 21 Mar 2022 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//3d-art/2022/03/21/3DArts_WorkingPerson.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//3d-art/2022/03/21/3DArts_WorkingPerson.html</guid>
+        <link>http://localhost:4000//3d-art/2022/03/21/3DArts_WorkingPerson.html</link>
+        <guid isPermaLink="true">http://localhost:4000//3d-art/2022/03/21/3DArts_WorkingPerson.html</guid>
         
         
         <category>3D-Art</category>
@@ -87,16 +87,16 @@
         <title>WorldEscape-3D Design</title>
         <description>&lt;h3 id=&quot;sketch&quot;&gt;Sketch&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_WorldEscape_Design.jpg&quot; alt=&quot;设计&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_WorldEscape_Design.jpg&quot; alt=&quot;设计&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;rendering&quot;&gt;Rendering&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_WorldEscape_Rendering.jpg&quot; alt=&quot;设计&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_WorldEscape_Rendering.jpg&quot; alt=&quot;设计&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 12 Aug 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//3d-art/2021/08/12/3DArts_WorldEscape.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//3d-art/2021/08/12/3DArts_WorldEscape.html</guid>
+        <link>http://localhost:4000//3d-art/2021/08/12/3DArts_WorldEscape.html</link>
+        <guid isPermaLink="true">http://localhost:4000//3d-art/2021/08/12/3DArts_WorldEscape.html</guid>
         
         
         <category>3D-Art</category>
@@ -119,16 +119,16 @@
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
 &lt;!-- v1.8 --&gt;
 &lt;div id=&quot;slider2&quot;&gt;
-  &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/www.bakumatata.com/assets/images/3DArt/3D_Lyre_Design.jpg&quot; title=&quot;&quot; alt=&quot;Design&quot; /&gt;
-  &lt;img data-src=&quot;/www.bakumatata.com/assets/images/3DArt/3D_Lyre_Model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;Model&quot; /&gt;
-  &lt;img data-src=&quot;/www.bakumatata.com/assets/images/3DArt/3D_Lyre_Render.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;Render&quot; /&gt;
-  &lt;img data-src=&quot;/www.bakumatata.com/assets/images/3DArt/3D_Lyre_3DPrinting.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;3D Printing&quot; /&gt;
+  &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/assets/images/3DArt/3D_Lyre_Design.jpg&quot; title=&quot;&quot; alt=&quot;Design&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Lyre_Model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;Model&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Lyre_Render.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;Render&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Lyre_3DPrinting.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;3D Printing&quot; /&gt;
   &lt;/div&gt;
 
 </description>
         <pubDate>Tue, 10 Aug 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//3d-art/2021/08/10/3DArts_Lyre.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//3d-art/2021/08/10/3DArts_Lyre.html</guid>
+        <link>http://localhost:4000//3d-art/2021/08/10/3DArts_Lyre.html</link>
+        <guid isPermaLink="true">http://localhost:4000//3d-art/2021/08/10/3DArts_Lyre.html</guid>
         
         
         <category>3D-Art</category>
@@ -147,33 +147,33 @@
 &lt;!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include --&gt;
 &lt;!-- v1.8 --&gt;
 &lt;div id=&quot;slider2&quot;&gt;
-  &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/www.bakumatata.com/assets/images/3DArt/3D_Sheep_draft.jpg&quot; title=&quot;&quot; alt=&quot;draft&quot; /&gt;
-  &lt;img data-src=&quot;/www.bakumatata.com/assets/images/3DArt/3D_Sheep_model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;model&quot; /&gt;
+  &lt;img data-src=&quot;&quot; data-src-2x=&quot;&quot; src=&quot;/assets/images/3DArt/3D_Sheep_draft.jpg&quot; title=&quot;&quot; alt=&quot;draft&quot; /&gt;
+  &lt;img data-src=&quot;/assets/images/3DArt/3D_Sheep_model.jpg&quot; data-src-2x=&quot;&quot; src=&quot;&quot; title=&quot;&quot; alt=&quot;model&quot; /&gt;
   &lt;/div&gt;
 
 &lt;p&gt;And based on that, I designed some scenes.&lt;/p&gt;
 
 &lt;h2 id=&quot;场景&quot;&gt;场景&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_Sheep_SummerSea.jpg&quot; alt=&quot;Summer Sea&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_Sheep_SummerSea.jpg&quot; alt=&quot;Summer Sea&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Summer Sea&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg&quot; alt=&quot;Wind Bell&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_Sheep_Summer_Windbell.jpg&quot; alt=&quot;Wind Bell&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Wind Bell&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_Sheep_SummerIsOver.jpg&quot; alt=&quot;Summer is Over&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_Sheep_SummerIsOver.jpg&quot; alt=&quot;Summer is Over&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Summer is Over&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_Sheep_newYear.jpg&quot; alt=&quot;New Year(2022)&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_Sheep_newYear.jpg&quot; alt=&quot;New Year(2022)&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;New Year(2022)&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Jul 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//3d-art/2021/07/04/3DArts_Sheep.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//3d-art/2021/07/04/3DArts_Sheep.html</guid>
+        <link>http://localhost:4000//3d-art/2021/07/04/3DArts_Sheep.html</link>
+        <guid isPermaLink="true">http://localhost:4000//3d-art/2021/07/04/3DArts_Sheep.html</guid>
         
         
         <category>3D-Art</category>
@@ -208,8 +208,8 @@
 
 </description>
         <pubDate>Tue, 18 May 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//translate/2021/05/18/TheLostDesigner.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//translate/2021/05/18/TheLostDesigner.html</guid>
+        <link>http://localhost:4000//translate/2021/05/18/TheLostDesigner.html</link>
+        <guid isPermaLink="true">http://localhost:4000//translate/2021/05/18/TheLostDesigner.html</guid>
         
         
         <category>Translate</category>
@@ -224,15 +224,15 @@
 
 &lt;p&gt;&lt;em&gt;First version of the building prefabs&lt;/em&gt;  🡇&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_building01.jpg&quot; alt=&quot;First version of the building prefabs&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_building01.jpg&quot; alt=&quot;First version of the building prefabs&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;First version single building color test&lt;/em&gt;  🡇&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_building02.jpg&quot; alt=&quot;First version single building color test&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_building02.jpg&quot; alt=&quot;First version single building color test&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;First version scene test&lt;/em&gt;  🡇&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_scence1.jpg&quot; alt=&quot;First version scene test&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_scence1.jpg&quot; alt=&quot;First version scene test&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After it was done, I felt that the classical Italian architecture did not fit the theme of the game, and I couldn’t explain the origin of the architectural style, so I overturned it all and reconstructed it.&lt;/p&gt;
 
@@ -240,22 +240,22 @@
 
 &lt;p&gt;&lt;em&gt;Second version scene test&lt;/em&gt;  🡇&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_scence2.jpg&quot; alt=&quot;Second version scene test&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_scence2.jpg&quot; alt=&quot;Second version scene test&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Second version scene test：Unity&lt;/em&gt; 🡇&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_scence2_1.jpg&quot; alt=&quot;Second version scene test：Unity&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_scence2_1.jpg&quot; alt=&quot;Second version scene test：Unity&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_scence2_2.jpg&quot; alt=&quot;Second version scene test：Unity&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_scence2_2.jpg&quot; alt=&quot;Second version scene test：Unity&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Second version scene test: overall&lt;/em&gt;  🡇&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/3DArt/3D_scence3.jpg&quot; alt=&quot;Second version scene test: overall&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/3DArt/3D_scence3.jpg&quot; alt=&quot;Second version scene test: overall&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 22 Mar 2021 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//3d-art/2021/03/22/3DArts_building.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//3d-art/2021/03/22/3DArts_building.html</guid>
+        <link>http://localhost:4000//3d-art/2021/03/22/3DArts_building.html</link>
+        <guid isPermaLink="true">http://localhost:4000//3d-art/2021/03/22/3DArts_building.html</guid>
         
         
         <category>3D-Art</category>
@@ -291,13 +291,13 @@
 
 &lt;p&gt;The original perfect closed loop is completely broken and the demand now becomes:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/UI/ux01.jpg&quot; alt=&quot;ux01&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/UI/ux01.jpg&quot; alt=&quot;ux01&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I need a markdown App that syncs files on my iPad and iPhone, and uploads directly from my mobile device to GitHub without the need for a secondary transfer from my computer.&lt;/p&gt;
 
 &lt;p&gt;While searching, I realized that writing code on mobile is also a big need, and there is already mature software Working Copy for uploading files frome mobile to GitHub, so the only question left was, the app that can sync files between iPad and iPhone.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/UI/ux02.jpg&quot; alt=&quot;ux02&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/UI/ux02.jpg&quot; alt=&quot;ux02&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;dilemma&quot;&gt;Dilemma&lt;/h2&gt;
 
@@ -337,8 +337,8 @@
 
 </description>
         <pubDate>Sat, 18 Jan 2020 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//journey/2020/01/18/AboutUserExperience.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//journey/2020/01/18/AboutUserExperience.html</guid>
+        <link>http://localhost:4000//journey/2020/01/18/AboutUserExperience.html</link>
+        <guid isPermaLink="true">http://localhost:4000//journey/2020/01/18/AboutUserExperience.html</guid>
         
         
         <category>Journey</category>
@@ -368,8 +368,8 @@
 &lt;p&gt;我已经感觉到时间在赶着我，嘲笑我在无用的娱乐中消耗自己的生命。&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//journey/2018/09/29/TooNoisy_Journey.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//journey/2018/09/29/TooNoisy_Journey.html</guid>
+        <link>http://localhost:4000//journey/2018/09/29/TooNoisy_Journey.html</link>
+        <guid isPermaLink="true">http://localhost:4000//journey/2018/09/29/TooNoisy_Journey.html</guid>
         
         
         <category>Journey</category>
@@ -423,8 +423,8 @@
 &lt;p&gt;&lt;a href=&quot;https://8ku.github.io/ux design/2018/09/28/UXDesign_community&quot;&gt;相关作品&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//journey/2018/09/28/UXDesign_community_Journey.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//journey/2018/09/28/UXDesign_community_Journey.html</guid>
+        <link>http://localhost:4000//journey/2018/09/28/UXDesign_community_Journey.html</link>
+        <guid isPermaLink="true">http://localhost:4000//journey/2018/09/28/UXDesign_community_Journey.html</guid>
         
         
         <category>Journey</category>
@@ -451,13 +451,13 @@
 
 &lt;p&gt;最开始的设想，是用一张地图来承载社区功能，讨论区，用户中心，通知系统，成长系统等等。我希望在最初就能吸引用户，场所的舒适性能激发用户交流的欲望，况且，谁不喜欢游戏呢？&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/UI/community01.jpg&quot; alt=&quot;community01&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/UI/community01.jpg&quot; alt=&quot;community01&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;地图上需要把社区基本功能及最主要的信息都表现出来，它看起来不像社区，但是，有什么关系呢。&lt;/p&gt;
 
 &lt;h3 id=&quot;社区里需要什么&quot;&gt;社区里需要什么&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/UI/community02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/UI/community02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;要在一个地图上展示这么多功能和信息，如何让信息不杂乱，突出重点，抓住用户视觉焦点，提升用户的兴趣，是这个项目的一大难点。&lt;/p&gt;
 
@@ -484,7 +484,7 @@
 
 &lt;h4 id=&quot;产品原型草图&quot;&gt;产品原型草图&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/UI/community03.jpg&quot; alt=&quot;community03&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/UI/community03.jpg&quot; alt=&quot;community03&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;主要页面的框架图出来以后进行讨论，设计方向上达成了一致。&lt;/p&gt;
 
@@ -508,7 +508,7 @@
 
 &lt;h4 id=&quot;小程序原型界面&quot;&gt;小程序原型界面&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;www.bakumatata.com//assets/images/UI/GameofThrone02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//assets/images/UI/GameofThrone02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;总结和思考&quot;&gt;总结和思考&lt;/h3&gt;
 
@@ -523,8 +523,8 @@
 &lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;相关经历&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000www.bakumatata.com//ui-ux-design/2018/09/28/UXDesign_community.html</link>
-        <guid isPermaLink="true">http://localhost:4000www.bakumatata.com//ui-ux-design/2018/09/28/UXDesign_community.html</guid>
+        <link>http://localhost:4000//ui-ux-design/2018/09/28/UXDesign_community.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ui-ux-design/2018/09/28/UXDesign_community.html</guid>
         
         
         <category>UI-UX-Design</category>
