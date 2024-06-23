@@ -3,8 +3,9 @@ import {
 	DataUtils,
 	FloatType,
 	HalfFloatType,
-	LinearEncoding,
+	NoColorSpace,
 	LinearFilter,
+	LinearSRGBColorSpace,
 	RedFormat,
 	RGBAFormat
 } from 'three';
@@ -130,9 +131,9 @@ class EXRLoader extends DataTextureLoader {
 
 		function reverseLutFromBitmap( bitmap, lut ) {
 
-			var k = 0;
+			let k = 0;
 
-			for ( var i = 0; i < USHORT_RANGE; ++ i ) {
+			for ( let i = 0; i < USHORT_RANGE; ++ i ) {
 
 				if ( ( i == 0 ) || ( bitmap[ i >> 3 ] & ( 1 << ( i & 7 ) ) ) ) {
 
@@ -142,7 +143,7 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			var n = k - 1;
+			const n = k - 1;
 
 			while ( k < USHORT_RANGE ) lut[ k ++ ] = 0;
 
@@ -152,7 +153,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function hufClearDecTable( hdec ) {
 
-			for ( var i = 0; i < HUF_DECSIZE; i ++ ) {
+			for ( let i = 0; i < HUF_DECSIZE; i ++ ) {
 
 				hdec[ i ] = {};
 				hdec[ i ].len = 0;
@@ -186,33 +187,33 @@ class EXRLoader extends DataTextureLoader {
 
 		function hufCanonicalCodeTable( hcode ) {
 
-			for ( var i = 0; i <= 58; ++ i ) hufTableBuffer[ i ] = 0;
-			for ( var i = 0; i < HUF_ENCSIZE; ++ i ) hufTableBuffer[ hcode[ i ] ] += 1;
+			for ( let i = 0; i <= 58; ++ i ) hufTableBuffer[ i ] = 0;
+			for ( let i = 0; i < HUF_ENCSIZE; ++ i ) hufTableBuffer[ hcode[ i ] ] += 1;
 
-			var c = 0;
+			let c = 0;
 
-			for ( var i = 58; i > 0; -- i ) {
+			for ( let i = 58; i > 0; -- i ) {
 
-				var nc = ( ( c + hufTableBuffer[ i ] ) >> 1 );
+				const nc = ( ( c + hufTableBuffer[ i ] ) >> 1 );
 				hufTableBuffer[ i ] = c;
 				c = nc;
 
 			}
 
-			for ( var i = 0; i < HUF_ENCSIZE; ++ i ) {
+			for ( let i = 0; i < HUF_ENCSIZE; ++ i ) {
 
-				var l = hcode[ i ];
+				const l = hcode[ i ];
 				if ( l > 0 ) hcode[ i ] = l | ( hufTableBuffer[ l ] ++ << 6 );
 
 			}
 
 		}
 
-		function hufUnpackEncTable( uInt8Array, inDataView, inOffset, ni, im, iM, hcode ) {
+		function hufUnpackEncTable( uInt8Array, inOffset, ni, im, iM, hcode ) {
 
-			var p = inOffset;
-			var c = 0;
-			var lc = 0;
+			const p = inOffset;
+			let c = 0;
+			let lc = 0;
 
 			for ( ; im <= iM; im ++ ) {
 
@@ -220,7 +221,7 @@ class EXRLoader extends DataTextureLoader {
 
 				getBits( 6, c, lc, uInt8Array, p );
 
-				var l = getBitsReturn.l;
+				const l = getBitsReturn.l;
 				c = getBitsReturn.c;
 				lc = getBitsReturn.lc;
 
@@ -236,7 +237,7 @@ class EXRLoader extends DataTextureLoader {
 
 					getBits( 8, c, lc, uInt8Array, p );
 
-					var zerun = getBitsReturn.l + SHORTEST_LONG_RUN;
+					let zerun = getBitsReturn.l + SHORTEST_LONG_RUN;
 					c = getBitsReturn.c;
 					lc = getBitsReturn.lc;
 
@@ -252,7 +253,7 @@ class EXRLoader extends DataTextureLoader {
 
 				} else if ( l >= SHORT_ZEROCODE_RUN ) {
 
-					var zerun = l - SHORT_ZEROCODE_RUN + 2;
+					let zerun = l - SHORT_ZEROCODE_RUN + 2;
 
 					if ( im + zerun > iM + 1 ) {
 
@@ -288,8 +289,8 @@ class EXRLoader extends DataTextureLoader {
 
 			for ( ; im <= iM; im ++ ) {
 
-				var c = hufCode( hcode[ im ] );
-				var l = hufLength( hcode[ im ] );
+				const c = hufCode( hcode[ im ] );
+				const l = hufLength( hcode[ im ] );
 
 				if ( c >> l ) {
 
@@ -299,7 +300,7 @@ class EXRLoader extends DataTextureLoader {
 
 				if ( l > HUF_DECBITS ) {
 
-					var pl = hdecod[ ( c >> ( l - HUF_DECBITS ) ) ];
+					const pl = hdecod[ ( c >> ( l - HUF_DECBITS ) ) ];
 
 					if ( pl.len ) {
 
@@ -311,10 +312,10 @@ class EXRLoader extends DataTextureLoader {
 
 					if ( pl.p ) {
 
-						var p = pl.p;
+						const p = pl.p;
 						pl.p = new Array( pl.lit );
 
-						for ( var i = 0; i < pl.lit - 1; ++ i ) {
+						for ( let i = 0; i < pl.lit - 1; ++ i ) {
 
 							pl.p[ i ] = p[ i ];
 
@@ -330,11 +331,11 @@ class EXRLoader extends DataTextureLoader {
 
 				} else if ( l ) {
 
-					var plOffset = 0;
+					let plOffset = 0;
 
-					for ( var i = 1 << ( HUF_DECBITS - l ); i > 0; i -- ) {
+					for ( let i = 1 << ( HUF_DECBITS - l ); i > 0; i -- ) {
 
-						var pl = hdecod[ ( c << ( HUF_DECBITS - l ) ) + plOffset ];
+						const pl = hdecod[ ( c << ( HUF_DECBITS - l ) ) + plOffset ];
 
 						if ( pl.len || pl.p ) {
 
@@ -371,7 +372,7 @@ class EXRLoader extends DataTextureLoader {
 
 		const getCodeReturn = { c: 0, lc: 0 };
 
-		function getCode( po, rlc, c, lc, uInt8Array, inDataView, inOffset, outBuffer, outBufferOffset, outBufferEndOffset ) {
+		function getCode( po, rlc, c, lc, uInt8Array, inOffset, outBuffer, outBufferOffset, outBufferEndOffset ) {
 
 			if ( po == rlc ) {
 
@@ -385,8 +386,8 @@ class EXRLoader extends DataTextureLoader {
 
 				lc -= 8;
 
-				var cs = ( c >> lc );
-				var cs = new Uint8Array( [ cs ] )[ 0 ];
+				let cs = ( c >> lc );
+				cs = new Uint8Array( [ cs ] )[ 0 ];
 
 				if ( outBufferOffset.value + cs > outBufferEndOffset ) {
 
@@ -394,7 +395,7 @@ class EXRLoader extends DataTextureLoader {
 
 				}
 
-				var s = outBuffer[ outBufferOffset.value - 1 ];
+				const s = outBuffer[ outBufferOffset.value - 1 ];
 
 				while ( cs -- > 0 ) {
 
@@ -425,7 +426,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function Int16( value ) {
 
-			var ref = UInt16( value );
+			const ref = UInt16( value );
 			return ( ref > 0x7FFF ) ? ref - 0x10000 : ref;
 
 		}
@@ -434,14 +435,14 @@ class EXRLoader extends DataTextureLoader {
 
 		function wdec14( l, h ) {
 
-			var ls = Int16( l );
-			var hs = Int16( h );
+			const ls = Int16( l );
+			const hs = Int16( h );
 
-			var hi = hs;
-			var ai = ls + ( hi & 1 ) + ( hi >> 1 );
+			const hi = hs;
+			const ai = ls + ( hi & 1 ) + ( hi >> 1 );
 
-			var as = ai;
-			var bs = ai - hi;
+			const as = ai;
+			const bs = ai - hi;
 
 			wdec14Return.a = as;
 			wdec14Return.b = bs;
@@ -450,11 +451,11 @@ class EXRLoader extends DataTextureLoader {
 
 		function wdec16( l, h ) {
 
-			var m = UInt16( l );
-			var d = UInt16( h );
+			const m = UInt16( l );
+			const d = UInt16( h );
 
-			var bb = ( m - ( d >> 1 ) ) & MOD_MASK;
-			var aa = ( d + bb - A_OFFSET ) & MOD_MASK;
+			const bb = ( m - ( d >> 1 ) ) & MOD_MASK;
+			const aa = ( d + bb - A_OFFSET ) & MOD_MASK;
 
 			wdec14Return.a = aa;
 			wdec14Return.b = bb;
@@ -463,10 +464,11 @@ class EXRLoader extends DataTextureLoader {
 
 		function wav2Decode( buffer, j, nx, ox, ny, oy, mx ) {
 
-			var w14 = mx < ( 1 << 14 );
-			var n = ( nx > ny ) ? ny : nx;
-			var p = 1;
-			var p2;
+			const w14 = mx < ( 1 << 14 );
+			const n = ( nx > ny ) ? ny : nx;
+			let p = 1;
+			let p2;
+			let py;
 
 			while ( p <= n ) p <<= 1;
 
@@ -476,24 +478,24 @@ class EXRLoader extends DataTextureLoader {
 
 			while ( p >= 1 ) {
 
-				var py = 0;
-				var ey = py + oy * ( ny - p2 );
-				var oy1 = oy * p;
-				var oy2 = oy * p2;
-				var ox1 = ox * p;
-				var ox2 = ox * p2;
-				var i00, i01, i10, i11;
+				py = 0;
+				const ey = py + oy * ( ny - p2 );
+				const oy1 = oy * p;
+				const oy2 = oy * p2;
+				const ox1 = ox * p;
+				const ox2 = ox * p2;
+				let i00, i01, i10, i11;
 
 				for ( ; py <= ey; py += oy2 ) {
 
-					var px = py;
-					var ex = py + ox * ( nx - p2 );
+					let px = py;
+					const ex = py + ox * ( nx - p2 );
 
 					for ( ; px <= ex; px += ox2 ) {
 
-						var p01 = px + ox1;
-						var p10 = px + oy1;
-						var p11 = p10 + ox1;
+						const p01 = px + ox1;
+						const p10 = px + oy1;
+						const p11 = p10 + ox1;
 
 						if ( w14 ) {
 
@@ -546,7 +548,7 @@ class EXRLoader extends DataTextureLoader {
 
 					if ( nx & p ) {
 
-						var p10 = px + oy1;
+						const p10 = px + oy1;
 
 						if ( w14 )
 							wdec14( buffer[ px + j ], buffer[ p10 + j ] );
@@ -564,12 +566,12 @@ class EXRLoader extends DataTextureLoader {
 
 				if ( ny & p ) {
 
-					var px = py;
-					var ex = py + ox * ( nx - p2 );
+					let px = py;
+					const ex = py + ox * ( nx - p2 );
 
 					for ( ; px <= ex; px += ox2 ) {
 
-						var p01 = px + ox1;
+						const p01 = px + ox1;
 
 						if ( w14 )
 							wdec14( buffer[ px + j ], buffer[ p01 + j ] );
@@ -594,12 +596,12 @@ class EXRLoader extends DataTextureLoader {
 
 		}
 
-		function hufDecode( encodingTable, decodingTable, uInt8Array, inDataView, inOffset, ni, rlc, no, outBuffer, outOffset ) {
+		function hufDecode( encodingTable, decodingTable, uInt8Array, inOffset, ni, rlc, no, outBuffer, outOffset ) {
 
-			var c = 0;
-			var lc = 0;
-			var outBufferEndOffset = no;
-			var inOffsetEnd = Math.trunc( inOffset.value + ( ni + 7 ) / 8 );
+			let c = 0;
+			let lc = 0;
+			const outBufferEndOffset = no;
+			const inOffsetEnd = Math.trunc( inOffset.value + ( ni + 7 ) / 8 );
 
 			while ( inOffset.value < inOffsetEnd ) {
 
@@ -610,14 +612,14 @@ class EXRLoader extends DataTextureLoader {
 
 				while ( lc >= HUF_DECBITS ) {
 
-					var index = ( c >> ( lc - HUF_DECBITS ) ) & HUF_DECMASK;
-					var pl = decodingTable[ index ];
+					const index = ( c >> ( lc - HUF_DECBITS ) ) & HUF_DECMASK;
+					const pl = decodingTable[ index ];
 
 					if ( pl.len ) {
 
 						lc -= pl.len;
 
-						getCode( pl.lit, rlc, c, lc, uInt8Array, inDataView, inOffset, outBuffer, outOffset, outBufferEndOffset );
+						getCode( pl.lit, rlc, c, lc, uInt8Array, inOffset, outBuffer, outOffset, outBufferEndOffset );
 
 						c = getCodeReturn.c;
 						lc = getCodeReturn.lc;
@@ -630,11 +632,11 @@ class EXRLoader extends DataTextureLoader {
 
 						}
 
-						var j;
+						let j;
 
 						for ( j = 0; j < pl.lit; j ++ ) {
 
-							var l = hufLength( encodingTable[ pl.p[ j ] ] );
+							const l = hufLength( encodingTable[ pl.p[ j ] ] );
 
 							while ( lc < l && inOffset.value < inOffsetEnd ) {
 
@@ -651,7 +653,7 @@ class EXRLoader extends DataTextureLoader {
 
 									lc -= l;
 
-									getCode( pl.p[ j ], rlc, c, lc, uInt8Array, inDataView, inOffset, outBuffer, outOffset, outBufferEndOffset );
+									getCode( pl.p[ j ], rlc, c, lc, uInt8Array, inOffset, outBuffer, outOffset, outBufferEndOffset );
 
 									c = getCodeReturn.c;
 									lc = getCodeReturn.lc;
@@ -676,20 +678,20 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			var i = ( 8 - ni ) & 7;
+			const i = ( 8 - ni ) & 7;
 
 			c >>= i;
 			lc -= i;
 
 			while ( lc > 0 ) {
 
-				var pl = decodingTable[ ( c << ( HUF_DECBITS - lc ) ) & HUF_DECMASK ];
+				const pl = decodingTable[ ( c << ( HUF_DECBITS - lc ) ) & HUF_DECMASK ];
 
 				if ( pl.len ) {
 
 					lc -= pl.len;
 
-					getCode( pl.lit, rlc, c, lc, uInt8Array, inDataView, inOffset, outBuffer, outOffset, outBufferEndOffset );
+					getCode( pl.lit, rlc, c, lc, uInt8Array, inOffset, outBuffer, outOffset, outBufferEndOffset );
 
 					c = getCodeReturn.c;
 					lc = getCodeReturn.lc;
@@ -708,15 +710,15 @@ class EXRLoader extends DataTextureLoader {
 
 		function hufUncompress( uInt8Array, inDataView, inOffset, nCompressed, outBuffer, nRaw ) {
 
-			var outOffset = { value: 0 };
-			var initialInOffset = inOffset.value;
+			const outOffset = { value: 0 };
+			const initialInOffset = inOffset.value;
 
-			var im = parseUint32( inDataView, inOffset );
-			var iM = parseUint32( inDataView, inOffset );
+			const im = parseUint32( inDataView, inOffset );
+			const iM = parseUint32( inDataView, inOffset );
 
 			inOffset.value += 4;
 
-			var nBits = parseUint32( inDataView, inOffset );
+			const nBits = parseUint32( inDataView, inOffset );
 
 			inOffset.value += 4;
 
@@ -726,14 +728,14 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			var freq = new Array( HUF_ENCSIZE );
-			var hdec = new Array( HUF_DECSIZE );
+			const freq = new Array( HUF_ENCSIZE );
+			const hdec = new Array( HUF_DECSIZE );
 
 			hufClearDecTable( hdec );
 
-			var ni = nCompressed - ( inOffset.value - initialInOffset );
+			const ni = nCompressed - ( inOffset.value - initialInOffset );
 
-			hufUnpackEncTable( uInt8Array, inDataView, inOffset, ni, im, iM, freq );
+			hufUnpackEncTable( uInt8Array, inOffset, ni, im, iM, freq );
 
 			if ( nBits > 8 * ( nCompressed - ( inOffset.value - initialInOffset ) ) ) {
 
@@ -743,13 +745,13 @@ class EXRLoader extends DataTextureLoader {
 
 			hufBuildDecTable( freq, im, iM, hdec );
 
-			hufDecode( freq, hdec, uInt8Array, inDataView, inOffset, nBits, iM, nRaw, outBuffer, outOffset );
+			hufDecode( freq, hdec, uInt8Array, inOffset, nBits, iM, nRaw, outBuffer, outOffset );
 
 		}
 
 		function applyLut( lut, data, nData ) {
 
-			for ( var i = 0; i < nData; ++ i ) {
+			for ( let i = 0; i < nData; ++ i ) {
 
 				data[ i ] = lut[ data[ i ] ];
 
@@ -759,9 +761,9 @@ class EXRLoader extends DataTextureLoader {
 
 		function predictor( source ) {
 
-			for ( var t = 1; t < source.length; t ++ ) {
+			for ( let t = 1; t < source.length; t ++ ) {
 
-				var d = source[ t - 1 ] + source[ t ] - 128;
+				const d = source[ t - 1 ] + source[ t ] - 128;
 				source[ t ] = d;
 
 			}
@@ -770,10 +772,10 @@ class EXRLoader extends DataTextureLoader {
 
 		function interleaveScalar( source, out ) {
 
-			var t1 = 0;
-			var t2 = Math.floor( ( source.length + 1 ) / 2 );
-			var s = 0;
-			var stop = source.length - 1;
+			let t1 = 0;
+			let t2 = Math.floor( ( source.length + 1 ) / 2 );
+			let s = 0;
+			const stop = source.length - 1;
 
 			while ( true ) {
 
@@ -789,22 +791,22 @@ class EXRLoader extends DataTextureLoader {
 
 		function decodeRunLength( source ) {
 
-			var size = source.byteLength;
-			var out = new Array();
-			var p = 0;
+			let size = source.byteLength;
+			const out = new Array();
+			let p = 0;
 
-			var reader = new DataView( source );
+			const reader = new DataView( source );
 
 			while ( size > 0 ) {
 
-				var l = reader.getInt8( p ++ );
+				const l = reader.getInt8( p ++ );
 
 				if ( l < 0 ) {
 
-					var count = - l;
+					const count = - l;
 					size -= count + 1;
 
-					for ( var i = 0; i < count; i ++ ) {
+					for ( let i = 0; i < count; i ++ ) {
 
 						out.push( reader.getUint8( p ++ ) );
 
@@ -813,12 +815,12 @@ class EXRLoader extends DataTextureLoader {
 
 				} else {
 
-					var count = l;
+					const count = l;
 					size -= 2;
 
-					var value = reader.getUint8( p ++ );
+					const value = reader.getUint8( p ++ );
 
-					for ( var i = 0; i < count + 1; i ++ ) {
+					for ( let i = 0; i < count + 1; i ++ ) {
 
 						out.push( value );
 
@@ -834,25 +836,25 @@ class EXRLoader extends DataTextureLoader {
 
 		function lossyDctDecode( cscSet, rowPtrs, channelData, acBuffer, dcBuffer, outBuffer ) {
 
-			var dataView = new DataView( outBuffer.buffer );
+			let dataView = new DataView( outBuffer.buffer );
 
-			var width = channelData[ cscSet.idx[ 0 ] ].width;
-			var height = channelData[ cscSet.idx[ 0 ] ].height;
+			const width = channelData[ cscSet.idx[ 0 ] ].width;
+			const height = channelData[ cscSet.idx[ 0 ] ].height;
 
-			var numComp = 3;
+			const numComp = 3;
 
-			var numFullBlocksX = Math.floor( width / 8.0 );
-			var numBlocksX = Math.ceil( width / 8.0 );
-			var numBlocksY = Math.ceil( height / 8.0 );
-			var leftoverX = width - ( numBlocksX - 1 ) * 8;
-			var leftoverY = height - ( numBlocksY - 1 ) * 8;
+			const numFullBlocksX = Math.floor( width / 8.0 );
+			const numBlocksX = Math.ceil( width / 8.0 );
+			const numBlocksY = Math.ceil( height / 8.0 );
+			const leftoverX = width - ( numBlocksX - 1 ) * 8;
+			const leftoverY = height - ( numBlocksY - 1 ) * 8;
 
-			var currAcComp = { value: 0 };
-			var currDcComp = new Array( numComp );
-			var dctData = new Array( numComp );
-			var halfZigBlock = new Array( numComp );
-			var rowBlock = new Array( numComp );
-			var rowOffsets = new Array( numComp );
+			const currAcComp = { value: 0 };
+			const currDcComp = new Array( numComp );
+			const dctData = new Array( numComp );
+			const halfZigBlock = new Array( numComp );
+			const rowBlock = new Array( numComp );
+			const rowOffsets = new Array( numComp );
 
 			for ( let comp = 0; comp < numComp; ++ comp ) {
 
@@ -866,12 +868,12 @@ class EXRLoader extends DataTextureLoader {
 
 			for ( let blocky = 0; blocky < numBlocksY; ++ blocky ) {
 
-				var maxY = 8;
+				let maxY = 8;
 
 				if ( blocky == numBlocksY - 1 )
 					maxY = leftoverY;
 
-				var maxX = 8;
+				let maxX = 8;
 
 				for ( let blockx = 0; blockx < numBlocksX; ++ blockx ) {
 
@@ -960,28 +962,28 @@ class EXRLoader extends DataTextureLoader {
 
 			} // blocky
 
-			var halfRow = new Uint16Array( width );
-			var dataView = new DataView( outBuffer.buffer );
+			const halfRow = new Uint16Array( width );
+			dataView = new DataView( outBuffer.buffer );
 
 			// convert channels back to float, if needed
-			for ( var comp = 0; comp < numComp; ++ comp ) {
+			for ( let comp = 0; comp < numComp; ++ comp ) {
 
 				channelData[ cscSet.idx[ comp ] ].decoded = true;
-				var type = channelData[ cscSet.idx[ comp ] ].type;
+				const type = channelData[ cscSet.idx[ comp ] ].type;
 
 				if ( channelData[ comp ].type != 2 ) continue;
 
-				for ( var y = 0; y < height; ++ y ) {
+				for ( let y = 0; y < height; ++ y ) {
 
 					const offset = rowOffsets[ comp ][ y ];
 
-					for ( var x = 0; x < width; ++ x ) {
+					for ( let x = 0; x < width; ++ x ) {
 
 						halfRow[ x ] = dataView.getUint16( offset + x * INT16_SIZE * type, true );
 
 					}
 
-					for ( var x = 0; x < width; ++ x ) {
+					for ( let x = 0; x < width; ++ x ) {
 
 						dataView.setFloat32( offset + x * INT16_SIZE * type, decodeFloat16( halfRow[ x ] ), true );
 
@@ -995,8 +997,8 @@ class EXRLoader extends DataTextureLoader {
 
 		function unRleAC( currAcComp, acBuffer, halfZigBlock ) {
 
-			var acValue;
-			var dctComp = 1;
+			let acValue;
+			let dctComp = 1;
 
 			while ( dctComp < 64 ) {
 
@@ -1108,14 +1110,14 @@ class EXRLoader extends DataTextureLoader {
 			const f = 0.5 * Math.cos( 3.0 * 3.14159 / 8.0 );
 			const g = 0.5 * Math.cos( 7.0 * 3.14159 / 16.0 );
 
-			var alpha = new Array( 4 );
-			var beta = new Array( 4 );
-			var theta = new Array( 4 );
-			var gamma = new Array( 4 );
+			const alpha = new Array( 4 );
+			const beta = new Array( 4 );
+			const theta = new Array( 4 );
+			const gamma = new Array( 4 );
 
-			for ( var row = 0; row < 8; ++ row ) {
+			for ( let row = 0; row < 8; ++ row ) {
 
-				var rowPtr = row * 8;
+				const rowPtr = row * 8;
 
 				alpha[ 0 ] = c * data[ rowPtr + 2 ];
 				alpha[ 1 ] = f * data[ rowPtr + 2 ];
@@ -1149,7 +1151,7 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			for ( var column = 0; column < 8; ++ column ) {
+			for ( let column = 0; column < 8; ++ column ) {
 
 				alpha[ 0 ] = c * data[ 16 + column ];
 				alpha[ 1 ] = f * data[ 16 + column ];
@@ -1188,11 +1190,11 @@ class EXRLoader extends DataTextureLoader {
 
 		function csc709Inverse( data ) {
 
-			for ( var i = 0; i < 64; ++ i ) {
+			for ( let i = 0; i < 64; ++ i ) {
 
-				var y = data[ 0 ][ i ];
-				var cb = data[ 1 ][ i ];
-				var cr = data[ 2 ][ i ];
+				const y = data[ 0 ][ i ];
+				const cb = data[ 1 ][ i ];
+				const cr = data[ 2 ][ i ];
 
 				data[ 0 ][ i ] = y + 1.5747 * cr;
 				data[ 1 ][ i ] = y - 0.1873 * cb - 0.4682 * cr;
@@ -1204,7 +1206,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function convertToHalf( src, dst, idx ) {
 
-			for ( var i = 0; i < 64; ++ i ) {
+			for ( let i = 0; i < 64; ++ i ) {
 
 				dst[ idx + i ] = DataUtils.toHalfFloat( toLinear( src[ i ] ) );
 
@@ -1234,10 +1236,10 @@ class EXRLoader extends DataTextureLoader {
 
 		function uncompressRLE( info ) {
 
-			var compressed = info.viewer.buffer.slice( info.offset.value, info.offset.value + info.size );
+			const compressed = info.viewer.buffer.slice( info.offset.value, info.offset.value + info.size );
 
-			var rawBuffer = new Uint8Array( decodeRunLength( compressed ) );
-			var tmpBuffer = new Uint8Array( rawBuffer.length );
+			const rawBuffer = new Uint8Array( decodeRunLength( compressed ) );
+			const tmpBuffer = new Uint8Array( rawBuffer.length );
 
 			predictor( rawBuffer ); // revert predictor
 
@@ -1249,16 +1251,10 @@ class EXRLoader extends DataTextureLoader {
 
 		function uncompressZIP( info ) {
 
-			var compressed = info.array.slice( info.offset.value, info.offset.value + info.size );
+			const compressed = info.array.slice( info.offset.value, info.offset.value + info.size );
 
-			if ( typeof fflate === 'undefined' ) {
-
-				console.error( 'THREE.EXRLoader: External library fflate.min.js required.' );
-
-			}
-
-			var rawBuffer = fflate.unzlibSync( compressed ); // eslint-disable-line no-undef
-			var tmpBuffer = new Uint8Array( rawBuffer.length );
+			const rawBuffer = fflate.unzlibSync( compressed );
+			const tmpBuffer = new Uint8Array( rawBuffer.length );
 
 			predictor( rawBuffer ); // revert predictor
 
@@ -1270,21 +1266,21 @@ class EXRLoader extends DataTextureLoader {
 
 		function uncompressPIZ( info ) {
 
-			var inDataView = info.viewer;
-			var inOffset = { value: info.offset.value };
+			const inDataView = info.viewer;
+			const inOffset = { value: info.offset.value };
 
-			var outBuffer = new Uint16Array( info.width * info.scanlineBlockSize * ( info.channels * info.type ) );
-			var bitmap = new Uint8Array( BITMAP_SIZE );
+			const outBuffer = new Uint16Array( info.columns * info.lines * ( info.inputChannels.length * info.type ) );
+			const bitmap = new Uint8Array( BITMAP_SIZE );
 
 			// Setup channel info
-			var outBufferEnd = 0;
-			var pizChannelData = new Array( info.channels );
-			for ( var i = 0; i < info.channels; i ++ ) {
+			let outBufferEnd = 0;
+			const pizChannelData = new Array( info.inputChannels.length );
+			for ( let i = 0, il = info.inputChannels.length; i < il; i ++ ) {
 
 				pizChannelData[ i ] = {};
 				pizChannelData[ i ][ 'start' ] = outBufferEnd;
 				pizChannelData[ i ][ 'end' ] = pizChannelData[ i ][ 'start' ];
-				pizChannelData[ i ][ 'nx' ] = info.width;
+				pizChannelData[ i ][ 'nx' ] = info.columns;
 				pizChannelData[ i ][ 'ny' ] = info.lines;
 				pizChannelData[ i ][ 'size' ] = info.type;
 
@@ -1294,8 +1290,8 @@ class EXRLoader extends DataTextureLoader {
 
 			// Read range compression data
 
-			var minNonZero = parseUint16( inDataView, inOffset );
-			var maxNonZero = parseUint16( inDataView, inOffset );
+			const minNonZero = parseUint16( inDataView, inOffset );
+			const maxNonZero = parseUint16( inDataView, inOffset );
 
 			if ( maxNonZero >= BITMAP_SIZE ) {
 
@@ -1305,7 +1301,7 @@ class EXRLoader extends DataTextureLoader {
 
 			if ( minNonZero <= maxNonZero ) {
 
-				for ( var i = 0; i < maxNonZero - minNonZero + 1; i ++ ) {
+				for ( let i = 0; i < maxNonZero - minNonZero + 1; i ++ ) {
 
 					bitmap[ i + minNonZero ] = parseUint8( inDataView, inOffset );
 
@@ -1314,20 +1310,20 @@ class EXRLoader extends DataTextureLoader {
 			}
 
 			// Reverse LUT
-			var lut = new Uint16Array( USHORT_RANGE );
-			var maxValue = reverseLutFromBitmap( bitmap, lut );
+			const lut = new Uint16Array( USHORT_RANGE );
+			const maxValue = reverseLutFromBitmap( bitmap, lut );
 
-			var length = parseUint32( inDataView, inOffset );
+			const length = parseUint32( inDataView, inOffset );
 
 			// Huffman decoding
 			hufUncompress( info.array, inDataView, inOffset, length, outBuffer, outBufferEnd );
 
 			// Wavelet decoding
-			for ( var i = 0; i < info.channels; ++ i ) {
+			for ( let i = 0; i < info.inputChannels.length; ++ i ) {
 
-				var cd = pizChannelData[ i ];
+				const cd = pizChannelData[ i ];
 
-				for ( var j = 0; j < pizChannelData[ i ].size; ++ j ) {
+				for ( let j = 0; j < pizChannelData[ i ].size; ++ j ) {
 
 					wav2Decode(
 						outBuffer,
@@ -1347,16 +1343,16 @@ class EXRLoader extends DataTextureLoader {
 			applyLut( lut, outBuffer, outBufferEnd );
 
 			// Rearrange the pixel data into the format expected by the caller.
-			var tmpOffset = 0;
-			var tmpBuffer = new Uint8Array( outBuffer.buffer.byteLength );
-			for ( var y = 0; y < info.lines; y ++ ) {
+			let tmpOffset = 0;
+			const tmpBuffer = new Uint8Array( outBuffer.buffer.byteLength );
+			for ( let y = 0; y < info.lines; y ++ ) {
 
-				for ( var c = 0; c < info.channels; c ++ ) {
+				for ( let c = 0; c < info.inputChannels.length; c ++ ) {
 
-					var cd = pizChannelData[ c ];
+					const cd = pizChannelData[ c ];
 
-					var n = cd.nx * cd.size;
-					var cp = new Uint8Array( outBuffer.buffer, cd.end * INT16_SIZE, n * INT16_SIZE );
+					const n = cd.nx * cd.size;
+					const cp = new Uint8Array( outBuffer.buffer, cd.end * INT16_SIZE, n * INT16_SIZE );
 
 					tmpBuffer.set( cp, tmpOffset );
 					tmpOffset += n * INT16_SIZE;
@@ -1372,18 +1368,13 @@ class EXRLoader extends DataTextureLoader {
 
 		function uncompressPXR( info ) {
 
-			var compressed = info.array.slice( info.offset.value, info.offset.value + info.size );
+			const compressed = info.array.slice( info.offset.value, info.offset.value + info.size );
 
-			if ( typeof fflate === 'undefined' ) {
+			const rawBuffer = fflate.unzlibSync( compressed );
 
-				console.error( 'THREE.EXRLoader: External library fflate.min.js required.' );
-
-			}
-
-			var rawBuffer = fflate.unzlibSync( compressed ); // eslint-disable-line no-undef
-
-			const sz = info.lines * info.channels * info.width;
-			const tmpBuffer = ( info.type == 1 ) ? new Uint16Array( sz ) : new Uint32Array( sz );
+			const byteSize = info.inputChannels.length * info.lines * info.columns * info.totalBytes;
+			const tmpBuffer = new ArrayBuffer( byteSize );
+			const viewer = new DataView( tmpBuffer );
 
 			let tmpBufferEnd = 0;
 			let writePtr = 0;
@@ -1391,26 +1382,27 @@ class EXRLoader extends DataTextureLoader {
 
 			for ( let y = 0; y < info.lines; y ++ ) {
 
-				for ( let c = 0; c < info.channels; c ++ ) {
+				for ( let c = 0; c < info.inputChannels.length; c ++ ) {
 
 					let pixel = 0;
 
-					switch ( info.type ) {
+					const type = info.inputChannels[ c ].pixelType;
+					switch ( type ) {
 
 						case 1:
 
 							ptr[ 0 ] = tmpBufferEnd;
-							ptr[ 1 ] = ptr[ 0 ] + info.width;
-							tmpBufferEnd = ptr[ 1 ] + info.width;
+							ptr[ 1 ] = ptr[ 0 ] + info.columns;
+							tmpBufferEnd = ptr[ 1 ] + info.columns;
 
-							for ( let j = 0; j < info.width; ++ j ) {
+							for ( let j = 0; j < info.columns; ++ j ) {
 
 								const diff = ( rawBuffer[ ptr[ 0 ] ++ ] << 8 ) | rawBuffer[ ptr[ 1 ] ++ ];
 
 								pixel += diff;
 
-								tmpBuffer[ writePtr ] = pixel;
-								writePtr ++;
+								viewer.setUint16( writePtr, pixel, true );
+								writePtr += 2;
 
 							}
 
@@ -1419,18 +1411,18 @@ class EXRLoader extends DataTextureLoader {
 						case 2:
 
 							ptr[ 0 ] = tmpBufferEnd;
-							ptr[ 1 ] = ptr[ 0 ] + info.width;
-							ptr[ 2 ] = ptr[ 1 ] + info.width;
-							tmpBufferEnd = ptr[ 2 ] + info.width;
+							ptr[ 1 ] = ptr[ 0 ] + info.columns;
+							ptr[ 2 ] = ptr[ 1 ] + info.columns;
+							tmpBufferEnd = ptr[ 2 ] + info.columns;
 
-							for ( let j = 0; j < info.width; ++ j ) {
+							for ( let j = 0; j < info.columns; ++ j ) {
 
 								const diff = ( rawBuffer[ ptr[ 0 ] ++ ] << 24 ) | ( rawBuffer[ ptr[ 1 ] ++ ] << 16 ) | ( rawBuffer[ ptr[ 2 ] ++ ] << 8 );
 
 								pixel += diff;
 
-								tmpBuffer[ writePtr ] = pixel;
-								writePtr ++;
+								viewer.setUint32( writePtr, pixel, true );
+								writePtr += 4;
 
 							}
 
@@ -1442,18 +1434,18 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			return new DataView( tmpBuffer.buffer );
+			return viewer;
 
 		}
 
 		function uncompressDWA( info ) {
 
-			var inDataView = info.viewer;
-			var inOffset = { value: info.offset.value };
-			var outBuffer = new Uint8Array( info.width * info.lines * ( info.channels * info.type * INT16_SIZE ) );
+			const inDataView = info.viewer;
+			const inOffset = { value: info.offset.value };
+			const outBuffer = new Uint8Array( info.columns * info.lines * ( info.inputChannels.length * info.type * INT16_SIZE ) );
 
 			// Read compression header information
-			var dwaHeader = {
+			const dwaHeader = {
 
 				version: parseInt64( inDataView, inOffset ),
 				unknownUncompressedSize: parseInt64( inDataView, inOffset ),
@@ -1473,17 +1465,17 @@ class EXRLoader extends DataTextureLoader {
 				throw new Error( 'EXRLoader.parse: ' + EXRHeader.compression + ' version ' + dwaHeader.version + ' is unsupported' );
 
 			// Read channel ruleset information
-			var channelRules = new Array();
-			var ruleSize = parseUint16( inDataView, inOffset ) - INT16_SIZE;
+			const channelRules = new Array();
+			let ruleSize = parseUint16( inDataView, inOffset ) - INT16_SIZE;
 
 			while ( ruleSize > 0 ) {
 
-				var name = parseNullTerminatedString( inDataView.buffer, inOffset );
-				var value = parseUint8( inDataView, inOffset );
-				var compression = ( value >> 2 ) & 3;
-				var csc = ( value >> 4 ) - 1;
-				var index = new Int8Array( [ csc ] )[ 0 ];
-				var type = parseUint8( inDataView, inOffset );
+				const name = parseNullTerminatedString( inDataView.buffer, inOffset );
+				const value = parseUint8( inDataView, inOffset );
+				const compression = ( value >> 2 ) & 3;
+				const csc = ( value >> 4 ) - 1;
+				const index = new Int8Array( [ csc ] )[ 0 ];
+				const type = parseUint8( inDataView, inOffset );
 
 				channelRules.push( {
 					name: name,
@@ -1497,35 +1489,35 @@ class EXRLoader extends DataTextureLoader {
 			}
 
 			// Classify channels
-			var channels = EXRHeader.channels;
-			var channelData = new Array( info.channels );
+			const channels = EXRHeader.channels;
+			const channelData = new Array( info.inputChannels.length );
 
-			for ( var i = 0; i < info.channels; ++ i ) {
+			for ( let i = 0; i < info.inputChannels.length; ++ i ) {
 
-				var cd = channelData[ i ] = {};
-				var channel = channels[ i ];
+				const cd = channelData[ i ] = {};
+				const channel = channels[ i ];
 
 				cd.name = channel.name;
 				cd.compression = UNKNOWN;
 				cd.decoded = false;
 				cd.type = channel.pixelType;
 				cd.pLinear = channel.pLinear;
-				cd.width = info.width;
+				cd.width = info.columns;
 				cd.height = info.lines;
 
 			}
 
-			var cscSet = {
+			const cscSet = {
 				idx: new Array( 3 )
 			};
 
-			for ( var offset = 0; offset < info.channels; ++ offset ) {
+			for ( let offset = 0; offset < info.inputChannels.length; ++ offset ) {
 
-				var cd = channelData[ offset ];
+				const cd = channelData[ offset ];
 
-				for ( var i = 0; i < channelRules.length; ++ i ) {
+				for ( let i = 0; i < channelRules.length; ++ i ) {
 
-					var rule = channelRules[ i ];
+					const rule = channelRules[ i ];
 
 					if ( cd.name == rule.name ) {
 
@@ -1545,6 +1537,8 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
+			let acBuffer, dcBuffer, rleBuffer;
+
 			// Read DCT - AC component data
 			if ( dwaHeader.acCompressedSize > 0 ) {
 
@@ -1552,15 +1546,15 @@ class EXRLoader extends DataTextureLoader {
 
 					case STATIC_HUFFMAN:
 
-						var acBuffer = new Uint16Array( dwaHeader.totalAcUncompressedCount );
+						acBuffer = new Uint16Array( dwaHeader.totalAcUncompressedCount );
 						hufUncompress( info.array, inDataView, inOffset, dwaHeader.acCompressedSize, acBuffer, dwaHeader.totalAcUncompressedCount );
 						break;
 
 					case DEFLATE:
 
-						var compressed = info.array.slice( inOffset.value, inOffset.value + dwaHeader.totalAcUncompressedCount );
-						var data = fflate.unzlibSync( compressed ); // eslint-disable-line no-undef
-						var acBuffer = new Uint16Array( data.buffer );
+						const compressed = info.array.slice( inOffset.value, inOffset.value + dwaHeader.totalAcUncompressedCount );
+						const data = fflate.unzlibSync( compressed );
+						acBuffer = new Uint16Array( data.buffer );
 						inOffset.value += dwaHeader.totalAcUncompressedCount;
 						break;
 
@@ -1572,12 +1566,12 @@ class EXRLoader extends DataTextureLoader {
 			// Read DCT - DC component data
 			if ( dwaHeader.dcCompressedSize > 0 ) {
 
-				var zlibInfo = {
+				const zlibInfo = {
 					array: info.array,
 					offset: inOffset,
 					size: dwaHeader.dcCompressedSize
 				};
-				var dcBuffer = new Uint16Array( uncompressZIP( zlibInfo ).buffer );
+				dcBuffer = new Uint16Array( uncompressZIP( zlibInfo ).buffer );
 				inOffset.value += dwaHeader.dcCompressedSize;
 
 			}
@@ -1585,26 +1579,26 @@ class EXRLoader extends DataTextureLoader {
 			// Read RLE compressed data
 			if ( dwaHeader.rleRawSize > 0 ) {
 
-				var compressed = info.array.slice( inOffset.value, inOffset.value + dwaHeader.rleCompressedSize );
-				var data = fflate.unzlibSync( compressed ); // eslint-disable-line no-undef
-				var rleBuffer = decodeRunLength( data.buffer );
+				const compressed = info.array.slice( inOffset.value, inOffset.value + dwaHeader.rleCompressedSize );
+				const data = fflate.unzlibSync( compressed );
+				rleBuffer = decodeRunLength( data.buffer );
 
 				inOffset.value += dwaHeader.rleCompressedSize;
 
 			}
 
 			// Prepare outbuffer data offset
-			var outBufferEnd = 0;
-			var rowOffsets = new Array( channelData.length );
-			for ( var i = 0; i < rowOffsets.length; ++ i ) {
+			let outBufferEnd = 0;
+			const rowOffsets = new Array( channelData.length );
+			for ( let i = 0; i < rowOffsets.length; ++ i ) {
 
 				rowOffsets[ i ] = new Array();
 
 			}
 
-			for ( var y = 0; y < info.lines; ++ y ) {
+			for ( let y = 0; y < info.lines; ++ y ) {
 
-				for ( var chan = 0; chan < channelData.length; ++ chan ) {
+				for ( let chan = 0; chan < channelData.length; ++ chan ) {
 
 					rowOffsets[ chan ].push( outBufferEnd );
 					outBufferEnd += channelData[ chan ].width * info.type * INT16_SIZE;
@@ -1617,9 +1611,9 @@ class EXRLoader extends DataTextureLoader {
 			lossyDctDecode( cscSet, rowOffsets, channelData, acBuffer, dcBuffer, outBuffer );
 
 			// Decode other channels
-			for ( var i = 0; i < channelData.length; ++ i ) {
+			for ( let i = 0; i < channelData.length; ++ i ) {
 
-				var cd = channelData[ i ];
+				const cd = channelData[ i ];
 
 				if ( cd.decoded ) continue;
 
@@ -1627,16 +1621,16 @@ class EXRLoader extends DataTextureLoader {
 
 					case RLE:
 
-						var row = 0;
-						var rleOffset = 0;
+						let row = 0;
+						let rleOffset = 0;
 
-						for ( var y = 0; y < info.lines; ++ y ) {
+						for ( let y = 0; y < info.lines; ++ y ) {
 
-							var rowOffsetBytes = rowOffsets[ i ][ row ];
+							let rowOffsetBytes = rowOffsets[ i ][ row ];
 
-							for ( var x = 0; x < cd.width; ++ x ) {
+							for ( let x = 0; x < cd.width; ++ x ) {
 
-								for ( var byte = 0; byte < INT16_SIZE * cd.type; ++ byte ) {
+								for ( let byte = 0; byte < INT16_SIZE * cd.type; ++ byte ) {
 
 									outBuffer[ rowOffsetBytes ++ ] = rleBuffer[ rleOffset + byte * cd.width * cd.height ];
 
@@ -1667,8 +1661,8 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseNullTerminatedString( buffer, offset ) {
 
-			var uintBuffer = new Uint8Array( buffer );
-			var endOffset = 0;
+			const uintBuffer = new Uint8Array( buffer );
+			let endOffset = 0;
 
 			while ( uintBuffer[ offset.value + endOffset ] != 0 ) {
 
@@ -1676,7 +1670,7 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			var stringValue = new TextDecoder().decode(
+			const stringValue = new TextDecoder().decode(
 				uintBuffer.slice( offset.value, offset.value + endOffset )
 			);
 
@@ -1688,7 +1682,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseFixedLengthString( buffer, offset, size ) {
 
-			var stringValue = new TextDecoder().decode(
+			const stringValue = new TextDecoder().decode(
 				new Uint8Array( buffer ).slice( offset.value, offset.value + size )
 			);
 
@@ -1700,8 +1694,8 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseRational( dataView, offset ) {
 
-			var x = parseInt32( dataView, offset );
-			var y = parseUint32( dataView, offset );
+			const x = parseInt32( dataView, offset );
+			const y = parseUint32( dataView, offset );
 
 			return [ x, y ];
 
@@ -1709,8 +1703,8 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseTimecode( dataView, offset ) {
 
-			var x = parseUint32( dataView, offset );
-			var y = parseUint32( dataView, offset );
+			const x = parseUint32( dataView, offset );
+			const y = parseUint32( dataView, offset );
 
 			return [ x, y ];
 
@@ -1718,7 +1712,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseInt32( dataView, offset ) {
 
-			var Int32 = dataView.getInt32( offset.value, true );
+			const Int32 = dataView.getInt32( offset.value, true );
 
 			offset.value = offset.value + INT32_SIZE;
 
@@ -1728,7 +1722,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseUint32( dataView, offset ) {
 
-			var Uint32 = dataView.getUint32( offset.value, true );
+			const Uint32 = dataView.getUint32( offset.value, true );
 
 			offset.value = offset.value + INT32_SIZE;
 
@@ -1738,7 +1732,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseUint8Array( uInt8Array, offset ) {
 
-			var Uint8 = uInt8Array[ offset.value ];
+			const Uint8 = uInt8Array[ offset.value ];
 
 			offset.value = offset.value + INT8_SIZE;
 
@@ -1748,7 +1742,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseUint8( dataView, offset ) {
 
-			var Uint8 = dataView.getUint8( offset.value );
+			const Uint8 = dataView.getUint8( offset.value );
 
 			offset.value = offset.value + INT8_SIZE;
 
@@ -1778,7 +1772,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseFloat32( dataView, offset ) {
 
-			var float = dataView.getFloat32( offset.value, true );
+			const float = dataView.getFloat32( offset.value, true );
 
 			offset.value += FLOAT32_SIZE;
 
@@ -1795,7 +1789,7 @@ class EXRLoader extends DataTextureLoader {
 		// https://stackoverflow.com/questions/5678432/decompressing-half-precision-floats-in-javascript
 		function decodeFloat16( binary ) {
 
-			var exponent = ( binary & 0x7C00 ) >> 10,
+			const exponent = ( binary & 0x7C00 ) >> 10,
 				fraction = binary & 0x03FF;
 
 			return ( binary >> 15 ? - 1 : 1 ) * (
@@ -1812,7 +1806,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseUint16( dataView, offset ) {
 
-			var Uint16 = dataView.getUint16( offset.value, true );
+			const Uint16 = dataView.getUint16( offset.value, true );
 
 			offset.value += INT16_SIZE;
 
@@ -1828,17 +1822,17 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseChlist( dataView, buffer, offset, size ) {
 
-			var startOffset = offset.value;
-			var channels = [];
+			const startOffset = offset.value;
+			const channels = [];
 
 			while ( offset.value < ( startOffset + size - 1 ) ) {
 
-				var name = parseNullTerminatedString( buffer, offset );
-				var pixelType = parseInt32( dataView, offset );
-				var pLinear = parseUint8( dataView, offset );
+				const name = parseNullTerminatedString( buffer, offset );
+				const pixelType = parseInt32( dataView, offset );
+				const pLinear = parseUint8( dataView, offset );
 				offset.value += 3; // reserved, three chars
-				var xSampling = parseInt32( dataView, offset );
-				var ySampling = parseInt32( dataView, offset );
+				const xSampling = parseInt32( dataView, offset );
+				const ySampling = parseInt32( dataView, offset );
 
 				channels.push( {
 					name: name,
@@ -1858,14 +1852,14 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseChromaticities( dataView, offset ) {
 
-			var redX = parseFloat32( dataView, offset );
-			var redY = parseFloat32( dataView, offset );
-			var greenX = parseFloat32( dataView, offset );
-			var greenY = parseFloat32( dataView, offset );
-			var blueX = parseFloat32( dataView, offset );
-			var blueY = parseFloat32( dataView, offset );
-			var whiteX = parseFloat32( dataView, offset );
-			var whiteY = parseFloat32( dataView, offset );
+			const redX = parseFloat32( dataView, offset );
+			const redY = parseFloat32( dataView, offset );
+			const greenX = parseFloat32( dataView, offset );
+			const greenY = parseFloat32( dataView, offset );
+			const blueX = parseFloat32( dataView, offset );
+			const blueY = parseFloat32( dataView, offset );
+			const whiteX = parseFloat32( dataView, offset );
+			const whiteY = parseFloat32( dataView, offset );
 
 			return { redX: redX, redY: redY, greenX: greenX, greenY: greenY, blueX: blueX, blueY: blueY, whiteX: whiteX, whiteY: whiteY };
 
@@ -1873,7 +1867,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseCompression( dataView, offset ) {
 
-			var compressionCodes = [
+			const compressionCodes = [
 				'NO_COMPRESSION',
 				'RLE_COMPRESSION',
 				'ZIPS_COMPRESSION',
@@ -1886,7 +1880,7 @@ class EXRLoader extends DataTextureLoader {
 				'DWAB_COMPRESSION'
 			];
 
-			var compression = parseUint8( dataView, offset );
+			const compression = parseUint8( dataView, offset );
 
 			return compressionCodes[ compression ];
 
@@ -1894,10 +1888,10 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseBox2i( dataView, offset ) {
 
-			var xMin = parseUint32( dataView, offset );
-			var yMin = parseUint32( dataView, offset );
-			var xMax = parseUint32( dataView, offset );
-			var yMax = parseUint32( dataView, offset );
+			const xMin = parseInt32( dataView, offset );
+			const yMin = parseInt32( dataView, offset );
+			const xMax = parseInt32( dataView, offset );
+			const yMax = parseInt32( dataView, offset );
 
 			return { xMin: xMin, yMin: yMin, xMax: xMax, yMax: yMax };
 
@@ -1905,20 +1899,61 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseLineOrder( dataView, offset ) {
 
-			var lineOrders = [
-				'INCREASING_Y'
+			const lineOrders = [
+				'INCREASING_Y',
+				'DECREASING_Y',
+				'RANDOM_Y',
 			];
 
-			var lineOrder = parseUint8( dataView, offset );
+			const lineOrder = parseUint8( dataView, offset );
 
 			return lineOrders[ lineOrder ];
 
 		}
 
+		function parseEnvmap( dataView, offset ) {
+
+			const envmaps = [
+				'ENVMAP_LATLONG',
+				'ENVMAP_CUBE'
+			];
+
+			const envmap = parseUint8( dataView, offset );
+
+			return envmaps[ envmap ];
+
+		}
+
+		function parseTiledesc( dataView, offset ) {
+
+			const levelModes = [
+				'ONE_LEVEL',
+				'MIPMAP_LEVELS',
+				'RIPMAP_LEVELS',
+			];
+
+			const roundingModes = [
+				'ROUND_DOWN',
+				'ROUND_UP',
+			];
+
+			const xSize = parseUint32( dataView, offset );
+			const ySize = parseUint32( dataView, offset );
+			const modes = parseUint8( dataView, offset );
+
+			return {
+				xSize: xSize,
+				ySize: ySize,
+				levelMode: levelModes[ modes & 0xf ],
+				roundingMode: roundingModes[ modes >> 4 ]
+			};
+
+		}
+
 		function parseV2f( dataView, offset ) {
 
-			var x = parseFloat32( dataView, offset );
-			var y = parseFloat32( dataView, offset );
+			const x = parseFloat32( dataView, offset );
+			const y = parseFloat32( dataView, offset );
 
 			return [ x, y ];
 
@@ -1926,9 +1961,9 @@ class EXRLoader extends DataTextureLoader {
 
 		function parseV3f( dataView, offset ) {
 
-			var x = parseFloat32( dataView, offset );
-			var y = parseFloat32( dataView, offset );
-			var z = parseFloat32( dataView, offset );
+			const x = parseFloat32( dataView, offset );
+			const y = parseFloat32( dataView, offset );
+			const z = parseFloat32( dataView, offset );
 
 			return [ x, y, z ];
 
@@ -1955,6 +1990,14 @@ class EXRLoader extends DataTextureLoader {
 			} else if ( type === 'box2i' ) {
 
 				return parseBox2i( dataView, offset );
+
+			} else if ( type === 'envmap' ) {
+
+				return parseEnvmap( dataView, offset );
+
+			} else if ( type === 'tiledesc' ) {
+
+				return parseTiledesc( dataView, offset );
 
 			} else if ( type === 'lineOrder' ) {
 
@@ -1998,13 +2041,170 @@ class EXRLoader extends DataTextureLoader {
 
 		}
 
+		function roundLog2( x, mode ) {
+
+			const log2 = Math.log2( x );
+			return mode == 'ROUND_DOWN' ? Math.floor( log2 ) : Math.ceil( log2 );
+
+		}
+
+		function calculateTileLevels( tiledesc, w, h ) {
+
+			let num = 0;
+
+			switch ( tiledesc.levelMode ) {
+
+				case 'ONE_LEVEL':
+					num = 1;
+					break;
+
+				case 'MIPMAP_LEVELS':
+					num = roundLog2( Math.max( w, h ), tiledesc.roundingMode ) + 1;
+					break;
+
+				case 'RIPMAP_LEVELS':
+					throw new Error( 'THREE.EXRLoader: RIPMAP_LEVELS tiles currently unsupported.' );
+
+			}
+
+			return num;
+
+		}
+
+		function calculateTiles( count, dataSize, size, roundingMode ) {
+
+			const tiles = new Array( count );
+
+			for ( let i = 0; i < count; i ++ ) {
+
+				const b = ( 1 << i );
+				let s = ( dataSize / b ) | 0;
+
+				if ( roundingMode == 'ROUND_UP' && s * b < dataSize ) s += 1;
+
+				const l = Math.max( s, 1 );
+
+				tiles[ i ] = ( ( l + size - 1 ) / size ) | 0;
+
+			}
+
+			return tiles;
+
+		}
+
+		function parseTiles() {
+
+			const EXRDecoder = this;
+			const offset = EXRDecoder.offset;
+			const tmpOffset = { value: 0 };
+
+			for ( let tile = 0; tile < EXRDecoder.tileCount; tile ++ ) {
+
+				const tileX = parseInt32( EXRDecoder.viewer, offset );
+				const tileY = parseInt32( EXRDecoder.viewer, offset );
+				offset.value += 8; // skip levels - only parsing top-level
+				EXRDecoder.size = parseUint32( EXRDecoder.viewer, offset );
+
+				const startX = tileX * EXRDecoder.blockWidth;
+				const startY = tileY * EXRDecoder.blockHeight;
+				EXRDecoder.columns = ( startX + EXRDecoder.blockWidth > EXRDecoder.width ) ? EXRDecoder.width - startX : EXRDecoder.blockWidth;
+				EXRDecoder.lines = ( startY + EXRDecoder.blockHeight > EXRDecoder.height ) ? EXRDecoder.height - startY : EXRDecoder.blockHeight;
+
+				const bytesBlockLine = EXRDecoder.columns * EXRDecoder.totalBytes;
+				const isCompressed = EXRDecoder.size < EXRDecoder.lines * bytesBlockLine;
+				const viewer = isCompressed ? EXRDecoder.uncompress( EXRDecoder ) : uncompressRAW( EXRDecoder );
+
+				offset.value += EXRDecoder.size;
+
+				for ( let line = 0; line < EXRDecoder.lines; line ++ ) {
+
+					const lineOffset = line * EXRDecoder.columns * EXRDecoder.totalBytes;
+
+					for ( let channelID = 0; channelID < EXRDecoder.inputChannels.length; channelID ++ ) {
+
+						const name = EXRHeader.channels[ channelID ].name;
+						const lOff = EXRDecoder.channelByteOffsets[ name ] * EXRDecoder.columns;
+						const cOff = EXRDecoder.decodeChannels[ name ];
+
+						if ( cOff === undefined ) continue;
+
+						tmpOffset.value = lineOffset + lOff;
+						const outLineOffset = ( EXRDecoder.height - ( 1 + startY + line ) ) * EXRDecoder.outLineWidth;
+
+						for ( let x = 0; x < EXRDecoder.columns; x ++ ) {
+
+							const outIndex = outLineOffset + ( x + startX ) * EXRDecoder.outputChannels + cOff;
+							EXRDecoder.byteArray[ outIndex ] = EXRDecoder.getter( viewer, tmpOffset );
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+		function parseScanline() {
+
+			const EXRDecoder = this;
+			const offset = EXRDecoder.offset;
+			const tmpOffset = { value: 0 };
+
+			for ( let scanlineBlockIdx = 0; scanlineBlockIdx < EXRDecoder.height / EXRDecoder.blockHeight; scanlineBlockIdx ++ ) {
+
+				const line = parseInt32( EXRDecoder.viewer, offset ) - EXRHeader.dataWindow.yMin; // line_no
+				EXRDecoder.size = parseUint32( EXRDecoder.viewer, offset ); // data_len
+				EXRDecoder.lines = ( ( line + EXRDecoder.blockHeight > EXRDecoder.height ) ? ( EXRDecoder.height - line ) : EXRDecoder.blockHeight );
+
+				const bytesPerLine = EXRDecoder.columns * EXRDecoder.totalBytes;
+				const isCompressed = EXRDecoder.size < EXRDecoder.lines * bytesPerLine;
+				const viewer = isCompressed ? EXRDecoder.uncompress( EXRDecoder ) : uncompressRAW( EXRDecoder );
+
+				offset.value += EXRDecoder.size;
+
+				for ( let line_y = 0; line_y < EXRDecoder.blockHeight; line_y ++ ) {
+
+					const scan_y = scanlineBlockIdx * EXRDecoder.blockHeight;
+					const true_y = line_y + EXRDecoder.scanOrder( scan_y );
+					if ( true_y >= EXRDecoder.height ) continue;
+
+					const lineOffset = line_y * bytesPerLine;
+					const outLineOffset = ( EXRDecoder.height - 1 - true_y ) * EXRDecoder.outLineWidth;
+
+					for ( let channelID = 0; channelID < EXRDecoder.inputChannels.length; channelID ++ ) {
+
+						const name = EXRHeader.channels[ channelID ].name;
+						const lOff = EXRDecoder.channelByteOffsets[ name ] * EXRDecoder.columns;
+						const cOff = EXRDecoder.decodeChannels[ name ];
+
+						if ( cOff === undefined ) continue;
+
+						tmpOffset.value = lineOffset + lOff;
+
+						for ( let x = 0; x < EXRDecoder.columns; x ++ ) {
+
+							const outIndex = outLineOffset + x * EXRDecoder.outputChannels + cOff;
+							EXRDecoder.byteArray[ outIndex ] = EXRDecoder.getter( viewer, tmpOffset );
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
 		function parseHeader( dataView, buffer, offset ) {
 
 			const EXRHeader = {};
 
 			if ( dataView.getUint32( 0, true ) != 20000630 ) { // magic
 
-				throw new Error( 'THREE.EXRLoader: provided file doesn\'t appear to be in OpenEXR format.' );
+				throw new Error( 'THREE.EXRLoader: Provided file doesn\'t appear to be in OpenEXR format.' );
 
 			}
 
@@ -2023,11 +2223,11 @@ class EXRLoader extends DataTextureLoader {
 
 			offset.value = 8; // start at 8 - after pre-amble
 
-			var keepReading = true;
+			let keepReading = true;
 
 			while ( keepReading ) {
 
-				var attributeName = parseNullTerminatedString( buffer, offset );
+				const attributeName = parseNullTerminatedString( buffer, offset );
 
 				if ( attributeName == 0 ) {
 
@@ -2035,13 +2235,13 @@ class EXRLoader extends DataTextureLoader {
 
 				} else {
 
-					var attributeType = parseNullTerminatedString( buffer, offset );
-					var attributeSize = parseUint32( dataView, offset );
-					var attributeValue = parseValue( dataView, buffer, offset, attributeType, attributeSize );
+					const attributeType = parseNullTerminatedString( buffer, offset );
+					const attributeSize = parseUint32( dataView, offset );
+					const attributeValue = parseValue( dataView, buffer, offset, attributeType, attributeSize );
 
 					if ( attributeValue === undefined ) {
 
-						console.warn( `EXRLoader.parse: skipped unknown header attribute type \'${attributeType}\'.` );
+						console.warn( `THREE.EXRLoader: Skipped unknown header attribute type \'${attributeType}\'.` );
 
 					} else {
 
@@ -2053,10 +2253,10 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			if ( spec != 0 ) {
+			if ( ( spec & ~ 0x06 ) != 0 ) { // unsupported deep-image, multi-part
 
-				console.error( 'EXRHeader:', EXRHeader );
-				throw new Error( 'THREE.EXRLoader: provided file is currently unsupported.' );
+				console.error( 'THREE.EXRHeader:', EXRHeader );
+				throw new Error( 'THREE.EXRLoader: Provided file is currently unsupported.' );
 
 			}
 
@@ -2073,56 +2273,58 @@ class EXRLoader extends DataTextureLoader {
 				offset: offset,
 				width: EXRHeader.dataWindow.xMax - EXRHeader.dataWindow.xMin + 1,
 				height: EXRHeader.dataWindow.yMax - EXRHeader.dataWindow.yMin + 1,
-				channels: EXRHeader.channels.length,
-				bytesPerLine: null,
+				inputChannels: EXRHeader.channels,
+				channelByteOffsets: {},
+				scanOrder: null,
+				totalBytes: null,
+				columns: null,
 				lines: null,
-				inputSize: null,
-				type: EXRHeader.channels[ 0 ].pixelType,
+				type: null,
 				uncompress: null,
 				getter: null,
 				format: null,
-				encoding: null,
+				colorSpace: LinearSRGBColorSpace,
 			};
 
 			switch ( EXRHeader.compression ) {
 
 				case 'NO_COMPRESSION':
-					EXRDecoder.lines = 1;
+					EXRDecoder.blockHeight = 1;
 					EXRDecoder.uncompress = uncompressRAW;
 					break;
 
 				case 'RLE_COMPRESSION':
-					EXRDecoder.lines = 1;
+					EXRDecoder.blockHeight = 1;
 					EXRDecoder.uncompress = uncompressRLE;
 					break;
 
 				case 'ZIPS_COMPRESSION':
-					EXRDecoder.lines = 1;
+					EXRDecoder.blockHeight = 1;
 					EXRDecoder.uncompress = uncompressZIP;
 					break;
 
 				case 'ZIP_COMPRESSION':
-					EXRDecoder.lines = 16;
+					EXRDecoder.blockHeight = 16;
 					EXRDecoder.uncompress = uncompressZIP;
 					break;
 
 				case 'PIZ_COMPRESSION':
-					EXRDecoder.lines = 32;
+					EXRDecoder.blockHeight = 32;
 					EXRDecoder.uncompress = uncompressPIZ;
 					break;
 
 				case 'PXR24_COMPRESSION':
-					EXRDecoder.lines = 16;
+					EXRDecoder.blockHeight = 16;
 					EXRDecoder.uncompress = uncompressPXR;
 					break;
 
 				case 'DWAA_COMPRESSION':
-					EXRDecoder.lines = 32;
+					EXRDecoder.blockHeight = 32;
 					EXRDecoder.uncompress = uncompressDWA;
 					break;
 
 				case 'DWAB_COMPRESSION':
-					EXRDecoder.lines = 256;
+					EXRDecoder.blockHeight = 256;
 					EXRDecoder.uncompress = uncompressDWA;
 					break;
 
@@ -2131,7 +2333,42 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			EXRDecoder.scanlineBlockSize = EXRDecoder.lines;
+			const channels = {};
+			for ( const channel of EXRHeader.channels ) {
+
+				switch ( channel.name ) {
+
+					case 'Y':
+					case 'R':
+					case 'G':
+					case 'B':
+					case 'A':
+						channels[ channel.name ] = true;
+						EXRDecoder.type = channel.pixelType;
+
+				}
+
+			}
+
+			// RGB images will be converted to RGBA format, preventing software emulation in select devices.
+			let fillAlpha = false;
+
+			if ( channels.R && channels.G && channels.B ) {
+
+				fillAlpha = ! channels.A;
+				EXRDecoder.outputChannels = 4;
+				EXRDecoder.decodeChannels = { R: 0, G: 1, B: 2, A: 3 };
+
+			} else if ( channels.Y ) {
+
+				EXRDecoder.outputChannels = 1;
+				EXRDecoder.decodeChannels = { Y: 0 };
+
+			} else {
+
+				throw new Error( 'EXRLoader.parse: file contains unsupported data channels.' );
+
+			}
 
 			if ( EXRDecoder.type == 1 ) {
 
@@ -2140,12 +2377,10 @@ class EXRLoader extends DataTextureLoader {
 
 					case FloatType:
 						EXRDecoder.getter = parseFloat16;
-						EXRDecoder.inputSize = INT16_SIZE;
 						break;
 
 					case HalfFloatType:
 						EXRDecoder.getter = parseUint16;
-						EXRDecoder.inputSize = INT16_SIZE;
 						break;
 
 				}
@@ -2157,12 +2392,10 @@ class EXRLoader extends DataTextureLoader {
 
 					case FloatType:
 						EXRDecoder.getter = parseFloat32;
-						EXRDecoder.inputSize = FLOAT32_SIZE;
 						break;
 
 					case HalfFloatType:
 						EXRDecoder.getter = decodeFloat32;
-						EXRDecoder.inputSize = FLOAT32_SIZE;
 
 				}
 
@@ -2172,15 +2405,7 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			EXRDecoder.blockCount = ( EXRHeader.dataWindow.yMax + 1 ) / EXRDecoder.scanlineBlockSize;
-
-			for ( var i = 0; i < EXRDecoder.blockCount; i ++ )
-				parseInt64( dataView, offset ); // scanlineOffset
-
-			// we should be passed the scanline offset table, ready to start reading pixel data.
-
-			// RGB images will be converted to RGBA format, preventing software emulation in select devices.
-			EXRDecoder.outputChannels = ( ( EXRDecoder.channels == 3 ) ? 4 : EXRDecoder.channels );
+			EXRDecoder.columns = EXRDecoder.width;
 			const size = EXRDecoder.width * EXRDecoder.height * EXRDecoder.outputChannels;
 
 			switch ( outputType ) {
@@ -2189,7 +2414,7 @@ class EXRLoader extends DataTextureLoader {
 					EXRDecoder.byteArray = new Float32Array( size );
 
 					// Fill initially with 1s for the alpha value if the texture is not RGBA, RGB values will be overwritten
-					if ( EXRDecoder.channels < EXRDecoder.outputChannels )
+					if ( fillAlpha )
 						EXRDecoder.byteArray.fill( 1, 0, size );
 
 					break;
@@ -2197,7 +2422,7 @@ class EXRLoader extends DataTextureLoader {
 				case HalfFloatType:
 					EXRDecoder.byteArray = new Uint16Array( size );
 
-					if ( EXRDecoder.channels < EXRDecoder.outputChannels )
+					if ( fillAlpha )
 						EXRDecoder.byteArray.fill( 0x3C00, 0, size ); // Uint16Array holds half float data, 0x3C00 is 1
 
 					break;
@@ -2208,17 +2433,73 @@ class EXRLoader extends DataTextureLoader {
 
 			}
 
-			EXRDecoder.bytesPerLine = EXRDecoder.width * EXRDecoder.inputSize * EXRDecoder.channels;
+			let byteOffset = 0;
+			for ( const channel of EXRHeader.channels ) {
+
+				if ( EXRDecoder.decodeChannels[ channel.name ] !== undefined ) {
+
+					EXRDecoder.channelByteOffsets[ channel.name ] = byteOffset;
+
+				}
+
+				byteOffset += channel.pixelType * 2;
+
+			}
+
+			EXRDecoder.totalBytes = byteOffset;
+			EXRDecoder.outLineWidth = EXRDecoder.width * EXRDecoder.outputChannels;
+
+			if ( EXRHeader.lineOrder === 'INCREASING_Y' ) {
+
+				EXRDecoder.scanOrder = ( y ) => y;
+
+			} else {
+
+				EXRDecoder.scanOrder = ( y ) => EXRDecoder.height - 1 - y;
+
+			}
 
 			if ( EXRDecoder.outputChannels == 4 ) {
 
 				EXRDecoder.format = RGBAFormat;
-				EXRDecoder.encoding = LinearEncoding;
+				EXRDecoder.colorSpace = LinearSRGBColorSpace;
 
 			} else {
 
 				EXRDecoder.format = RedFormat;
-				EXRDecoder.encoding = LinearEncoding;
+				EXRDecoder.colorSpace = NoColorSpace;
+
+			}
+
+			if ( EXRHeader.spec.singleTile ) {
+
+				EXRDecoder.blockHeight = EXRHeader.tiles.ySize;
+				EXRDecoder.blockWidth = EXRHeader.tiles.xSize;
+
+				const numXLevels = calculateTileLevels( EXRHeader.tiles, EXRDecoder.width, EXRDecoder.height );
+				// const numYLevels = calculateTileLevels( EXRHeader.tiles, EXRDecoder.width, EXRDecoder.height );
+
+				const numXTiles = calculateTiles( numXLevels, EXRDecoder.width, EXRHeader.tiles.xSize, EXRHeader.tiles.roundingMode );
+				const numYTiles = calculateTiles( numXLevels, EXRDecoder.height, EXRHeader.tiles.ySize, EXRHeader.tiles.roundingMode );
+
+				EXRDecoder.tileCount = numXTiles[ 0 ] * numYTiles[ 0 ];
+
+				for ( let l = 0; l < numXLevels; l ++ )
+					for ( let y = 0; y < numYTiles[ l ]; y ++ )
+						for ( let x = 0; x < numXTiles[ l ]; x ++ )
+							parseInt64( dataView, offset ); // tileOffset
+
+				EXRDecoder.decode = parseTiles.bind( EXRDecoder );
+
+			} else {
+
+				EXRDecoder.blockWidth = EXRDecoder.width;
+				const blockCount = Math.ceil( EXRDecoder.height / EXRDecoder.blockHeight );
+
+				for ( let i = 0; i < blockCount; i ++ )
+					parseInt64( dataView, offset ); // scanlineOffset
+
+				EXRDecoder.decode = parseScanline.bind( EXRDecoder );
 
 			}
 
@@ -2227,10 +2508,9 @@ class EXRLoader extends DataTextureLoader {
 		}
 
 		// start parsing file [START]
-
+		const offset = { value: 0 };
 		const bufferDataView = new DataView( buffer );
 		const uInt8Array = new Uint8Array( buffer );
-		const offset = { value: 0 };
 
 		// get header information and validate format.
 		const EXRHeader = parseHeader( bufferDataView, buffer, offset );
@@ -2238,42 +2518,8 @@ class EXRLoader extends DataTextureLoader {
 		// get input compression information and prepare decoding.
 		const EXRDecoder = setupDecoder( EXRHeader, bufferDataView, uInt8Array, offset, this.type );
 
-		const tmpOffset = { value: 0 };
-		const channelOffsets = { R: 0, G: 1, B: 2, A: 3, Y: 0 };
-
-		for ( let scanlineBlockIdx = 0; scanlineBlockIdx < EXRDecoder.height / EXRDecoder.scanlineBlockSize; scanlineBlockIdx ++ ) {
-
-			const line = parseUint32( bufferDataView, offset ); // line_no
-			EXRDecoder.size = parseUint32( bufferDataView, offset ); // data_len
-			EXRDecoder.lines = ( ( line + EXRDecoder.scanlineBlockSize > EXRDecoder.height ) ? ( EXRDecoder.height - line ) : EXRDecoder.scanlineBlockSize );
-
-			const isCompressed = EXRDecoder.size < EXRDecoder.lines * EXRDecoder.bytesPerLine;
-			const viewer = isCompressed ? EXRDecoder.uncompress( EXRDecoder ) : uncompressRAW( EXRDecoder );
-
-			offset.value += EXRDecoder.size;
-
-			for ( let line_y = 0; line_y < EXRDecoder.scanlineBlockSize; line_y ++ ) {
-
-				const true_y = line_y + scanlineBlockIdx * EXRDecoder.scanlineBlockSize;
-				if ( true_y >= EXRDecoder.height ) break;
-
-				for ( let channelID = 0; channelID < EXRDecoder.channels; channelID ++ ) {
-
-					const cOff = channelOffsets[ EXRHeader.channels[ channelID ].name ];
-
-					for ( let x = 0; x < EXRDecoder.width; x ++ ) {
-
-						tmpOffset.value = ( line_y * ( EXRDecoder.channels * EXRDecoder.width ) + channelID * EXRDecoder.width + x ) * EXRDecoder.inputSize;
-						const outIndex = ( EXRDecoder.height - 1 - true_y ) * ( EXRDecoder.width * EXRDecoder.outputChannels ) + x * EXRDecoder.outputChannels + cOff;
-						EXRDecoder.byteArray[ outIndex ] = EXRDecoder.getter( viewer, tmpOffset );
-
-					}
-
-				}
-
-			}
-
-		}
+		// parse input data
+		EXRDecoder.decode();
 
 		return {
 			header: EXRHeader,
@@ -2281,7 +2527,7 @@ class EXRLoader extends DataTextureLoader {
 			height: EXRDecoder.height,
 			data: EXRDecoder.byteArray,
 			format: EXRDecoder.format,
-			encoding: EXRDecoder.encoding,
+			colorSpace: EXRDecoder.colorSpace,
 			type: this.type,
 		};
 
@@ -2298,7 +2544,7 @@ class EXRLoader extends DataTextureLoader {
 
 		function onLoadCallback( texture, texData ) {
 
-			texture.encoding = texData.encoding;
+			texture.colorSpace = texData.colorSpace;
 			texture.minFilter = LinearFilter;
 			texture.magFilter = LinearFilter;
 			texture.generateMipmaps = false;

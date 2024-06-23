@@ -228,12 +228,12 @@
 		#box {
 			text-align: center;
 			width: 100%;
+      height: 600px;
 		}
-		#c {
-			float: center;
-			width: 100%;
-			height: 540px;
-		}
+    canvas[data-engine="three.js r165"] {
+    width: 100%;
+    height: 100%; /* Make the canvas fill the parent div */
+  }
 </style>
 
 <p>这是一个突发奇想的项目。</p>
@@ -255,12 +255,7 @@
 
 <p>为了增加可玩性，这个礼物还包含了一个可以直接在手机上观看的AR模型，在寻找更便捷的实现方式时，无意中发现了 <strong>Three.js</strong> 这个脚本语言。虽然最终还是决定使用苹果官方的 Reality Converter 把模型转换为可以直接在苹果手机上打开的AR模型，但我也顺手学了如何在 Web 网站上显示可交互的 3D 模型的方法。这个意外的插曲也让我成功为公司的虚拟人项目做了一点点贡献。</p>
 
-<div id="box">
-		<canvas id="c"></canvas>
-  	<p>
-     这是一个可以用鼠标放大缩小的模型～
-  </p>
-</div>
+<div id="box"></div>
 
 <div class="row" style="margin-bottom:16px;">
 <div class="col-sm-6">
