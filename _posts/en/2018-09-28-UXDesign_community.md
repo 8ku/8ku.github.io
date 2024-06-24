@@ -60,7 +60,7 @@ The reasons for choosing these three functional modules are very obvious. The **
 
 After finalizing the core content, I proceed with prototyping using the previously created concept map.
 
-#### 产品原型草图
+#### Product prototype sketch
 
 ![community03]({{ site.baseurl }}/assets/images/UI/community03.jpg)
 
@@ -108,4 +108,4 @@ This attempt is a bit ambitious. Many people who have seen the planning draft sa
 
 
 
-[相关经历](https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey)
+[Relevant Journey](https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey)
