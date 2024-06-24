@@ -5,8 +5,8 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jun 2024 11:46:02 +0800</pubDate>
-    <lastBuildDate>Sun, 23 Jun 2024 11:46:02 +0800</lastBuildDate>
+    <pubDate>Mon, 24 Jun 2024 11:09:39 +0800</pubDate>
+    <lastBuildDate>Mon, 24 Jun 2024 11:09:39 +0800</lastBuildDate>
     <generator>Jekyll v4.3.1</generator>
     
       <item>
@@ -372,6 +372,108 @@
       </item>
     
       <item>
+        <title>Community Product UX</title>
+        <description>&lt;p&gt;Rethinking What Community Means.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rewritten text:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A major IP of the company, “Game of Thrones,” is about to go online and needs a product pre-launch. The game project team has decided to create a community product that can bring together book and show fans. They have approached our team to plan and design the interaction.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-a-community&quot;&gt;What is a Community&lt;/h3&gt;
+
+&lt;p&gt;When the project was proposed, everyone involved was aware that there were already communities like Baidu Tieba and Zhihu in the market. It seemed challenging to create yet another single-product community. Colleagues from the operations team mentioned that we have content and Key Opinion Leaders (KOLs) to drive traffic. It sounded like a significant challenge for the project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is a community?&lt;/strong&gt;  This is the first question we encounter.&lt;/p&gt;
+
+&lt;p&gt;The product team compared the forums and community products available on the market, finding them quite similar in form. It seemed that creating a similar product would suffice. I was unwilling at that time, hoping it wouldn’t be a boring replica, akin to opening a new space for activities like sports fields or gyms when there are already plenty around, expecting people to come and engage.&lt;/p&gt;
+
+&lt;p&gt;The TV series &lt;strong&gt;Game of Thrones&lt;/strong&gt; has aired up to its 7th season. There are also some fan-made encyclopedic websites which seem to be supported by the enthusiasm of the fans. If the enthusiasm fades or the TV series ends, there is a high possibility that the community will be deserted , which is why there is only an empty space without organizers.&lt;/p&gt;
+
+&lt;p&gt;The concept of ‘community’ doesn’t have to look like a traditional community; we can make it more fun, maybe even turn it into a game. That’s how I suggested it at the time.&lt;/p&gt;
+
+&lt;p&gt;At first, the idea was to use a map to carry community functions, discussion forums, user centers, notification systems, growth systems, and so on. I hope to attract users from the beginning, as the comfort of the place can stimulate users’ desire to communicate. After all, who doesn’t like games?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community01.jpg&quot; alt=&quot;community01&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the map, the basic functions and most important information of the community need to be displayed. It may not look like a community, but what does it matter.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-does-the-community-need&quot;&gt;What does the community Need?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To display so many features and information on a map, how to keep the information organized, highlight key points, capture the user’s visual focus, and enhance the user’s interest is a major challenge of this project.&lt;/p&gt;
+
+&lt;h3 id=&quot;design-concept&quot;&gt;Design Concept&lt;/h3&gt;
+
+&lt;h4 id=&quot;extract-core-functionality&quot;&gt;Extract Core Functionality&lt;/h4&gt;
+
+&lt;p&gt;After discussion, we have identified the three most core functions of the entire community:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Discussion Area&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Community Activities&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Store&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The reasons for choosing these three functional modules are very obvious. The &lt;strong&gt;discussion area&lt;/strong&gt; is the most active block for users, &lt;strong&gt;community activities&lt;/strong&gt; are blocks for phase-based activation, and the &lt;strong&gt;store&lt;/strong&gt; can increase user stickiness and sense of belonging. Other modules support the refinement of these three core functions.&lt;/p&gt;
+
+&lt;p&gt;After finalizing the core content, I proceed with prototyping using the previously created concept map.&lt;/p&gt;
+
+&lt;h4 id=&quot;产品原型草图&quot;&gt;产品原型草图&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community03.jpg&quot; alt=&quot;community03&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After the framework diagram of the main page was presented, we discussed and reached a consensus on the design direction.&lt;/p&gt;
+
+&lt;p&gt;However, when it came to the approval from the higher-ups, we encountered some significant &lt;strong&gt;issues&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Firstly, the format of this concept differs too much from traditional communities, causing the superiors to perceive a high level of risk.&lt;/p&gt;
+
+&lt;p&gt;Secondly, if the community resembles a game too much, it might overshadow the attention towards the game itself.&lt;/p&gt;
+
+&lt;p&gt;Lastly, using a map as the foundation may raise some copyright infringement concerns.&lt;/p&gt;
+
+&lt;p&gt;The final conclusion was to reject the original proposal and create a conventional community instead.&lt;/p&gt;
+
+&lt;h3 id=&quot;modification&quot;&gt;Modification&lt;/h3&gt;
+
+&lt;p&gt;The revised plan was quickly finalized. It was built using a popular framework based on the original functional requirements, with minor optimizations for micro-interactions. The mobile interface based on the mini-program also took shape rapidly.&lt;/p&gt;
+
+&lt;video width=&quot;100%&quot; height=&quot;100%&quot; controls=&quot;&quot;&gt;
+  &lt;source type=&quot;video/mp4&quot; src=&quot;https://8ku.github.io/archive/GameofThroneSite.mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;h4 id=&quot;prototype-interface-for-mini-programs&quot;&gt;Prototype Interface for Mini Programs&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/UI/GameofThrone02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion-and-more&quot;&gt;Conclusion and more..&lt;/h3&gt;
+
+&lt;p&gt;Although the initial plan in this project was overturned, I think having the opportunity to try out new ideas is still a very good thing.&lt;/p&gt;
+
+&lt;p&gt;I believe that games should not be limited to the game industry; many products we think should be serious can incorporate the concept of gamification. Humans enjoy playing games, and we have underestimated the benefits that games can bring to people.&lt;/p&gt;
+
+&lt;p&gt;This attempt is a bit ambitious. Many people who have seen the planning draft say, “Is this a game or a community? It doesn’t look like a community at all.” I like fixed thinking because it helps me figure out how to break it.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Subsequent: This project went live after restoring 70% of my prototype. Tencent took over the promotion and operation of the Game of Thrones game. Tencent also launched its own community, this project slowly became abandoned after theirs release. A year after leaving Youzu, I noticed it quietly went offline.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;相关经历&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
+        <link>/ui-ux-design/2018/09/28/UXDesign_community.html</link>
+        <guid isPermaLink="true">/ui-ux-design/2018/09/28/UXDesign_community.html</guid>
+        
+        
+        <category>UI-UX-Design</category>
+        
+      </item>
+    
+      <item>
         <title>游戏交互？我做不了的，哦？没关系？</title>
         <description>&lt;p&gt;游戏公司里不是只有游戏项目组，我真正到一家游戏公司里才知道这件事。我所在的部门叫平台运营部，主要工作围绕平台网站业务需求提供交互设计上的支持。&lt;/p&gt;
 
@@ -423,106 +525,6 @@
         
         
         <category>Journey</category>
-        
-      </item>
-    
-      <item>
-        <title>社区产品 UX</title>
-        <description>&lt;p&gt;重新思考了什么叫社区。&lt;/p&gt;
-
-&lt;p&gt;公司一个大IP《权力的游戏》快要上线，需要做一个产品预热。游戏项目组决定做一个能让书迷剧迷聚集起来的社区产品，找到我们组来策划和做交互设计。&lt;/p&gt;
-
-&lt;h3 id=&quot;什么叫社区&quot;&gt;什么叫社区&lt;/h3&gt;
-
-&lt;p&gt;立项的时候，参与的人都清楚市场上已经有了像百度贴吧、知乎这样的社区存在，再多一个单产品的社区是不是会很难做。运营组同事说我们有内容，有KOL带流量。听起来，这就是一个项目难点了。。。&lt;/p&gt;
-
-&lt;p&gt;什么是社区？这是我们碰到的第一个问题。&lt;/p&gt;
-
-&lt;p&gt;产品同学去找了市场上已有的论坛、交流社区产品来对比，形式上大同小异，似乎我们也照着做一个就差不多了。我当时很不甘心，不希望它是一个无聊的千篇一律的样子，就像在周围已经有各种球场健身馆的前提下再辟一块空地出来，指望着有人会来玩。&lt;/p&gt;
-
-&lt;p&gt;权力的游戏TV已经播到第7季，也有一些书迷们自建的百科网站，看得出来都是用书迷的热情支撑下来的资料型网站，如果热情褪去，或者TV完结，荒废掉的可能性很大，这就是只有一块空地没有组织者的原因了。&lt;/p&gt;
-
-&lt;p&gt;“社区”不非得长得社区的样子啊，我们可以做好玩一点，不然做成游戏吧。————我当时这么提出来。&lt;/p&gt;
-
-&lt;p&gt;最开始的设想，是用一张地图来承载社区功能，讨论区，用户中心，通知系统，成长系统等等。我希望在最初就能吸引用户，场所的舒适性能激发用户交流的欲望，况且，谁不喜欢游戏呢？&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community01.jpg&quot; alt=&quot;community01&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;地图上需要把社区基本功能及最主要的信息都表现出来，它看起来不像社区，但是，有什么关系呢。&lt;/p&gt;
-
-&lt;h3 id=&quot;社区里需要什么&quot;&gt;社区里需要什么&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;要在一个地图上展示这么多功能和信息，如何让信息不杂乱，突出重点，抓住用户视觉焦点，提升用户的兴趣，是这个项目的一大难点。&lt;/p&gt;
-
-&lt;h3 id=&quot;设计思路&quot;&gt;设计思路&lt;/h3&gt;
-
-&lt;h4 id=&quot;提取核心功能&quot;&gt;提取核心功能&lt;/h4&gt;
-
-&lt;p&gt;经过讨论，我们确定了整个社区最核心的三个功能：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;讨论区&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;社区活动&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;商店&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;选择这三个功能模块原因都很明显，讨论区是用户最活跃的区块，社区活动是阶段性促活的区块，商店能增加用户粘性和归属感。其他的模块辅助这三大核心功能做细化。&lt;/p&gt;
-
-&lt;p&gt;确定好核心内容，开始用之前的概念图进行原型设计。&lt;/p&gt;
-
-&lt;h4 id=&quot;产品原型草图&quot;&gt;产品原型草图&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/UI/community03.jpg&quot; alt=&quot;community03&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;主要页面的框架图出来以后进行讨论，设计方向上达成了一致。&lt;/p&gt;
-
-&lt;p&gt;但是在上级审批的时候，遇到了比较大的问题。&lt;/p&gt;
-
-&lt;p&gt;首先，这个形式和传统社区有太大的区别，上级觉得风险很大；&lt;/p&gt;
-
-&lt;p&gt;其次，如果社区也长得像游戏，可能会抢掉游戏的关注度；&lt;/p&gt;
-
-&lt;p&gt;最后，用地图做基底，可能会涉及一些侵权问题。&lt;/p&gt;
-
-&lt;p&gt;最后得出的结论是，推掉原方案，做一个常规的社区。&lt;/p&gt;
-
-&lt;h3 id=&quot;修改方案&quot;&gt;修改方案&lt;/h3&gt;
-
-&lt;p&gt;修改以后的方案很快就拍定了，根据原有的功能需求，用大众化的框架搭建，小部分进行微交互优化。基于小程序的移动端界面也迅速成型。&lt;/p&gt;
-
-&lt;video width=&quot;100%&quot; height=&quot;100%&quot; controls=&quot;&quot;&gt;
-  &lt;source type=&quot;video/mp4&quot; src=&quot;https://8ku.github.io/archive/GameofThroneSite.mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;h4 id=&quot;小程序原型界面&quot;&gt;小程序原型界面&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/UI/GameofThrone02.jpg&quot; alt=&quot;community02&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;总结和思考&quot;&gt;总结和思考&lt;/h3&gt;
-
-&lt;p&gt;虽然这个项目里一开始的方案被推翻了，但是我觉得有机会去尝试新的思路还是特别好的一件事。&lt;/p&gt;
-
-&lt;p&gt;我认为游戏不应该只被局限于游戏行业，其实很多我们觉得应该严肃的，“不可儿戏”的产品都可以加入游戏化的思想，游戏这种心态，追溯到原始时期便有，人类喜欢玩游戏，我们都低估了游戏能带给人的益处。&lt;/p&gt;
-
-&lt;p&gt;这次尝试一下子跨得有点大，很多看到策划草稿的人都说“你这是游戏还是社区，一点都不像社区啊”，我喜欢固化思维，因为这样我就知道怎么去打破它。&lt;/p&gt;
-
-&lt;p&gt;后续: 这个项目按我的原型还原了70%后上线了, 但众所周知权游的游戏推广和运营给到了腾讯, 他们自己也出了个社区, 这个社区项目在上线后慢慢废弃了. 离开游族一年后, 我看到它也悄悄下线.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;相关经历&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
-        <link>/ui-ux-design/2018/09/28/UXDesign_community.html</link>
-        <guid isPermaLink="true">/ui-ux-design/2018/09/28/UXDesign_community.html</guid>
-        
-        
-        <category>UI-UX-Design</category>
         
       </item>
     
