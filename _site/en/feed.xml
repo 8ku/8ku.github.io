@@ -5,8 +5,8 @@
     <description>nowhere but here.</description>
     <link>/</link>
     <atom:link href="/en/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Jun 2024 11:09:39 +0800</pubDate>
-    <lastBuildDate>Mon, 24 Jun 2024 11:09:39 +0800</lastBuildDate>
+    <pubDate>Mon, 24 Jun 2024 11:17:46 +0800</pubDate>
+    <lastBuildDate>Mon, 24 Jun 2024 11:17:46 +0800</lastBuildDate>
     <generator>Jekyll v4.3.1</generator>
     
       <item>
@@ -424,7 +424,7 @@
 
 &lt;p&gt;After finalizing the core content, I proceed with prototyping using the previously created concept map.&lt;/p&gt;
 
-&lt;h4 id=&quot;产品原型草图&quot;&gt;产品原型草图&lt;/h4&gt;
+&lt;h4 id=&quot;product-prototype-sketch&quot;&gt;Product prototype sketch&lt;/h4&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/UI/community03.jpg&quot; alt=&quot;community03&quot; /&gt;&lt;/p&gt;
 
@@ -462,7 +462,7 @@
 
 &lt;p&gt;&lt;em&gt;Subsequent: This project went live after restoring 70% of my prototype. Tencent took over the promotion and operation of the Game of Thrones game. Tencent also launched its own community, this project slowly became abandoned after theirs release. A year after leaving Youzu, I noticed it quietly went offline.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;相关经历&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://8ku.github.io/journey/2018/09/28/UXDesign_community_Journey&quot;&gt;Relevant Journey&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Sep 2018 00:00:00 +0800</pubDate>
         <link>/ui-ux-design/2018/09/28/UXDesign_community.html</link>
