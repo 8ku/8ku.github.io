@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Lost Designer
-categories: [Translate]
+categories: [Translate, Journey]
 featured: false
 ---
 

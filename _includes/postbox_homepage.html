@@ -7,7 +7,7 @@
     </a>
     <div class="card-block">
         <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-        <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
+        <!-- <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4> -->
         <div class="metafooter">
             <div class="wrapfooter">
                 {% if post.author %}
@@ -17,9 +17,9 @@
                 <span class="author-meta">
                 <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
                 {% endif %}
+                <span class="post-date">{{post.categories}}, </span>
                 <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>
-                <span class="post-read-more"><a href="{{ post.url | absolute_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>
