@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — BAKU</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/about.css" />
+</head>
+<body class="page-about">
+  <main class="about">
+    <header class="about__header">
+      <h1 class="about__title">{{title}}</h1>
+    </header>
+
+    <section class="about__picture" aria-label="Portrait">
+      <div class="about__picture-stage">
+        <span class="about__picture-label">picture placeholder</span>
+      </div>
+    </section>
+
+    <section class="about__text-wrap">
+      <div class="about__text">
+        {{body}}
+      </div>
+    </section>
+
+    <aside class="masthead">
+      <div class="masthead__logo"><span>BA</span><span>KU</span></div>
+      <div class="masthead__role">Designer</div>
+    </aside>
+
+    <nav class="footnav">
+      <a href="/">Works</a>
+      <a href="/thoughts/">Thoughts</a>
+      <a href="/about/" class="is-current">About</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,180 @@
+.thought-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px 56px;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  column-gap: clamp(40px, 5vw, 80px);
+  row-gap: 32px;
+  height: 100vh;
+  padding: var(--gap) var(--gap) var(--gap) max(80px, 18vw);
+}
+
+/* hide TOC if no items */
+.thought-detail.no-toc {
+  grid-template-columns: minmax(0, 1fr) 56px;
+}
+.thought-detail.no-toc .toc { display: none; }
+.thought-detail.no-toc .masthead { grid-column: 2; }
+.thought-detail.no-toc .footnav { grid-column: 1 / span 2; }
+
+/* === HEADER (pinned via grid row 1) === */
+.thought-header {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding-top: 4px;
+}
+.thought-header__title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.thought-header__name {
+  font-size: 24px;
+  letter-spacing: 0.01em;
+}
+.thought-header__date,
+.thought-header__year {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.thought-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  transition: color 200ms ease;
+}
+.nav-link:hover { color: var(--ink-soft); }
+.nav-link--disabled { color: var(--ink-mute); pointer-events: none; }
+.nav-link__arrow { font-size: 14px; }
+
+/* === ARTICLE (scrollable middle) === */
+.thought-body-wrap {
+  grid-column: 1;
+  grid-row: 2;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding-top: 20px;
+  padding-bottom: 400px;
+  mask-image: linear-gradient(180deg, transparent 0, #000 4%, #000 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 4%, #000 94%, transparent 100%);
+}
+.thought-body-wrap::-webkit-scrollbar { display: none; }
+
+.thought-body {
+  max-width: clamp(640px, 50vw, 1200px);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink);
+  padding: 4px 0 80px 0;
+}
+.thought-body h2 {
+  margin: 48px 0 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.thought-body h2:first-child { margin-top: 0; }
+.thought-body p {
+  margin: 0 0 18px 0;
+  letter-spacing: 0.005em;
+}
+
+.thought-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 32px auto;
+  border-radius: 2px;
+}
+
+/* 当一个段落里只有一张图(没有别的文字)时,去掉段落的下边距, 避免和 img 自己的 margin 叠加导致间距过大 */
+.thought-body p:has(> img:only-child) {
+  margin: 0;
+}
+
+.thought-body ul,
+.thought-body ol {
+  margin: 0 0 18px 0;
+  padding-left: 24px;
+}
+
+.thought-body ul {
+  list-style: disc;
+}
+
+.thought-body ol {
+  list-style: decimal;
+}
+
+.thought-body li {
+  margin: 6px 0;
+  letter-spacing: 0.005em;
+}
+
+.thought-body li::marker {
+  color: var(--ink-mute);
+}
+
+/* 嵌套列表 */
+.thought-body ul ul,
+.thought-body ol ol,
+.thought-body ul ol,
+.thought-body ol ul {
+  margin: 6px 0;
+}
+
+.thought-body ul ul {
+  list-style: circle;
+}
+
+.thought-body ul ul ul {
+  list-style: square;
+}
+
+/* === TOC (pinned via grid, stays in row 2) === */
+.toc {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  padding-top: 4px;
+}
+.toc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.toc__item {
+  font-size: 14px;
+  letter-spacing: 0.005em;
+  color: var(--ink-mute);
+  cursor: pointer;
+  transition: color 220ms ease;
+  line-height: 1.4;
+}
+.toc__item:hover { color: var(--ink-soft); }
+.toc__item.is-active { color: var(--ink); }
+
+/* === MASTHEAD === */
+.thought-detail .masthead {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.thought-detail .footnav {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}

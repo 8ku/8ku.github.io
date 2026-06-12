@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}} — BAKU</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/thought-detail.css" />
+</head>
+<body class="page-thought-detail">
+  <main class="thought-detail">
+    <header class="thought-header">
+      <div class="thought-header__title">
+        <span class="thought-header__name">{{title}}</span>
+        <span class="thought-header__date">{{date}}</span>
+      </div>
+      <nav class="thought-header__nav">
+        <a href="{{prevHref}}" class="nav-link {{prevClass}}">
+          <span class="nav-link__arrow">⟵</span>
+          <span>Prev</span>
+        </a>
+        <a href="{{nextHref}}" class="nav-link {{nextClass}}">
+          <span>Next</span>
+          <span class="nav-link__arrow">⟶</span>
+        </a>
+      </nav>
+    </header>
+
+    <div class="thought-body-wrap" id="thoughtBodyWrap">
+      <article class="thought-body" id="thoughtBody">
+        {{body}}
+      </article>
+    </div>
+
+    <aside class="toc" id="toc" aria-label="Table of contents">
+      <ul class="toc__list" id="tocList"></ul>
+    </aside>
+
+    <aside class="masthead">
+      <div class="masthead__logo"><span>BA</span><span>KU</span></div>
+      <div class="masthead__role">Designer</div>
+    </aside>
+
+    <nav class="footnav">
+      <a href="/">Works</a>
+      <a href="/thoughts/">Thoughts</a>
+      <a href="/about/">About</a>
+    </nav>
+  </main>
+
+  <script type="module" src="/scripts/thought-detail.js"></script>
+</body>
+</html>

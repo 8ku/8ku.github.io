@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thoughts — BAKU</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/thoughts.css" />
+</head>
+<body class="page-thoughts">
+  <main class="thoughts">
+    <header class="thoughts__header">
+      <h1 class="thoughts__title">Thoughts</h1>
+    </header>
+
+    <section class="thoughts__preview" aria-label="Preview">
+      <div class="thoughts__preview-stage" id="previewStage">
+        <span class="thoughts__preview-label">picture placeholder</span>
+      </div>
+    </section>
+
+    <section class="thoughts__list-wrap">
+      <ul class="thoughts__list" id="thoughtsList"></ul>
+    </section>
+
+    <aside class="masthead">
+      <div class="masthead__logo"><span>BA</span><span>KU</span></div>
+      <div class="masthead__role">Designer</div>
+    </aside>
+
+    <nav class="footnav">
+      <a href="/">Works</a>
+      <a href="/thoughts/" class="is-current">Thoughts</a>
+      <a href="/about/">About</a>
+    </nav>
+  </main>
+
+  <script>window.THOUGHTS_DATA = {{thoughtsJson}};</script>
+  <script type="module" src="/scripts/thoughts-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}} — BAKU</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/work-detail.css" />
+
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+
+<body class="page-work-detail">
+  <main class="work-detail">
+    <header class="work-header">
+      <div class="work-header__title">
+        <span class="work-header__name">{{title}}</span>
+        <span class="work-header__dot">•</span>
+        <span class="work-header__year">{{year}}</span>
+      </div>
+      <nav class="work-header__nav">
+        <a href="{{prevHref}}" class="nav-link {{prevClass}}">
+          <span class="nav-link__arrow">⟵</span>
+          <span>Prev</span>
+        </a>
+        <a href="{{nextHref}}" class="nav-link {{nextClass}}">
+          <span>Next</span>
+          <span class="nav-link__arrow">⟶</span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="picture-stage" aria-label="Project image">
+      <div class="picture-stage__inner" id="pictureStage"></div>
+    </section>
+
+    <section class="text-rail" id="textRail" aria-label="Project description">
+      <div class="text-rail__inner" id="textRailInner"></div>
+    </section>
+
+    <aside class="masthead">
+      <div class="masthead__logo"><span>BA</span><span>KU</span></div>
+      <div class="masthead__role">Designer</div>
+    </aside>
+
+    <nav class="footnav">
+      <a href="/">Works</a>
+      <a href="/thoughts/">Thoughts</a>
+      <a href="/about/">About</a>
+    </nav>
+  </main>
+
+  <script>window.PROJECT_DATA = {{ projectJson }};</script>
+  <script type="module" src="/scripts/work-detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BAKU — Designer</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body class="page-home">
+  <main class="home">
+    <section class="cover" aria-label="Project cover">
+      <div class="cover__stage" id="coverStage"></div>
+    </section>
+
+    <section class="projects" aria-label="Projects">
+      <div class="projects__viewport" id="projectsViewport">
+        <ul class="projects__list" id="projectsList"></ul>
+      </div>
+    </section>
+
+    <aside class="masthead">
+      <div class="masthead__logo"><span>BA</span><span>KU</span></div>
+      <div class="masthead__role">Designer</div>
+    </aside>
+
+    <nav class="footnav">
+      <a href="/">Works</a>
+      <a href="/thoughts/">Thoughts</a>
+      <a href="/about/">About</a>
+    </nav>
+  </main>
+
+  <script>window.PROJECTS_DATA = {{projectsJson}};</script>
+  <script type="module" src="/scripts/home.js"></script>
+</body>
+</html>
